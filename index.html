@@ -1,0 +1,2817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Indian Parent's Guide to Kids, Phones &amp; Screen Time</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700;8..60,800&amp;display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1B1D4D;
+  --indigo:#5B4BE0;
+  --amber:#FFB320;
+  --ink:#171A27;
+  --ink-2:#464C5E;
+  --ink-3:#7B8296;
+  --line:#D9DCE6;
+  --paper:#FCFBF7;
+  --canvas:#EEEFF5;
+  --pad:14mm;
+  --display:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  background:var(--canvas);
+  color:var(--ink);
+  font-family:Inter,"Helvetica Neue",Arial,sans-serif;
+  font-size:9pt;
+  line-height:1.4;
+  -webkit-font-smoothing:antialiased;
+}
+
+.page{
+  position:relative;
+  width:210mm;
+  min-height:297mm;
+  margin:8mm auto;
+  padding:12mm var(--pad) 16mm;
+  overflow:hidden;
+  background:var(--paper);
+  box-shadow:0 2px 16px rgba(27,29,77,.11);
+}
+
+.masthead{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding-bottom:3mm;
+  border-bottom:1px solid var(--navy);
+}
+.logo{width:34mm;height:9mm;margin:0;}
+.logo img{display:block;width:100%;height:100%;object-fit:contain;}
+.edition{
+  color:var(--ink-3);
+  font-size:6.5pt;
+  font-weight:700;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+
+.headline{margin:6mm 0 0;}
+.headline h1{
+  max-width:168mm;
+  margin:0;
+  color:var(--navy);
+  font-family:var(--display);
+  font-size:30pt;
+  font-weight:800;
+  letter-spacing:-.045em;
+  line-height:.96;
+}
+.headline h1 span{display:block;}
+.headline h1 em{color:var(--indigo);font-style:normal;}
+.deck{
+  max-width:150mm;
+  margin:3mm 0 0;
+  color:var(--ink-2);
+  font-size:10.2pt;
+  line-height:1.42;
+}
+.deck strong{color:var(--navy);}
+
+.hero{
+  height:auto;
+  aspect-ratio:2152 / 731;
+  margin:4mm 0 0;
+  overflow:hidden;
+  border-top:3px solid var(--amber);
+}
+.hero img{display:block;width:100%;height:100%;object-fit:cover;}
+.thesis{
+  margin:2.5mm 0;
+  padding:2.6mm 0;
+  border-top:1px solid var(--navy);
+  border-bottom:1px solid var(--navy);
+}
+.thesis-label{
+  display:block;
+  margin-bottom:1mm;
+  color:var(--indigo);
+  font-size:6.3pt;
+  font-weight:800;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.thesis p{
+  margin:0;
+  color:var(--navy);
+  font-family:var(--display);
+  font-size:13pt;
+  font-weight:700;
+  letter-spacing:-.025em;
+  line-height:1.15;
+}
+
+.section-title{
+  margin:0 0 1.6mm;
+  color:var(--indigo);
+  font-size:6.8pt;
+  font-weight:800;
+  letter-spacing:.14em;
+  line-height:1.2;
+  text-transform:uppercase;
+}
+
+.opening-grid{
+  display:grid;
+  grid-template-columns:54mm 1fr;
+  gap:8mm;
+  align-items:start;
+  margin:6mm 0 5mm;
+}
+.scene-card{
+  min-height:46mm;
+  padding:3.8mm 4mm 4mm 0;
+  border-top:2px solid var(--amber);
+  border-bottom:1px solid var(--navy);
+}
+.scene-card .section-title,
+.opening-grid > .story > .section-title{margin-bottom:3mm;}
+.scene-line{margin:0;}
+.scene-line span{
+  display:block;
+  margin-bottom:.6mm;
+  color:var(--ink-3);
+  font-size:6pt;
+  font-weight:800;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.scene-line strong{
+  color:var(--navy);
+  font-family:var(--display);
+  font-size:12.3pt;
+  font-weight:700;
+  letter-spacing:-.02em;
+  line-height:1.05;
+}
+.time-jump{
+  display:flex;
+  align-items:center;
+  margin:3mm 0;
+  color:var(--indigo);
+  font-size:5.8pt;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.time-jump::before{content:none;}
+
+.story{
+  max-width:none;
+  margin:0;
+  color:var(--ink-2);
+  font-size:9pt;
+  line-height:1.48;
+}
+.opening-grid > .story{
+  min-height:46mm;
+  padding-top:3.8mm;
+  border-top:2px solid var(--amber);
+}
+.story p{margin:0 0 1.8mm;}
+.story strong{color:var(--navy);}
+.goal{
+  margin-top:2.2mm;
+  padding-left:4mm;
+  border-left:3px solid var(--amber);
+  color:var(--navy);
+  font-size:10pt;
+  font-weight:800;
+  line-height:1.3;
+}
+
+.contents-title{
+  display:flex;
+  align-items:center;
+  gap:3mm;
+  margin:0 0 1.3mm;
+}
+.contents-title::after{content:"";flex:1;border-top:1px solid var(--line);}
+.contents-title h2{margin:0;white-space:nowrap;}
+.toc{display:grid;grid-template-columns:1fr;}
+.toc-item{
+  display:grid;
+  grid-template-columns:8mm 1fr;
+  gap:2mm;
+  align-items:baseline;
+  padding:1.4mm 0;
+  border-bottom:1px solid var(--line);
+  color:var(--ink-2);
+  font-size:7.7pt;
+  line-height:1.2;
+}
+.toc-item b{color:var(--indigo);font-size:9pt;font-weight:900;}
+
+.footer{
+  position:absolute;
+  right:var(--pad);
+  bottom:7mm;
+  left:var(--pad);
+  display:grid;
+  grid-template-columns:8mm 1fr;
+  gap:8mm;
+  align-items:end;
+  color:var(--ink-3);
+  font-size:6.2pt;
+  line-height:1.35;
+}
+.footer .brand{justify-self:end;}
+.page-number{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:8mm;
+  height:8mm;
+  background:var(--navy);
+  color:#fff;
+  font-size:8pt;
+  font-weight:700;
+}
+.brand{font-weight:600;letter-spacing:.1em;text-transform:uppercase;}
+
+/* Page 2: PW Games */
+.product-page{padding-top:12mm;}
+.product-title{
+  display:grid;
+  grid-template-columns:78mm 1fr;
+  gap:8mm;
+  align-items:center;
+  margin:8mm 0 6mm;
+}
+.product-title .eyebrow{
+  margin:0 0 1.8mm;
+  color:var(--indigo);
+  font-size:6.6pt;
+  font-weight:800;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+.product-title h1{
+  margin:0;
+  color:var(--navy);
+  font-family:var(--display);
+  font-size:26pt;
+  font-weight:800;
+  letter-spacing:-.045em;
+  line-height:.98;
+}
+.product-lead{
+  margin:3.5mm 0 0;
+  padding:1mm 0 1mm 4mm;
+  border-left:3px solid var(--amber);
+  color:var(--ink-2);
+  font-size:8.2pt;
+  line-height:1.42;
+}
+.product-hero{
+  width:100%;
+  height:auto;
+  aspect-ratio:1672/941;
+  margin:0;
+  overflow:hidden;
+  border-top:1.2mm solid var(--amber);
+  background:#EFE9E0;
+}
+.product-hero img{display:block;width:100%;height:100%;object-fit:contain;}
+.product-summary{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:3.5mm;
+  align-items:center;
+  margin:0 0 6mm;
+  padding:4.5mm 0;
+  border-bottom:1px solid var(--line);
+}
+.product-summary p{margin:0;color:var(--ink-2);font-size:8.2pt;line-height:1.38;}
+.product-summary strong{color:var(--navy);}
+
+.product-story{
+  display:grid;
+  grid-template-columns:58mm 1fr;
+  gap:8mm;
+  align-items:start;
+  padding:7mm 0;
+  border-top:1px solid var(--navy);
+  border-bottom:1px solid var(--line);
+}
+.principles>.section-title{margin-bottom:2.5mm;}
+.benefit-band{
+  display:block;
+  margin:0;
+  border:0;
+}
+.editorial-principle{
+  min-height:0;
+  padding:3.8mm 0;
+  border-top:1px solid var(--line);
+}
+.editorial-principle:first-child{border-top:1px solid var(--navy);}
+.editorial-principle span{
+  display:block;
+  margin-bottom:.8mm;
+  color:var(--indigo);
+  font-size:6pt;
+  font-weight:900;
+  letter-spacing:.12em;
+}
+.editorial-principle h3{
+  margin:0;
+  color:var(--navy);
+  font-size:8.4pt;
+  line-height:1.2;
+}
+.editorial-principle p{margin:.8mm 0 0;color:var(--ink-2);font-size:6.7pt;line-height:1.32;}
+.evidence-heading{
+  display:block;
+  margin:0 0 2.2mm;
+}
+.evidence-heading h2{margin:0;color:var(--navy);font-size:9pt;}
+.evidence-heading p{margin:0;color:var(--ink-3);font-size:6.6pt;}
+.product-evidence{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:4mm;
+  align-items:start;
+}
+.evidence-card{margin:0;}
+.evidence-card .device{
+  position:relative;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  width:32mm;
+  height:72mm;
+  margin:0 auto;
+  padding:4mm 0 3.5mm;
+  box-sizing:border-box;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:2mm;
+  background:#fff;
+}
+.status-bar{
+  position:absolute;
+  z-index:2;
+  top:0;
+  right:0;
+  left:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:4mm;
+  padding:0 2mm;
+  box-sizing:border-box;
+  background:#fff;
+  color:#20232B;
+  font-size:5.2pt;
+  font-weight:700;
+}
+.status-signals{display:flex;align-items:center;justify-content:flex-end;gap:1mm;}
+.cellular{display:flex;align-items:flex-end;gap:.35mm;width:3.5mm;height:2.5mm;}
+.cellular i{display:block;width:.55mm;border-radius:.2mm;background:#111318;}
+.cellular i:nth-child(1){height:.8mm;}
+.cellular i:nth-child(2){height:1.3mm;}
+.cellular i:nth-child(3){height:1.9mm;}
+.cellular i:nth-child(4){height:2.5mm;}
+.wifi-mark{position:relative;width:3mm;height:2.1mm;overflow:hidden;}
+.wifi-mark::before{
+  content:"";
+  position:absolute;
+  top:-1.7mm;
+  left:.2mm;
+  width:2.4mm;
+  height:2.4mm;
+  border:1px solid #111318;
+  border-radius:50%;
+}
+.wifi-mark::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:1.2mm;
+  width:.6mm;
+  height:.6mm;
+  border-radius:50%;
+  background:#111318;
+}
+.battery-mark{position:relative;width:3.1mm;height:1.6mm;border:.35mm solid #111318;border-radius:.5mm;box-sizing:border-box;}
+.battery-mark::before{content:"";position:absolute;top:.25mm;right:-.7mm;width:.35mm;height:.55mm;border-radius:0 .2mm .2mm 0;background:#111318;}
+.battery-mark::after{content:"";position:absolute;top:.25mm;right:.25mm;bottom:.25mm;left:.25mm;border-radius:.15mm;background:#111318;}
+.nav-bar{
+  position:absolute;
+  z-index:2;
+  right:0;
+  bottom:0;
+  left:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  height:3.5mm;
+  padding:0 5mm;
+  box-sizing:border-box;
+  background:#F3F3F3;
+}
+.nav-triangle{width:0;height:0;border-top:1.2mm solid transparent;border-bottom:1.2mm solid transparent;border-right:1.8mm solid #555;}
+.nav-circle{width:1.8mm;height:1.8mm;border:1px solid #666;border-radius:50%;box-sizing:border-box;}
+.nav-square{width:1.8mm;height:1.8mm;border:1px solid #666;box-sizing:border-box;}
+.evidence-card img{
+  display:block;
+  width:auto;
+  max-width:100%;
+  height:100%;
+  object-fit:contain;
+  border:1px solid var(--line);
+  border-radius:2mm;
+  background:#fff;
+}
+.evidence-card.app-screen .device{
+  height:72mm;
+  padding:4mm 0 3.5mm;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:2mm;
+  background:#fff;
+}
+.evidence-card.app-screen img{
+  width:auto;
+  max-width:none;
+  height:64.5mm;
+  transform:none;
+  border:0;
+  border-radius:0;
+}
+.evidence-card.analytics img{height:64.5mm;object-fit:contain;object-position:top center;background:#fff;}
+.evidence-card.raster-bars .device{width:34.75mm;height:72mm;padding:0;}
+.evidence-card.raster-bars img{width:auto;max-width:none;height:72mm;}
+.evidence-card figcaption{
+  max-width:38mm;
+  margin:1.3mm auto 0;
+  color:var(--ink-2);
+  font-size:6.7pt;
+  line-height:1.3;
+}
+.evidence-card figcaption strong{display:block;color:var(--navy);font-size:7.4pt;}
+.balance-editorial{
+  display:grid;
+  grid-template-columns:45mm 1fr;
+  gap:6mm;
+  align-items:center;
+  margin-top:9mm;
+  padding:4.5mm 0 4.5mm 4mm;
+  border-left:3px solid var(--amber);
+  border-top:1px solid var(--navy);
+  border-bottom:1px solid var(--navy);
+}
+.balance-editorial h2{margin:0;color:var(--navy);font-family:var(--display);font-size:12pt;line-height:1.1;}
+.balance-editorial p{margin:0;color:var(--ink-2);font-size:8pt;line-height:1.4;}
+
+@media screen and (max-width:230mm){
+  .page{width:auto;min-height:0;margin:3mm;padding:7mm 5mm 12mm;}
+  .headline h1{font-size:23pt;}
+  .hero{height:auto;aspect-ratio:2153/730;}
+  .toc{grid-template-columns:1fr;}
+  .product-summary,.product-story,.balance-editorial{grid-template-columns:1fr;}
+  .opening-grid{grid-template-columns:1fr;}
+  .benefit-band{grid-template-columns:1fr;}
+  .product-evidence{grid-template-columns:1fr;}
+  .footer{position:static;grid-template-columns:8mm 1fr;margin-top:8mm;}
+  .footer .brand{grid-column:2;}
+}
+
+@page{size:A4;margin:0;}
+/* Editorial restructuring for pages 3–9: fewer boxes, clearer reading paths */
+.chapter-editorial .chap{
+  grid-template-columns:12mm 1fr;
+  gap:5mm;
+  margin-bottom:5.5mm;
+  padding-bottom:4.5mm;
+}
+.chapter-editorial .chap .n{
+  padding-top:.5mm;
+  color:var(--indigo);
+  font-family:var(--display);
+  font-size:22pt;
+}
+.chapter-editorial .chap h2{max-width:150mm;font-size:21pt;line-height:1;}
+.chapter-editorial .chap .lead{max-width:150mm;font-size:8.8pt;}
+
+/* 01 — compare two uses, then scan four editorial lenses */
+.chapter-one .cols.c2n{grid-template-columns:76mm 1fr;gap:6mm;align-items:stretch;}
+.chapter-one .cols.c2n>.img{min-height:92mm!important;border:0;border-radius:1.5mm;}
+.chapter-one .cmp{border:0;border-radius:0;gap:0;background:#fff;}
+.chapter-one .cmp>div{padding:4mm 4mm 3mm;border-top:3px solid;}
+.chapter-one .cmp .a{background:#fff;border-color:var(--mint);}
+.chapter-one .cmp .b{background:#fff;border-color:var(--coral);border-left:1px solid var(--line);}
+.chapter-one .cols.c4{gap:4mm;border-top:1px solid var(--navy);padding-top:3mm;}
+.chapter-one .card.soft{padding:0 3mm 0 0;border:0;border-right:1px solid var(--line);border-radius:0;background:transparent;}
+.chapter-one .card.soft:last-child{border-right:0;}
+.chapter-one .card .img.icon{width:8mm;min-height:8mm;margin:0 0 2mm;border:0;background:transparent;}
+.chapter-one .card .t{font-family:var(--display);font-size:11pt;}
+.chapter-one .ev{padding:3mm 0 3mm 4mm;border-left:3px solid var(--mint);border-radius:0;background:transparent;}
+
+/* 02 — narrative first, mechanism second, slow activities as the conclusion */
+.chapter-two>.cols.c2:first-of-type{grid-template-columns:.82fr 1.18fr;gap:7mm;align-items:center;}
+.chapter-two>.cols.c2:first-of-type>.img{min-height:82mm!important;border:0;border-radius:1.5mm;}
+.chapter-two .chat{display:grid;grid-template-columns:1fr 1fr;gap:2mm;}
+.chapter-two .chat .b{max-width:none;border-radius:0;padding:2.5mm 3mm;border-top:2px solid var(--amber);background:transparent;}
+.chapter-two .loop{margin-top:3mm;padding:3mm 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);gap:1mm;}
+.chapter-two .loop span{padding:1mm 1.8mm;border:1px solid var(--navy);border-radius:9mm;background:transparent;color:var(--navy);}
+.chapter-two .loop span.r{border-color:var(--amber);background:var(--amber-soft);}
+.chapter-two>.cols.c2w{grid-template-columns:1fr 1fr;gap:7mm;border-top:1px solid var(--navy);padding-top:4mm;}
+.chapter-two .chips span{background:transparent;border-color:var(--line);}
+.chapter-two .ev{padding:3mm 0 3mm 4mm;border-left:3px solid var(--mint);border-radius:0;background:transparent;}
+.chapter-two .card.ind{padding:3mm 0 3mm 4mm;border:0;border-left:3px solid var(--amber);border-radius:0;background:transparent;}
+
+/* 03 — make the disappearing afternoon the dominant story */
+.chapter-three>.cols.c2{grid-template-columns:.9fr 1.1fr;gap:8mm;align-items:center;}
+.chapter-three>.cols.c2>.img{min-height:78mm!important;border:0;border-radius:1.5mm;}
+.chapter-three .tl{padding-left:5mm;border-left:1px solid var(--navy);}
+.chapter-three .stat{margin-top:5mm;padding:4mm 5mm;grid-template-columns:34mm 1fr;}
+.chapter-three .yesno{gap:7mm;margin-top:3mm;}
+.chapter-three .yesno>div{padding:2.5mm 0;border-radius:0;background:transparent;border-top:2px solid;}
+.chapter-three .yesno .no{border-color:var(--coral);}
+.chapter-three .yesno .yes{border-color:var(--mint);}
+.chapter-three .prot{gap:0;border-top:1px solid var(--navy);border-bottom:1px solid var(--line);}
+.chapter-three .prot div{padding:3mm 2mm;background:transparent;color:var(--navy);border-radius:0;border-right:1px solid var(--line);}
+.chapter-three .prot div:last-child{border-right:0;}
+.chapter-three .prot .img.icon{background:transparent;border:0;}
+.chapter-three .prot .img.icon{
+  width:10mm;
+  min-height:10mm;
+  margin:0 auto 1.8mm;
+  padding:1.8mm;
+  border:0;
+  border-radius:50%;
+  background:var(--navy);
+}
+.chapter-three .prot .img.icon img{object-fit:contain;}
+
+/* Combined home page — two related systems, visually balanced */
+.page-combined-home .rules{border-radius:1mm;box-shadow:none;}
+.page-combined-home .swap{border-radius:0;border-left:0;border-right:0;}
+.page-combined-home .chat .b{border-radius:0;border-top:1px solid var(--amber);background:transparent;}
+.page-combined-home .scr>div{border-radius:0;}
+
+/* 06 — keep the replacement menu useful without looking like a dashboard */
+.page-ch6 .menu{gap:0;border-top:1px solid var(--navy);border-bottom:1px solid var(--line);}
+.page-ch6 .menu div{border:0;border-right:1px solid var(--line);border-radius:0;background:transparent;}
+.page-ch6 .menu div:last-child{border-right:0;}
+.page-ch6 .menu b{padding:2mm 2.4mm;background:transparent!important;color:var(--navy);border-bottom:2px solid var(--indigo);}
+.page-ch6 .pw-third{background:transparent;}
+
+/* 07 — worksheet on the right, an uncluttered four-step path on the left */
+.chapter-reset .week{padding:3mm 0 3mm 4mm;border:0;border-left:2px solid var(--indigo);border-radius:0;}
+.chapter-reset .steps div{background:transparent;border-radius:0;border-bottom-width:2px;}
+.chapter-reset .plan{box-shadow:none;border-width:1px;}
+
+/* 08 — traffic-light decision aid rather than a wall of cards */
+.chapter-worry .tlight{gap:5mm;}
+.chapter-worry .tlight div{padding:3mm 0;border-radius:0;background:transparent;border-top:3px solid;}
+.chapter-worry .tlight .g{border-color:var(--mint);}
+.chapter-worry .tlight .a{border-color:var(--amber);}
+.chapter-worry .tlight .r{border-color:var(--coral);}
+.chapter-worry .basics{gap:0;border-top:1px solid var(--navy);border-bottom:1px solid var(--line);}
+.chapter-worry .basics>div{border:0;border-right:1px solid var(--line);border-radius:0;background:transparent;}
+.chapter-worry .basics>div:last-child{border-right:0;}
+
+/* Final editorial cleanup: remove duplicated labels and promotional furniture */
+.chapter-editorial .top .tag,
+.page-final-clean .top .tag{display:none;}
+.chapter-editorial .chap{
+  display:block;
+  padding-bottom:4mm;
+}
+.chapter-editorial .chap .n{
+  display:block;
+  margin:0 0 1.5mm;
+  padding:0;
+  color:var(--indigo);
+  font-family:Inter,"Helvetica Neue",Arial,sans-serif;
+  font-size:6.4pt;
+  font-weight:800;
+  line-height:1;
+  letter-spacing:.16em;
+}
+.chapter-editorial .chap .n::before{content:"SECTION ";}
+.page-combined-home .chap .n::before{content:"SECTION ";}
+.chapter-editorial .take{
+  display:block;
+  margin-top:4mm;
+  padding:3.5mm 0;
+  border:0;
+  border-top:1px solid var(--navy);
+  border-bottom:1px solid var(--navy);
+  border-radius:0;
+  background:transparent;
+}
+.chapter-editorial .take .lab{display:none;}
+.chapter-editorial .take p{font-size:10pt;line-height:1.25;}
+.foot .fn,
+.foot .brand,
+.footer .brand{display:none;}
+.foot{grid-template-columns:auto;}
+.footer{grid-template-columns:auto;}
+.foot .num,
+.footer .page-number{justify-self:start;}
+.page-final-clean .foot .brand{display:none;}
+
+@media print{
+  body{background:#fff;}
+  .page{width:210mm;height:297mm;min-height:0;margin:0;box-shadow:none;}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+
+/* Eight-page chapter system */
+
+/* =====================================================================
+   THE INDIAN PARENT'S GUIDE TO KIDS, PHONES & SCREEN TIME
+   10 × A4 pages · HTML + CSS only · print-ready
+   Image slots: every <figure class="img" data-id="IMG-xx"> is an artwork
+   slot. Replace the <figure> with <img> (same class) to drop final art in.
+   ===================================================================== */
+
+:root{
+  /* brand tokens — swap to PW Games brand values */
+  --navy:#1B1D4D;
+  --navy-2:#2A2D6E;
+  --indigo:#5B4BE0;
+  --indigo-soft:#EEECFC;
+  --indigo-line:#CFCAF5;
+  --amber:#FFB320;
+  --amber-dk:#B77600;
+  --amber-soft:#FFF5DD;
+  --mint:#159A6E;
+  --mint-soft:#E5F6EF;
+  --coral:#E3573F;
+  --coral-soft:#FDECE8;
+  --ink:#171A27;
+  --ink-2:#464C5E;
+  --ink-3:#7B8296;
+  --line:#E4E6EE;
+  --line-lt:#EFF0F5;
+  --paper:#FFFFFF;
+  --canvas:#EEEFF5;
+  --pad:13mm;
+}
+
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  background:var(--canvas);
+  color:var(--ink);
+  font-family:Inter,"Helvetica Neue",Arial,system-ui,sans-serif;
+  font-size:9pt;
+  line-height:1.4;
+  -webkit-font-smoothing:antialiased;
+  font-feature-settings:"cv11","ss01";
+}
+p{margin:0 0 1.6mm;}
+strong{font-weight:700;color:var(--navy);}
+em{font-style:italic;}
+
+/* ---------- page ---------- */
+.page{
+  position:relative;
+  width:210mm;
+  min-height:297mm;
+  margin:8mm auto;
+  padding:var(--pad) var(--pad) 15mm;
+  background:var(--paper);
+  box-shadow:0 2px 16px rgba(27,29,77,.12);
+  overflow:hidden;
+}
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:6mm;
+  margin-bottom:4.5mm;
+  font-size:6.6pt;
+  font-weight:600;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+}
+.top .tag{color:var(--indigo);}
+.foot{
+  position:absolute;
+  left:var(--pad);right:var(--pad);bottom:7mm;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:8mm;
+  font-size:6.4pt;
+  color:var(--ink-3);
+  line-height:1.35;
+}
+.foot .num{
+  flex:none;
+  width:8mm;height:8mm;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--navy);color:#fff;
+  font-weight:700;font-size:8pt;
+}
+.foot .fn{flex:1;}
+.foot .fn sup{color:var(--indigo);font-weight:700;}
+.foot .brand{flex:none;font-weight:600;letter-spacing:.1em;text-transform:uppercase;}
+
+sup{font-size:.68em;line-height:0;vertical-align:baseline;position:relative;top:-.45em;color:var(--indigo);font-weight:700;}
+
+/* ---------- chapter head ---------- */
+.chap{
+  display:grid;
+  grid-template-columns:16mm 1fr;
+  gap:4mm;
+  align-items:start;
+  margin-bottom:4mm;
+  padding-bottom:3.5mm;
+  border-bottom:1.5px solid var(--navy);
+}
+.chap .n{
+  font-size:26pt;
+  line-height:.9;
+  font-weight:900;
+  color:var(--indigo);
+  letter-spacing:-.04em;
+}
+.chap h2{
+  margin:0;
+  font-size:17pt;
+  line-height:1.08;
+  font-weight:800;
+  letter-spacing:-.02em;
+  color:var(--navy);
+}
+.chap .lead{
+  margin:1.6mm 0 0;
+  font-size:9.2pt;
+  color:var(--ink-2);
+  max-width:150mm;
+}
+
+/* ---------- grid helpers ---------- */
+.cols{display:grid;gap:5mm;}
+.c2{grid-template-columns:1fr 1fr;}
+.c2w{grid-template-columns:1.25fr 1fr;}
+.c2n{grid-template-columns:1fr 1.25fr;}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+.c5{grid-template-columns:repeat(5,1fr);}
+.c6{grid-template-columns:repeat(6,1fr);}
+.mb{margin-bottom:4mm;}
+.mb-s{margin-bottom:2.6mm;}
+.h3{
+  margin:0 0 1.8mm;
+  font-size:7pt;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--indigo);
+}
+.h4{
+  margin:0 0 1.4mm;
+  font-size:10.5pt;
+  font-weight:800;
+  line-height:1.15;
+  letter-spacing:-.01em;
+  color:var(--navy);
+}
+.muted{color:var(--ink-2);}
+.small{font-size:7.6pt;}
+.note{font-size:7pt;color:var(--ink-3);font-style:italic;}
+
+/* ---------- image slot ---------- */
+.img{
+  position:relative;
+  margin:0;
+  background:
+    linear-gradient(135deg,rgba(91,75,224,.05),rgba(91,75,224,.11)),
+    repeating-linear-gradient(-45deg,transparent 0 5px,rgba(91,75,224,.05) 5px 10px);
+  border:1px solid var(--indigo-line);
+  border-radius:1.6mm;
+  overflow:hidden;
+  min-height:16mm;
+}
+.img::after{
+  content:attr(data-id);
+  position:absolute;
+  left:2mm;bottom:1.8mm;
+  padding:.6mm 1.8mm;
+  background:var(--indigo);
+  color:#fff;
+  border-radius:.8mm;
+  font-size:5.8pt;
+  font-weight:700;
+  letter-spacing:.12em;
+}
+.img.icon{min-height:11mm;width:11mm;border-radius:50%;margin:0 auto 1.6mm;}
+.img.icon::after{display:none;}
+.img.fill{height:100%;}
+.img.phone{
+  aspect-ratio:9/14.5;
+  border-radius:3mm;
+  border:1.5px solid var(--navy);
+  min-height:0;
+}
+.img.phone::after{left:50%;transform:translateX(-50%);}
+.img.logo{min-height:9mm;width:34mm;border-radius:1mm;}
+.img.qr{width:26mm;height:26mm;min-height:0;border-radius:1mm;}
+.img.badge{width:32mm;height:9.6mm;min-height:0;border-radius:1.2mm;background:var(--navy);border-color:var(--navy);}
+.img.badge::after{background:rgba(255,255,255,.22);}
+
+/* ---------- speech bubbles ---------- */
+.chat{display:flex;flex-direction:column;gap:1.6mm;}
+.chat .b{
+  max-width:86%;
+  padding:1.8mm 3.2mm;
+  border-radius:3mm;
+  font-size:8.6pt;
+  line-height:1.3;
+}
+.chat .kid{align-self:flex-start;background:var(--indigo-soft);color:var(--navy);border-bottom-left-radius:.8mm;}
+.chat .par{align-self:flex-end;background:var(--amber-soft);color:#5E3E00;border-bottom-right-radius:.8mm;}
+.chat .who{display:block;font-size:6pt;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.65;margin-bottom:.4mm;}
+
+/* ---------- statement / pullquote ---------- */
+.state{
+  padding:5mm 6mm;
+  background:var(--navy);
+  color:#fff;
+  border-radius:1.6mm;
+}
+.state p{margin:0 0 1.4mm;}
+.state .big{font-size:12.5pt;font-weight:800;line-height:1.22;letter-spacing:-.01em;}
+.state .dim{color:#B7B9E6;font-size:8.6pt;}
+.state .hi{color:var(--amber);}
+.pull{
+  padding-left:4mm;
+  border-left:3px solid var(--amber);
+  font-size:10.4pt;
+  line-height:1.3;
+  font-weight:700;
+  color:var(--navy);
+  letter-spacing:-.01em;
+}
+
+/* ---------- take-away band ---------- */
+.take{
+  margin-top:4mm;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:4mm;
+  align-items:center;
+  padding:3.4mm 4.5mm;
+  background:var(--amber-soft);
+  border-radius:1.6mm;
+  border-left:4px solid var(--amber);
+}
+.take .lab{
+  font-size:6.4pt;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--amber-dk);
+  writing-mode:vertical-rl;transform:rotate(180deg);
+}
+.take p{margin:0;font-size:9.6pt;font-weight:800;line-height:1.28;color:var(--navy);letter-spacing:-.01em;}
+
+/* ---------- evidence ---------- */
+.ev{
+  padding:2.8mm 3.6mm;
+  background:var(--mint-soft);
+  border-left:3px solid var(--mint);
+  border-radius:0 1.4mm 1.4mm 0;
+}
+.ev .lab{display:block;font-size:6.2pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);margin-bottom:1mm;}
+.ev p{margin:0;font-size:8.5pt;color:#163D31;}
+
+/* ---------- stat card ---------- */
+.stat{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:5mm;
+  align-items:center;
+  padding:4mm 5mm;
+  background:var(--navy);
+  color:#fff;
+  border-radius:1.6mm;
+}
+.stat .fig{font-size:30pt;line-height:.9;font-weight:900;letter-spacing:-.04em;color:var(--amber);}
+.stat .fig small{display:block;font-size:6.4pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#B7B9E6;margin-top:1.6mm;}
+.stat p{margin:0 0 1.2mm;font-size:8.4pt;color:#E9E9F7;}
+.stat p:last-child{margin:0;}
+.stat strong{color:#fff;}
+.stat.two{grid-template-columns:1fr 1fr;gap:4mm;}
+.stat.two .fig{font-size:24pt;}
+.stat.two > div{padding-right:3mm;}
+.stat.two > div + div{border-left:1px solid rgba(255,255,255,.2);padding-left:4mm;}
+.stat.two .caveat{grid-column:1 / -1;border-top:1px solid rgba(255,255,255,.2);padding-top:2mm;font-size:7.4pt;color:#C9CBEE;}
+
+.yesno{display:grid;grid-template-columns:1fr 1fr;gap:3mm;}
+.yesno > div{padding:2.6mm 3.2mm;border-radius:1.4mm;font-size:8pt;}
+.yesno .no{background:var(--coral-soft);}
+.yesno .yes{background:var(--mint-soft);}
+.yesno b{display:block;font-size:6.4pt;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1mm;}
+.yesno .no b{color:var(--coral);}
+.yesno .yes b{color:var(--mint);}
+
+/* ---------- cards ---------- */
+.card{
+  padding:3.4mm 3.8mm;
+  border:1px solid var(--line);
+  border-radius:1.6mm;
+  background:#fff;
+}
+.card.soft{background:#FAFAFD;}
+.card.ind{background:var(--indigo-soft);border-color:transparent;}
+.card .k{display:block;font-size:6.2pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--indigo);margin-bottom:1mm;}
+.card .t{display:block;font-size:10.4pt;font-weight:800;color:var(--navy);line-height:1.12;margin-bottom:1.2mm;letter-spacing:-.01em;}
+.card p{margin:0;font-size:8.4pt;color:var(--ink-2);}
+.card ul{margin:0;padding-left:3.6mm;}
+.card li{font-size:8pt;color:var(--ink-2);margin-bottom:.6mm;}
+
+/* compare */
+.cmp{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:1.6mm;overflow:hidden;}
+.cmp > div{padding:3.2mm 3.6mm;}
+.cmp .a{background:var(--mint-soft);}
+.cmp .b{background:var(--coral-soft);}
+.cmp .k{display:block;font-size:6.4pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.4mm;}
+.cmp .a .k{color:var(--mint);}
+.cmp .b .k{color:var(--coral);}
+.cmp ul{margin:0;padding-left:3.6mm;}
+.cmp li{font-size:8.2pt;margin-bottom:.6mm;}
+.cmp .sum{display:block;margin-top:2mm;font-size:8pt;font-weight:700;color:var(--navy);}
+.cmp .big{font-size:13pt;font-weight:900;color:var(--navy);line-height:1;margin:1mm 0 1.6mm;letter-spacing:-.02em;}
+
+/* loop */
+.loop{display:flex;align-items:center;flex-wrap:wrap;gap:1.6mm;}
+.loop span{padding:1.4mm 2.6mm;border-radius:1mm;background:var(--navy);color:#fff;font-size:7pt;font-weight:700;letter-spacing:.06em;text-transform:uppercase;}
+.loop span.r{background:var(--amber);color:var(--navy);}
+.loop i{color:var(--indigo);font-weight:800;font-style:normal;}
+
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:1.6mm;}
+.chips span{padding:1.3mm 2.6mm;border:1px solid var(--line);border-radius:10mm;font-size:7.6pt;color:var(--ink-2);background:#fff;}
+.chips.ind span{background:var(--indigo-soft);border-color:transparent;color:var(--navy);font-weight:600;}
+
+/* dims */
+.dims{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm;}
+.dims div{padding:2.6mm 2mm;text-align:center;background:#fff;border:1.5px solid var(--mint);border-radius:50%/40%;font-size:7.6pt;font-weight:800;color:#0F5E45;line-height:1.15;}
+
+/* list w/ markers */
+.tick{margin:0;padding:0;list-style:none;}
+.tick li{position:relative;padding-left:5mm;margin-bottom:1.2mm;font-size:8.4pt;}
+.tick li::before{content:"";position:absolute;left:0;top:1.5mm;width:2.4mm;height:2.4mm;background:var(--indigo);border-radius:.4mm;}
+.tick.amber li::before{background:var(--amber);}
+
+/* timeline */
+.tl{border-left:2px solid var(--indigo);padding-left:4.6mm;margin-left:1mm;}
+.tl div{position:relative;padding:.9mm 0;font-size:8.4pt;}
+.tl div::before{content:"";position:absolute;left:-6.1mm;top:2.6mm;width:2.6mm;height:2.6mm;border-radius:50%;background:var(--indigo);}
+.tl div b{display:inline-block;min-width:23mm;color:var(--navy);font-weight:700;}
+.tl div.x{color:var(--coral);font-weight:600;}
+.tl div.x::before{background:var(--coral);}
+
+/* protect */
+.prot{display:grid;grid-template-columns:repeat(5,1fr);gap:2.4mm;}
+.prot div{padding:3mm 2mm 2.4mm;text-align:center;background:var(--navy);color:#fff;border-radius:1.6mm;}
+.prot .img.icon{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.35);}
+.prot b{display:block;font-size:7.4pt;letter-spacing:.1em;text-transform:uppercase;}
+
+/* swaps */
+.swap{border:1px solid var(--line);border-radius:1.6mm;overflow:hidden;}
+.swap div{display:grid;grid-template-columns:1fr 14mm 1fr;align-items:center;gap:2mm;padding:1.9mm 3.2mm;font-size:8.2pt;border-top:1px solid var(--line-lt);}
+.swap div:first-child{border-top:none;background:var(--navy);color:#fff;font-size:6.4pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;}
+.swap div:nth-child(odd):not(:first-child){background:#FAFAFD;}
+.swap .g{font-weight:700;color:var(--navy);}
+.swap .arr{text-align:center;color:var(--indigo);font-weight:800;font-size:6.6pt;letter-spacing:.06em;white-space:nowrap;}
+.swap .o{color:var(--ink-3);}
+.swap div:first-child .g,.swap div:first-child .o,.swap div:first-child .arr{color:#fff;font-weight:800;}
+
+/* rules poster */
+.rules{
+  display:flex;flex-direction:column;
+  padding:4mm 4.5mm 3.4mm;
+  background:var(--indigo-soft);
+  border-radius:1.6mm;
+  border:1px solid var(--indigo-line);
+}
+.rules .hd{display:flex;align-items:center;gap:3mm;margin-bottom:2.6mm;}
+.rules .hd .five{font-size:28pt;font-weight:900;line-height:.85;color:var(--indigo);letter-spacing:-.05em;}
+.rules .hd b{font-size:11pt;font-weight:800;line-height:1.1;color:var(--navy);letter-spacing:-.01em;}
+.rules .hd small{display:block;font-size:7pt;font-weight:500;color:var(--ink-2);margin-top:.6mm;}
+.rule{display:grid;grid-template-columns:7mm 1fr;gap:2.6mm;padding:2.1mm 0;border-top:1px solid var(--indigo-line);}
+.rule .n{font-size:13pt;font-weight:900;color:var(--indigo);line-height:1;letter-spacing:-.03em;}
+.rule b{display:block;font-size:8.8pt;font-weight:800;color:var(--navy);line-height:1.15;margin-bottom:.6mm;}
+.rule p{margin:0;font-size:8.2pt;color:var(--ink-2);}
+
+/* equations */
+.eq{display:grid;grid-template-columns:1fr 1fr;gap:3mm;}
+.eq div{display:grid;grid-template-columns:auto 1fr;gap:3mm;align-items:center;padding:2.6mm 3.2mm;border:1px solid var(--line);border-radius:1.6mm;background:#FAFAFD;}
+.eq .img.icon{margin:0;}
+.eq b{font-size:8.4pt;font-weight:800;color:var(--navy);line-height:1.2;}
+
+/* before/after scripts */
+.scr{display:grid;gap:2mm;}
+.scr div{display:grid;grid-template-columns:15mm 1fr;gap:2.6mm;align-items:center;padding:2.2mm 3.2mm;border-radius:1.4mm;font-size:8.6pt;font-style:italic;color:var(--navy);}
+.scr .bad{background:var(--coral-soft);}
+.scr .good{background:var(--mint-soft);}
+.scr b{font-size:6.2pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-style:normal;}
+.scr .bad b{color:var(--coral);}
+.scr .good b{color:var(--mint);}
+
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:1.8mm;}
+.count span{padding:1.8mm 1mm;text-align:center;font-size:7.6pt;font-weight:700;color:var(--navy);background:#fff;border:1px solid var(--line);border-top:2.5px solid var(--amber);border-radius:1.2mm;}
+
+/* challenge */
+.chal{
+  padding:3.6mm 4.2mm;
+  background:linear-gradient(135deg,#FFF1CC,#FFE3A3);
+  border-radius:1.6mm;
+}
+.chal .k{display:block;font-size:6.2pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--amber-dk);margin-bottom:1mm;}
+.chal .t{display:block;font-size:13pt;font-weight:900;line-height:1;color:var(--navy);letter-spacing:-.02em;margin-bottom:1.6mm;}
+.chal p{margin:0 0 1.2mm;font-size:8.2pt;color:#4A3300;}
+
+/* boredom menu */
+.menu{display:grid;grid-template-columns:repeat(5,1fr);gap:2.2mm;}
+.menu div{border-radius:1.6mm;overflow:hidden;border:1px solid var(--line);background:#fff;}
+.menu b{display:block;padding:1.8mm 2.4mm;font-size:7.4pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--navy);}
+.menu div:nth-child(2) b{background:var(--indigo);}
+.menu div:nth-child(3) b{background:var(--mint);}
+.menu div:nth-child(4) b{background:#B2531D;}
+.menu div:nth-child(5) b{background:var(--navy-2);}
+.menu ul{margin:0;padding:2mm 2mm 2mm 5mm;}
+.menu li{font-size:8pt;color:var(--ink-2);margin-bottom:.5mm;}
+
+/* aside — PW tip */
+.tip{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:3.6mm;
+  align-items:center;
+  padding:3mm 3.6mm;
+  border:1px solid var(--indigo-line);
+  background:linear-gradient(90deg,var(--indigo-soft),#fff);
+  border-radius:1.6mm;
+}
+.tip .img.logo{width:22mm;min-height:8mm;}
+.tip .k{display:block;font-size:6.2pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--indigo);margin-bottom:.8mm;}
+.tip p{margin:0;font-size:8pt;color:var(--ink-2);}
+
+/* weeks */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.8mm;align-items:end;}
+.steps div{padding:2mm 2.2mm;background:var(--indigo-soft);border-bottom:2.5px solid var(--indigo);border-radius:1.2mm 1.2mm 0 0;}
+.steps div:nth-child(2){padding-top:4mm;}
+.steps div:nth-child(3){padding-top:6mm;}
+.steps div:nth-child(4){padding-top:8mm;}
+.steps span{display:block;font-size:6.2pt;font-weight:800;letter-spacing:.14em;color:var(--indigo);}
+.steps b{font-size:8.6pt;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:-.01em;}
+.week{padding:2.6mm 3.2mm;border:1px solid var(--line);border-left:3px solid var(--indigo);border-radius:0 1.4mm 1.4mm 0;}
+.week b{display:block;font-size:9pt;font-weight:800;color:var(--navy);margin-bottom:1mm;}
+.week p{margin:0 0 .8mm;font-size:8.3pt;color:var(--ink-2);}
+.week .ex{display:grid;grid-template-columns:1fr auto 1fr;gap:1.6mm;align-items:center;margin-top:1.4mm;font-size:7.4pt;}
+.week .ex span{padding:1.4mm 2mm;border-radius:1mm;text-align:center;line-height:1.2;}
+.week .ex .p{background:var(--coral-soft);color:#7A2A1C;}
+.week .ex .a{background:var(--mint-soft);color:#0F5E45;font-weight:700;}
+.week .ex i{color:var(--indigo);font-weight:800;font-style:normal;}
+
+/* family plan */
+.plan{
+  padding:4mm 4.5mm 3.6mm;
+  border:1.5px solid var(--navy);
+  border-radius:1.6mm;
+  background:#fff;
+}
+.plan .t{display:block;font-size:12pt;font-weight:900;color:var(--navy);letter-spacing:-.02em;line-height:1;margin-bottom:.8mm;}
+.plan .s{display:block;font-size:7.2pt;color:var(--ink-3);margin-bottom:3mm;}
+.plan .k{display:block;font-size:6.2pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--indigo);margin:3.2mm 0 1.8mm;}
+.plan .k:first-of-type{margin-top:0;}
+.fl{display:grid;grid-template-columns:34mm 1fr;gap:3mm;align-items:end;margin-bottom:2.2mm;font-size:8pt;color:var(--ink-2);}
+.fl i{border-bottom:1px dotted var(--ink-3);height:5mm;display:block;}
+.fl.w{grid-template-columns:1fr;}
+.plan .prom{margin-top:2.8mm;padding:2.8mm 3.2mm;background:var(--navy);color:#fff;border-radius:1.2mm;font-size:7.8pt;line-height:1.35;}
+.plan .prom b{display:block;font-size:6.2pt;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:.8mm;}
+.sig{display:grid;grid-template-columns:1fr 1fr;gap:6mm;margin-top:3mm;font-size:6.2pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);}
+.sig i{display:block;border-bottom:1px solid var(--ink-3);height:5mm;margin-bottom:1mm;}
+
+/* traffic + flags */
+.tlight{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4mm;}
+.tlight div{padding:3.6mm 3.4mm;border-radius:1.6mm;}
+.tlight .g{background:var(--mint-soft);}
+.tlight .a{background:var(--amber-soft);}
+.tlight .r{background:var(--coral-soft);}
+.tlight i{display:block;width:3.6mm;height:3.6mm;border-radius:50%;margin-bottom:1.4mm;}
+.tlight .g i{background:var(--mint);}
+.tlight .a i{background:var(--amber);}
+.tlight .r i{background:var(--coral);}
+.tlight b{display:block;font-size:8.4pt;font-weight:800;color:var(--navy);margin-bottom:.6mm;}
+.tlight p{margin:0;font-size:8pt;color:var(--ink-2);}
+.flags{border:1px solid var(--line);border-radius:1.6mm;overflow:hidden;}
+.flags div{display:grid;grid-template-columns:1fr auto;gap:3mm;align-items:center;padding:1.9mm 3.2mm;border-top:1px solid var(--line-lt);font-size:8.6pt;}
+.flags div:first-child{border-top:none;background:var(--navy);color:#fff;font-size:6.4pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;}
+.flags .bx{display:flex;gap:1.6mm;}
+.flags .bx i{width:3.6mm;height:3.6mm;border:1px solid var(--ink-3);border-radius:.6mm;background:#fff;}
+.flags .bx i:nth-child(1){border-color:var(--mint);}
+.flags .bx i:nth-child(2){border-color:var(--amber);}
+.flags .bx i:nth-child(3){border-color:var(--coral);}
+.flags div:first-child .bx{font-size:5.8pt;letter-spacing:.1em;gap:2.2mm;}
+
+.basics{display:grid;grid-template-columns:repeat(6,1fr);gap:2mm;}
+.basics div{padding:3.2mm 1.8mm;text-align:center;border:1px solid var(--line);border-radius:1.4mm;background:#FAFAFD;font-size:7.2pt;font-weight:700;color:var(--navy);line-height:1.2;}
+
+/* closing */
+.hero-state{
+  padding:5mm 6mm;
+  background:var(--navy);
+  color:#fff;
+  border-radius:1.6mm;
+  text-align:center;
+}
+.hero-state p{margin:0 0 2mm;font-size:13.5pt;font-weight:900;line-height:1.12;letter-spacing:-.02em;}
+.hero-state p:last-child{margin:0;color:var(--amber);}
+
+.shots{display:grid;grid-template-columns:repeat(6,1fr);gap:3mm;}
+.cta{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:6mm;
+  align-items:center;
+  padding:4mm 5.5mm;
+  background:linear-gradient(135deg,var(--amber),#FFC85A);
+  border-radius:1.8mm;
+  color:var(--navy);
+}
+.cta .t{display:block;font-size:15pt;font-weight:900;line-height:1.05;letter-spacing:-.02em;margin-bottom:1.6mm;}
+.cta .t span{display:block;}
+.cta p{margin:0 0 1.2mm;font-size:8.8pt;color:#3D2A00;}
+.cta .price{display:inline-block;margin-top:1.8mm;padding:1.6mm 3.4mm;background:var(--navy);color:#fff;border-radius:10mm;font-size:8.4pt;font-weight:800;letter-spacing:.02em;}
+.cta .price b{color:var(--amber);font-size:11pt;}
+.cta .right{display:grid;grid-template-columns:auto auto;gap:2.4mm;align-items:center;}
+.cta .right .stack{display:grid;gap:2mm;}
+.feat{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm;}
+.feat div{padding:2.6mm 3mm;border:1px solid var(--indigo-line);border-radius:1.4mm;background:var(--indigo-soft);}
+.feat b{display:block;font-size:8.4pt;font-weight:800;color:var(--navy);margin-bottom:.6mm;}
+.feat p{margin:0;font-size:7.8pt;color:var(--ink-2);}
+
+.sources{font-size:6pt;color:var(--ink-3);line-height:1.3;columns:3;column-gap:5mm;}
+.sources div{break-inside:avoid;margin-bottom:.8mm;}
+.sources sup{color:var(--indigo);}
+
+/* cover */
+.cover .title{
+  margin:6mm 0 0;
+  font-size:30pt;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-.03em;
+  color:var(--navy);
+}
+.cover .title em{font-style:normal;color:var(--indigo);}
+.cover .sub{margin:3mm 0 0;font-size:10.5pt;color:var(--ink-2);max-width:150mm;}
+.cover .sub b{color:var(--navy);}
+.toc{display:grid;grid-template-columns:repeat(4,1fr);gap:2mm 4mm;}
+.toc div{display:grid;grid-template-columns:6mm 1fr;gap:1.6mm;align-items:baseline;font-size:7.4pt;color:var(--ink-2);padding:1.2mm 0;border-top:1px solid var(--line-lt);}
+.toc b{font-size:9pt;font-weight:900;color:var(--indigo);}
+
+/* ---------- screen (small) ---------- */
+@media screen and (max-width:230mm){
+  body{font-size:9.4pt;}
+  .page{width:auto;margin:3mm;padding:7mm 5mm 12mm;min-height:0;}
+  .foot{position:static;margin-top:8mm;}
+  .cols,.c2,.c2w,.c2n,.c3,.c4,.c5,.c6,.eq,.yesno,.cmp,.stat,.stat.two,.cta,.tip,.toc{grid-template-columns:1fr!important;}
+  .prot,.menu,.basics,.dims,.shots,.feat,.count,.steps,.tlight{grid-template-columns:repeat(2,1fr)!important;}
+  .cover .title{font-size:22pt;}
+  .chap h2{font-size:14pt;}
+  .take .lab{writing-mode:horizontal-tb;transform:none;}
+  .sources{columns:1;}
+  .stat.two > div + div{border-left:none;padding-left:0;border-top:1px solid rgba(255,255,255,.2);padding-top:3mm;}
+}
+
+/* ---------- print ---------- */
+@page{size:A4;margin:0;}
+@media print{
+  body{background:#fff;}
+  .page{width:210mm;height:297mm;min-height:0;margin:0;box-shadow:none;page-break-after:always;break-after:page;}
+  .page:last-child{page-break-after:auto;break-after:auto;}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+
+
+/* ---- embedded mapped assets ---- */
+figure.img.asset::after{display:none !important;}
+figure.img.asset > img{display:block;width:100%;height:100%;object-fit:cover;}
+figure.img.asset.fill > img{object-fit:cover;}
+figure.img.asset.icon{background:transparent;border:none;overflow:visible;}
+figure.img.asset.icon > img{object-fit:contain;}
+figure.img.asset.logo{background:transparent;border:none;}
+figure.img.asset.logo > img{object-fit:contain;}
+figure.img.asset.qr{background:#fff;border:1px solid var(--indigo-line);}
+figure.img.asset.qr > img{object-fit:contain;}
+figure.img.asset.badge{background:transparent;border:none;}
+figure.img.asset.badge > img{object-fit:contain;}
+figure.img.asset.phone{background:transparent;overflow:hidden;}
+figure.img.asset.phone > img{object-fit:cover;object-position:top center;}
+figure.img.asset:not(.icon):not(.logo):not(.qr):not(.badge):not(.phone){background:transparent;}
+
+/* page 08 print-fit fixes */
+.page-08-fix .cols.c2w{gap:4mm;}
+.page-08-fix .flags div{padding:1.55mm 2.7mm;font-size:8.05pt;line-height:1.16;}
+.page-08-fix .flags div:first-child{font-size:6.0pt;}
+.page-08-fix .stat.two{display:flex;flex-wrap:wrap;align-items:flex-start;gap:0;padding:3.2mm 4mm;}
+.page-08-fix .stat.two > div{flex:1 1 0;min-width:0;padding-right:2.5mm;}
+.page-08-fix .stat.two > div + div{border-left:1px solid rgba(255,255,255,.2);padding-left:3mm;padding-right:0;}
+.page-08-fix .stat.two .fig{font-size:18pt;line-height:1;font-weight:900;}
+.page-08-fix .stat.two p{margin-top:1.2mm;font-size:7.8pt;line-height:1.18;}
+.page-08-fix .stat.two .caveat{flex-basis:100%;border-top:1px solid rgba(255,255,255,.2);margin-top:2mm;padding-top:2mm;font-size:6.7pt;line-height:1.2;color:#C9CBEE;}
+.page-08-fix .basics{gap:1.6mm;}
+.page-08-fix .basics div{padding:2.2mm 1.2mm;font-size:6.5pt;line-height:1.12;}
+.page-08-fix .small{font-size:7.3pt;line-height:1.25;}
+.page-08-fix .take{margin-top:2.8mm;}
+.page-08-fix .take p{font-size:9.1pt;line-height:1.22;}
+.page-08-fix .badge > img{object-fit:contain;}
+
+/* final CTA fit fixes */
+.page-final-fix .cta .right{gap:1.8mm;}
+.page-final-fix .img.qr{width:24.5mm;height:24.5mm;}
+.page-final-fix .img.badge{width:26.5mm;height:8mm;}
+.page-final-fix .cta p{max-width:95%;}
+
+.page-final-fix .cta .right{gap:1.2mm;}
+.page-final-fix .img.qr{width:24mm;height:24mm;}
+.page-final-fix .img.badge{width:23mm;height:6.9mm;}
+.page-final-fix .cta .right .stack{gap:1.2mm;}
+
+.page-final-fix .cta .right{display:flex;flex-direction:column;gap:1.2mm;align-items:flex-end;}
+.page-final-fix .cta .right .stack{display:grid;gap:1.2mm;justify-items:end;}
+.page-final-fix .img.qr{width:21.5mm;height:21.5mm;}
+.page-final-fix .img.badge{width:25mm;height:7.4mm;}
+
+/* Complete edition: quieter editorial system */
+:root{--paper:#FBFAF7;--canvas:#ECEEF4;--pad:15mm;}
+.page{height:297mm;min-height:297mm;margin:7mm auto;padding:12mm var(--pad) 16mm;background:var(--paper);}
+.top{height:10mm;margin-bottom:5mm;padding-bottom:3mm;border-bottom:1px solid var(--navy);}
+.page:not(.cover) .top>span:first-child{display:none;}
+.page:not(.cover) .top::before{
+  content:"";
+  width:35mm;
+  height:9mm;
+  background:url("final_report_assets/IMG-01.png") left center/contain no-repeat;
+}
+.cover .top{height:12mm;}
+.cover .top>span{display:none;}
+.cover .top .img.logo{width:39mm;min-height:10mm;border:0;background:none;}
+.cover .title,.chap h2,.pull,.take p,.state .big,.hero-state p{font-family:"Source Serif 4",Georgia,serif;}
+.cover .title{font-size:29pt;line-height:.98;letter-spacing:-.04em;max-width:178mm;}
+.chap{grid-template-columns:13mm 1fr;gap:4mm;margin-bottom:5mm;padding-bottom:4mm;}
+.chap .n{font-size:22pt;font-family:"Source Serif 4",Georgia,serif;}
+.chap h2{font-size:20pt;line-height:1.04;letter-spacing:-.035em;}
+.chap .lead{font-size:9pt;line-height:1.38;max-width:160mm;}
+.h3{font-size:6.7pt;}
+.card,.ev,.take,.tip,.week,.plan,.rules{box-shadow:none;}
+.foot{left:var(--pad);right:var(--pad);bottom:7mm;}
+.foot .brand{margin-left:auto;}
+figure.img.asset{background:#F7F5F0;border-color:#D9DCE7;}
+
+/* Chapter 6: a real one-third-page PW Games bridge */
+.page-ch6 .cols.c2n{margin-bottom:3.5mm;}
+.page-ch6 .cols.c2n .img{min-height:64mm!important;}
+.page-ch6 .menu{margin-bottom:5mm;}
+.page-ch6 .menu ul{padding:1.5mm 1.5mm 1.5mm 4.5mm;}
+.page-ch6 .menu li{font-size:7.2pt;line-height:1.2;margin-bottom:.3mm;}
+.pw-third{
+  display:grid;
+  grid-template-columns:58mm 1fr;
+  gap:6mm;
+  min-height:69mm;
+  padding:5mm;
+  border-top:1.5px solid var(--navy);
+  border-bottom:1px solid var(--navy);
+  border-left:3px solid var(--amber);
+  background:#FFFDF8;
+}
+.pw-third .visual{display:grid;grid-template-columns:1fr 1fr;gap:2.5mm;}
+.pw-third .visual figure{height:57mm;margin:0;border-radius:2mm;overflow:hidden;border:1px solid var(--line);background:#fff;}
+.pw-third .visual img{width:100%;height:100%;object-fit:cover;object-position:top;}
+.pw-third .copy{display:flex;flex-direction:column;justify-content:center;}
+.pw-third .eyebrow{margin:0 0 1.5mm;color:var(--indigo);font-size:6.4pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;}
+.pw-third h3{margin:0 0 2mm;color:var(--navy);font-family:"Source Serif 4",Georgia,serif;font-size:18pt;line-height:1.05;}
+.pw-third p{margin:0 0 2.2mm;color:var(--ink-2);font-size:8pt;line-height:1.38;}
+.pw-third .subjects{display:flex;flex-wrap:wrap;gap:1.2mm;}
+.pw-third .subjects span{padding:1mm 1.8mm;border:1px solid var(--line);border-radius:10mm;color:var(--navy);font-size:6.5pt;font-weight:700;background:#fff;}
+
+/* Closing page: real gameplay first, then a restrained download block and sources */
+.page-final-clean .closing-intro{display:grid;grid-template-columns:.72fr 1.28fr;gap:7mm;align-items:start;margin:5mm 0 4mm;}
+.page-final-clean .closing-intro h2{margin:0;color:var(--navy);font-family:"Source Serif 4",Georgia,serif;font-size:21pt;line-height:1.02;letter-spacing:-.035em;}
+.page-final-clean .closing-copy{padding-left:4mm;border-left:3px solid var(--amber);}
+.page-final-clean .closing-copy p{margin:0 0 1.5mm;color:var(--ink-2);font-size:7.05pt;line-height:1.3;}
+.page-final-clean .closing-copy p:last-child{margin-bottom:0;}
+.page-final-clean .closing-copy strong{color:var(--navy);}
+.game-collage{
+  position:relative;
+  display:block;
+  height:102mm;
+  margin:0 0 4mm;
+}
+.game-collage figure{position:absolute;display:flex;flex-direction:column;margin:0;overflow:hidden;border:1px solid #D6D9E4;border-radius:2mm;background:#fff;}
+.game-collage .market{left:0;top:0;width:69mm;height:31mm;background:#F7B85D;}
+.game-collage .sequence{left:72mm;top:0;width:55mm;height:31mm;background:#087C55;}
+.game-collage .science{left:130mm;top:0;width:52mm;height:31mm;background:#21D7DB;}
+.game-collage .memory{left:0;top:34mm;width:35.5mm;height:68mm;background:#FFF5CD;}
+.game-collage .space{left:38.5mm;top:34mm;width:38mm;height:68mm;background:#08091B;}
+.game-collage .crossmath{left:79.5mm;top:34mm;width:30.5mm;height:68mm;background:#E8BE87;}
+.game-collage .shape{left:113mm;top:34mm;width:30.5mm;height:68mm;background:#FFE86D;}
+.game-collage .hindi{left:146.5mm;top:34mm;width:35.5mm;height:68mm;background:#55BFF1;}
+.game-collage img{display:block;width:100%;min-height:0;flex:1 1 auto;object-fit:cover;object-position:center;}
+.game-collage .market img,.game-collage .shape img,.game-collage .crossmath img,.game-collage .memory img,.game-collage .space img,.game-collage .hindi img,.game-collage .science img{object-fit:contain;}
+.game-collage .sequence img{object-fit:cover;object-position:center;}
+.game-collage figcaption{flex:0 0 7mm;display:flex;align-items:center;justify-content:center;gap:1.4mm;padding:1mm 1.5mm;background:#fff;color:var(--ink-2);font-size:5.5pt;line-height:1.05;text-align:center;}
+.game-collage figcaption strong{color:var(--navy);font-size:6pt;white-space:nowrap;}
+.game-collage figcaption span{padding-left:1.4mm;border-left:1px solid #D9DCE8;}
+.game-collage .memory figcaption,.game-collage .space figcaption,.game-collage .crossmath figcaption,.game-collage .shape figcaption,.game-collage .hindi figcaption{flex-basis:10mm;display:block;padding:1.4mm 1mm;}
+.game-collage .memory figcaption strong,.game-collage .space figcaption strong,.game-collage .crossmath figcaption strong,.game-collage .shape figcaption strong,.game-collage .hindi figcaption strong{display:block;margin-bottom:.7mm;white-space:normal;}
+.game-collage .memory figcaption span,.game-collage .space figcaption span,.game-collage .crossmath figcaption span,.game-collage .shape figcaption span,.game-collage .hindi figcaption span{display:block;padding:0;border:0;color:var(--ink-3);font-size:5pt;}
+
+.page-final-clean .download-pw{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:7mm;
+  align-items:center;
+  min-height:29mm;
+  margin-bottom:3.5mm;
+  padding:3.6mm 4.5mm;
+  border-left:3px solid var(--amber);
+  background:#FFF6DD;
+}
+.page-final-clean .download-pw h3{margin:0 0 1mm;color:var(--navy);font-family:"Source Serif 4",Georgia,serif;font-size:16pt;line-height:1.05;}
+.page-final-clean .download-pw p{max-width:116mm;margin:0;color:#4B4435;font-size:8pt;line-height:1.36;}
+.page-final-clean .download-pw .price{display:inline-flex;align-items:baseline;gap:1.2mm;margin-top:2mm;padding:1.2mm 3mm;border-radius:10mm;background:var(--navy);color:#fff;font-size:7pt;font-weight:800;letter-spacing:.03em;}
+.page-final-clean .download-pw .price strong{color:var(--amber);font-size:12pt;line-height:1;}
+.page-final-clean .download-pw .download-assets{display:flex;align-items:center;gap:2.2mm;}
+.page-final-clean .download-pw .qr{width:22mm;height:22mm;margin:0;border:1px solid #E2C878;background:#fff;}
+.page-final-clean .download-pw .qr img{width:100%;height:100%;object-fit:contain;}
+.page-final-clean .playstore-button{display:flex;align-items:center;gap:1.8mm;width:32mm;height:9.8mm;padding:1.1mm 1.8mm;border:1px solid #A8A8A8;border-radius:1mm;background:#050505;color:#fff;}
+.page-final-clean .playstore-button svg{display:block;width:6.2mm;height:6.2mm;flex:none;}
+.page-final-clean .playstore-button span{display:block;color:#fff;font-size:3.9pt;line-height:1;letter-spacing:.04em;}
+.page-final-clean .playstore-button strong{display:block;margin-top:.45mm;color:#fff;font-family:Arial,sans-serif;font-size:7.4pt;font-weight:500;line-height:1;letter-spacing:-.015em;}
+.page-final-clean .sources-heading{margin:0 0 1.5mm;color:var(--indigo);font-size:6.4pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;}
+.page-final-clean .mini-sources{padding-top:2.5mm;border-top:1px solid var(--navy);font-size:6pt;line-height:1.3;color:var(--ink-3);columns:3;column-gap:4mm;}
+.page-final-clean .mini-sources div{break-inside:avoid;margin-bottom:1mm;}
+
+/* Page 2: the PW Games introduction developed in the playbook */
+.product-page .product-title{display:grid;grid-template-columns:78mm 1fr;gap:8mm;align-items:center;margin:8mm 0 5mm;}
+.product-page .eyebrow{margin:0 0 1.8mm;color:var(--indigo);font-size:6.6pt;font-weight:800;letter-spacing:.15em;text-transform:uppercase;}
+.product-page h1{margin:0;color:var(--navy);font-family:"Source Serif 4",Georgia,serif;font-size:26pt;font-weight:800;letter-spacing:-.045em;line-height:.98;}
+.product-page .product-lead{margin:3.5mm 0 0;padding:1mm 0 1mm 4mm;border-left:3px solid var(--amber);color:var(--ink-2);font-size:8.2pt;line-height:1.42;}
+.product-page .product-hero{width:100%;aspect-ratio:1672/941;margin:0;overflow:hidden;border-top:1.2mm solid var(--amber);background:#efe9e0;}
+.product-page .product-hero img{display:block;width:100%;height:100%;object-fit:contain;}
+.product-page .product-summary{margin:0 0 5mm;padding:3.5mm 0;border-bottom:1px solid var(--line);}
+.product-page .product-summary p{margin:0;color:var(--ink-2);font-size:8.2pt;line-height:1.38;}
+.product-page .product-story{display:grid;grid-template-columns:58mm 1fr;gap:8mm;align-items:start;padding:6mm 0;border-top:1px solid var(--navy);border-bottom:1px solid var(--line);}
+.product-page .benefit-band{display:block;}
+.product-page .editorial-principle{padding:3.2mm 0;border-top:1px solid var(--line);}
+.product-page .editorial-principle:first-child{border-top:1px solid var(--navy);}
+.product-page .editorial-principle span{display:block;margin-bottom:.8mm;color:var(--indigo);font-size:6pt;font-weight:900;letter-spacing:.12em;}
+.product-page .editorial-principle h3{margin:0;color:var(--navy);font-size:8.4pt;line-height:1.2;}
+.product-page .editorial-principle p{margin:.8mm 0 0;color:var(--ink-2);font-size:6.7pt;line-height:1.32;}
+.product-page .evidence-heading h2{margin:0 0 2.2mm;color:var(--navy);font-size:9pt;}
+.product-page .product-evidence{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;align-items:start;}
+.product-page .evidence-card{margin:0;}
+.product-page .device{width:32mm;height:72mm;margin:0 auto;overflow:hidden;border:1px solid var(--line);border-radius:2mm;background:#fff;}
+.product-page .device img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;}
+.product-page .evidence-card.analytics .device{width:35mm;}
+.product-page .evidence-card.analytics img{object-fit:contain;}
+.product-page figcaption{margin:1.2mm auto 0;color:var(--navy);font-size:7.3pt;font-weight:700;}
+.product-page .balance-editorial{display:grid;grid-template-columns:45mm 1fr;gap:6mm;align-items:center;margin-top:7mm;padding:4mm 0 4mm 4mm;border-left:3px solid var(--amber);border-top:1px solid var(--navy);border-bottom:1px solid var(--navy);}
+.product-page .balance-editorial h2{margin:0;color:var(--navy);font-family:"Source Serif 4",Georgia,serif;font-size:12pt;line-height:1.1;}
+.product-page .balance-editorial p{margin:0;color:var(--ink-2);font-size:8pt;line-height:1.4;}
+
+/* Final chapter: guidance first, then a half-page visual library */
+.page-08-fix .chap{margin-bottom:3mm;padding-bottom:3mm;}
+.page-08-fix .tlight{margin-bottom:3mm;}
+.page-08-fix .tlight>div{padding:3mm;}
+.page-08-fix .cols.c2w{margin-bottom:4mm;}
+.page-08-fix .flags>div{padding:1.4mm 2mm;}
+.page-08-fix .stat.two>div{padding:3mm;}
+.page-08-fix .closing-collage{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,55mm);gap:2.5mm;height:112.5mm;margin-top:4mm;}
+.page-08-fix .closing-collage figure{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:2mm;background:#fff;}
+.page-08-fix .closing-collage figure:first-child,.page-08-fix .closing-collage figure:nth-child(4){grid-column:span 2;}
+.page-08-fix .closing-collage img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;}
+
+@media print{
+  .page{margin:0;break-after:page;page-break-after:always;}
+  .page:last-of-type{break-after:auto;page-break-after:auto;}
+}
+
+/* Restore the approved first-two-page styling */
+
+:root{
+  --navy:#1B1D4D;
+  --indigo:#5B4BE0;
+  --amber:#FFB320;
+  --ink:#171A27;
+  --ink-2:#464C5E;
+  --ink-3:#7B8296;
+  --line:#D9DCE6;
+  --paper:#FCFBF7;
+  --canvas:#EEEFF5;
+  --pad:14mm;
+  --display:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  background:var(--canvas);
+  color:var(--ink);
+  font-family:Inter,"Helvetica Neue",Arial,sans-serif;
+  font-size:9pt;
+  line-height:1.4;
+  -webkit-font-smoothing:antialiased;
+}
+
+.page{
+  position:relative;
+  width:210mm;
+  min-height:297mm;
+  margin:8mm auto;
+  padding:12mm var(--pad) 16mm;
+  overflow:hidden;
+  background:var(--paper);
+  box-shadow:0 2px 16px rgba(27,29,77,.11);
+}
+
+.masthead{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding-bottom:3mm;
+  border-bottom:1px solid var(--navy);
+}
+.logo{width:34mm;height:9mm;margin:0;}
+.logo img{display:block;width:100%;height:100%;object-fit:contain;}
+.edition{
+  color:var(--ink-3);
+  font-size:6.5pt;
+  font-weight:700;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+
+.headline{margin:6mm 0 0;}
+.headline h1{
+  max-width:168mm;
+  margin:0;
+  color:var(--navy);
+  font-family:var(--display);
+  font-size:30pt;
+  font-weight:800;
+  letter-spacing:-.045em;
+  line-height:.96;
+}
+.headline h1 span{display:block;}
+.headline h1 em{color:var(--indigo);font-style:normal;}
+.deck{
+  max-width:150mm;
+  margin:3mm 0 0;
+  color:var(--ink-2);
+  font-size:10.2pt;
+  line-height:1.42;
+}
+.deck strong{color:var(--navy);}
+
+.hero{
+  height:auto;
+  aspect-ratio:2152 / 731;
+  margin:4mm 0 0;
+  overflow:hidden;
+  border-top:3px solid var(--amber);
+}
+.hero img{display:block;width:100%;height:100%;object-fit:cover;}
+.thesis{
+  margin:2.5mm 0;
+  padding:2.6mm 0;
+  border-top:1px solid var(--navy);
+  border-bottom:1px solid var(--navy);
+}
+.thesis-label{
+  display:block;
+  margin-bottom:1mm;
+  color:var(--indigo);
+  font-size:6.3pt;
+  font-weight:800;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.thesis p{
+  margin:0;
+  color:var(--navy);
+  font-family:var(--display);
+  font-size:13pt;
+  font-weight:700;
+  letter-spacing:-.025em;
+  line-height:1.15;
+}
+
+.section-title{
+  margin:0 0 1.6mm;
+  color:var(--indigo);
+  font-size:6.8pt;
+  font-weight:800;
+  letter-spacing:.14em;
+  line-height:1.2;
+  text-transform:uppercase;
+}
+
+.opening-grid{
+  display:grid;
+  grid-template-columns:54mm 1fr;
+  gap:8mm;
+  align-items:start;
+  margin:6mm 0 5mm;
+}
+.scene-card{
+  min-height:46mm;
+  padding:3.8mm 4mm 4mm 0;
+  border-top:2px solid var(--amber);
+  border-bottom:1px solid var(--navy);
+}
+.scene-card .section-title,
+.opening-grid > .story > .section-title{margin-bottom:3mm;}
+.scene-line{margin:0;}
+.scene-line span{
+  display:block;
+  margin-bottom:.6mm;
+  color:var(--ink-3);
+  font-size:6pt;
+  font-weight:800;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.scene-line strong{
+  color:var(--navy);
+  font-family:var(--display);
+  font-size:12.3pt;
+  font-weight:700;
+  letter-spacing:-.02em;
+  line-height:1.05;
+}
+.time-jump{
+  display:flex;
+  align-items:center;
+  margin:3mm 0;
+  color:var(--indigo);
+  font-size:5.8pt;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.time-jump::before{content:none;}
+
+.story{
+  max-width:none;
+  margin:0;
+  color:var(--ink-2);
+  font-size:9pt;
+  line-height:1.48;
+}
+.opening-grid > .story{
+  min-height:46mm;
+  padding-top:3.8mm;
+  border-top:2px solid var(--amber);
+}
+.story p{margin:0 0 1.8mm;}
+.story strong{color:var(--navy);}
+.goal{
+  margin-top:2.2mm;
+  padding-left:4mm;
+  border-left:3px solid var(--amber);
+  color:var(--navy);
+  font-size:10pt;
+  font-weight:800;
+  line-height:1.3;
+}
+
+.contents-title{
+  display:flex;
+  align-items:center;
+  gap:3mm;
+  margin:0 0 1.3mm;
+}
+.contents-title::after{content:"";flex:1;border-top:1px solid var(--line);}
+.contents-title h2{margin:0;white-space:nowrap;}
+.toc{display:grid;grid-template-columns:1fr;}
+.toc-item{
+  display:grid;
+  grid-template-columns:8mm 1fr;
+  gap:2mm;
+  align-items:baseline;
+  padding:1.4mm 0;
+  border-bottom:1px solid var(--line);
+  color:var(--ink-2);
+  font-size:7.7pt;
+  line-height:1.2;
+}
+.toc-item b{color:var(--indigo);font-size:9pt;font-weight:900;}
+
+.footer{
+  position:absolute;
+  right:var(--pad);
+  bottom:7mm;
+  left:var(--pad);
+  display:grid;
+  grid-template-columns:8mm 1fr;
+  gap:8mm;
+  align-items:end;
+  color:var(--ink-3);
+  font-size:6.2pt;
+  line-height:1.35;
+}
+.footer .brand{justify-self:end;}
+.page-number{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:8mm;
+  height:8mm;
+  background:var(--navy);
+  color:#fff;
+  font-size:8pt;
+  font-weight:700;
+}
+.brand{font-weight:600;letter-spacing:.1em;text-transform:uppercase;}
+
+/* Page 2: PW Games */
+.product-page{padding-top:12mm;}
+.product-title{
+  display:grid;
+  grid-template-columns:78mm 1fr;
+  gap:8mm;
+  align-items:center;
+  margin:8mm 0 6mm;
+}
+.product-title .eyebrow{
+  margin:0 0 1.8mm;
+  color:var(--indigo);
+  font-size:6.6pt;
+  font-weight:800;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+.product-title h1{
+  margin:0;
+  color:var(--navy);
+  font-family:var(--display);
+  font-size:26pt;
+  font-weight:800;
+  letter-spacing:-.045em;
+  line-height:.98;
+}
+.product-lead{
+  margin:3.5mm 0 0;
+  padding:1mm 0 1mm 4mm;
+  border-left:3px solid var(--amber);
+  color:var(--ink-2);
+  font-size:8.2pt;
+  line-height:1.42;
+}
+.product-hero{
+  width:100%;
+  height:auto;
+  aspect-ratio:1672/941;
+  margin:0;
+  overflow:hidden;
+  border-top:1.2mm solid var(--amber);
+  background:#EFE9E0;
+}
+.product-hero img{display:block;width:100%;height:100%;object-fit:contain;}
+.product-summary{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:3.5mm;
+  align-items:center;
+  margin:0 0 6mm;
+  padding:4.5mm 0;
+  border-bottom:1px solid var(--line);
+}
+.product-summary p{margin:0;color:var(--ink-2);font-size:8.2pt;line-height:1.38;}
+.product-summary strong{color:var(--navy);}
+
+.product-story{
+  display:grid;
+  grid-template-columns:58mm 1fr;
+  gap:8mm;
+  align-items:start;
+  padding:7mm 0;
+  border-top:1px solid var(--navy);
+  border-bottom:1px solid var(--line);
+}
+.principles>.section-title{margin-bottom:2.5mm;}
+.benefit-band{
+  display:block;
+  margin:0;
+  border:0;
+}
+.editorial-principle{
+  min-height:0;
+  padding:3.8mm 0;
+  border-top:1px solid var(--line);
+}
+.editorial-principle:first-child{border-top:1px solid var(--navy);}
+.editorial-principle span{
+  display:block;
+  margin-bottom:.8mm;
+  color:var(--indigo);
+  font-size:6pt;
+  font-weight:900;
+  letter-spacing:.12em;
+}
+.editorial-principle h3{
+  margin:0;
+  color:var(--navy);
+  font-size:8.4pt;
+  line-height:1.2;
+}
+.editorial-principle p{margin:.8mm 0 0;color:var(--ink-2);font-size:6.7pt;line-height:1.32;}
+.evidence-heading{
+  display:block;
+  margin:0 0 2.2mm;
+}
+.evidence-heading h2{margin:0;color:var(--navy);font-size:9pt;}
+.evidence-heading p{margin:0;color:var(--ink-3);font-size:6.6pt;}
+.product-evidence{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:4mm;
+  align-items:start;
+}
+.evidence-card{margin:0;}
+.evidence-card .device{
+  position:relative;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  width:32mm;
+  height:72mm;
+  margin:0 auto;
+  padding:4mm 0 3.5mm;
+  box-sizing:border-box;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:2mm;
+  background:#fff;
+}
+.status-bar{
+  position:absolute;
+  z-index:2;
+  top:0;
+  right:0;
+  left:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:4mm;
+  padding:0 2mm;
+  box-sizing:border-box;
+  background:#fff;
+  color:#20232B;
+  font-size:5.2pt;
+  font-weight:700;
+}
+.status-signals{display:flex;align-items:center;justify-content:flex-end;gap:1mm;}
+.cellular{display:flex;align-items:flex-end;gap:.35mm;width:3.5mm;height:2.5mm;}
+.cellular i{display:block;width:.55mm;border-radius:.2mm;background:#111318;}
+.cellular i:nth-child(1){height:.8mm;}
+.cellular i:nth-child(2){height:1.3mm;}
+.cellular i:nth-child(3){height:1.9mm;}
+.cellular i:nth-child(4){height:2.5mm;}
+.wifi-mark{position:relative;width:3mm;height:2.1mm;overflow:hidden;}
+.wifi-mark::before{
+  content:"";
+  position:absolute;
+  top:-1.7mm;
+  left:.2mm;
+  width:2.4mm;
+  height:2.4mm;
+  border:1px solid #111318;
+  border-radius:50%;
+}
+.wifi-mark::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:1.2mm;
+  width:.6mm;
+  height:.6mm;
+  border-radius:50%;
+  background:#111318;
+}
+.battery-mark{position:relative;width:3.1mm;height:1.6mm;border:.35mm solid #111318;border-radius:.5mm;box-sizing:border-box;}
+.battery-mark::before{content:"";position:absolute;top:.25mm;right:-.7mm;width:.35mm;height:.55mm;border-radius:0 .2mm .2mm 0;background:#111318;}
+.battery-mark::after{content:"";position:absolute;top:.25mm;right:.25mm;bottom:.25mm;left:.25mm;border-radius:.15mm;background:#111318;}
+.nav-bar{
+  position:absolute;
+  z-index:2;
+  right:0;
+  bottom:0;
+  left:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  height:3.5mm;
+  padding:0 5mm;
+  box-sizing:border-box;
+  background:#F3F3F3;
+}
+.nav-triangle{width:0;height:0;border-top:1.2mm solid transparent;border-bottom:1.2mm solid transparent;border-right:1.8mm solid #555;}
+.nav-circle{width:1.8mm;height:1.8mm;border:1px solid #666;border-radius:50%;box-sizing:border-box;}
+.nav-square{width:1.8mm;height:1.8mm;border:1px solid #666;box-sizing:border-box;}
+.evidence-card img{
+  display:block;
+  width:auto;
+  max-width:100%;
+  height:100%;
+  object-fit:contain;
+  border:1px solid var(--line);
+  border-radius:2mm;
+  background:#fff;
+}
+.evidence-card.app-screen .device{
+  height:72mm;
+  padding:4mm 0 3.5mm;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:2mm;
+  background:#fff;
+}
+.evidence-card.app-screen img{
+  width:auto;
+  max-width:none;
+  height:64.5mm;
+  transform:none;
+  border:0;
+  border-radius:0;
+}
+.evidence-card.analytics img{height:64.5mm;object-fit:contain;object-position:top center;background:#fff;}
+.evidence-card.raster-bars .device{width:34.75mm;height:72mm;padding:0;}
+.evidence-card.raster-bars img{width:auto;max-width:none;height:72mm;}
+.evidence-card figcaption{
+  max-width:38mm;
+  margin:1.3mm auto 0;
+  color:var(--ink-2);
+  font-size:6.7pt;
+  line-height:1.3;
+}
+.evidence-card figcaption strong{display:block;color:var(--navy);font-size:7.4pt;}
+.balance-editorial{
+  display:grid;
+  grid-template-columns:45mm 1fr;
+  gap:6mm;
+  align-items:center;
+  margin-top:9mm;
+  padding:4.5mm 0 4.5mm 4mm;
+  border-left:3px solid var(--amber);
+  border-top:1px solid var(--navy);
+  border-bottom:1px solid var(--navy);
+}
+.balance-editorial h2{margin:0;color:var(--navy);font-family:var(--display);font-size:12pt;line-height:1.1;}
+.balance-editorial p{margin:0;color:var(--ink-2);font-size:8pt;line-height:1.4;}
+
+@media screen and (max-width:230mm){
+  .page{width:auto;min-height:0;margin:3mm;padding:7mm 5mm 12mm;}
+  .headline h1{font-size:23pt;}
+  .hero{height:auto;aspect-ratio:2153/730;}
+  .toc{grid-template-columns:1fr;}
+  .product-summary,.product-story,.balance-editorial{grid-template-columns:1fr;}
+  .opening-grid{grid-template-columns:1fr;}
+  .benefit-band{grid-template-columns:1fr;}
+  .product-evidence{grid-template-columns:1fr;}
+  .footer{position:static;grid-template-columns:8mm 1fr;margin-top:8mm;}
+  .footer .brand{grid-column:2;}
+}
+
+@page{size:A4;margin:0;}
+@media print{
+  body{background:#fff;}
+  .page{width:210mm;height:297mm;min-height:0;margin:0;box-shadow:none;}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+
+
+/* Final chapter-layout overrides */
+/* Editorial restructuring for pages 3–9: fewer boxes, clearer reading paths */
+.chapter-editorial .chap{
+  grid-template-columns:12mm 1fr;
+  gap:5mm;
+  margin-bottom:5.5mm;
+  padding-bottom:4.5mm;
+}
+.chapter-editorial .chap .n{
+  padding-top:.5mm;
+  color:var(--indigo);
+  font-family:var(--display);
+  font-size:22pt;
+}
+.chapter-editorial .chap h2{max-width:150mm;font-size:21pt;line-height:1;}
+.chapter-editorial .chap .lead{max-width:150mm;font-size:8.8pt;}
+
+/* 01 — compare two uses, then scan four editorial lenses */
+.chapter-one .cols.c2n{grid-template-columns:76mm 1fr;gap:6mm;align-items:stretch;}
+.chapter-one .cols.c2n>.img{min-height:92mm!important;border:0;border-radius:1.5mm;}
+.chapter-one .cmp{border:0;border-radius:0;gap:0;background:#fff;}
+.chapter-one .cmp>div{padding:4mm 4mm 3mm;border-top:3px solid;}
+.chapter-one .cmp .a{background:#fff;border-color:var(--mint);}
+.chapter-one .cmp .b{background:#fff;border-color:var(--coral);border-left:1px solid var(--line);}
+.chapter-one .cols.c4{gap:4mm;border-top:1px solid var(--navy);padding-top:3mm;}
+.chapter-one .card.soft{padding:0 3mm 0 0;border:0;border-right:1px solid var(--line);border-radius:0;background:transparent;}
+.chapter-one .card.soft:last-child{border-right:0;}
+.chapter-one .card .img.icon{width:8mm;min-height:8mm;margin:0 0 2mm;border:0;background:transparent;}
+.chapter-one .card .t{font-family:var(--display);font-size:11pt;}
+.chapter-one .ev{padding:3mm 0 3mm 4mm;border-left:3px solid var(--mint);border-radius:0;background:transparent;}
+
+/* 02 — narrative first, mechanism second, slow activities as the conclusion */
+.chapter-two>.cols.c2:first-of-type{grid-template-columns:.82fr 1.18fr;gap:7mm;align-items:center;}
+.chapter-two>.cols.c2:first-of-type>.img{min-height:82mm!important;border:0;border-radius:1.5mm;}
+.chapter-two .chat{display:grid;grid-template-columns:1fr 1fr;gap:2mm;}
+.chapter-two .chat .b{max-width:none;border-radius:0;padding:2.5mm 3mm;border-top:2px solid var(--amber);background:transparent;}
+.chapter-two .loop{margin-top:3mm;padding:3mm 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);gap:1mm;}
+.chapter-two .loop span{padding:1mm 1.8mm;border:1px solid var(--navy);border-radius:9mm;background:transparent;color:var(--navy);}
+.chapter-two .loop span.r{border-color:var(--amber);background:var(--amber-soft);}
+.chapter-two>.cols.c2w{grid-template-columns:1fr 1fr;gap:7mm;border-top:1px solid var(--navy);padding-top:4mm;}
+.chapter-two .chips span{background:transparent;border-color:var(--line);}
+.chapter-two .ev{padding:3mm 0 3mm 4mm;border-left:3px solid var(--mint);border-radius:0;background:transparent;}
+.chapter-two .card.ind{padding:3mm 0 3mm 4mm;border:0;border-left:3px solid var(--amber);border-radius:0;background:transparent;}
+
+/* 03 — make the disappearing afternoon the dominant story */
+.chapter-three>.cols.c2{grid-template-columns:.9fr 1.1fr;gap:8mm;align-items:center;}
+.chapter-three>.cols.c2>.img{min-height:78mm!important;border:0;border-radius:1.5mm;}
+.chapter-three .tl{padding-left:5mm;border-left:1px solid var(--navy);}
+.chapter-three .stat{margin-top:5mm;padding:4mm 5mm;grid-template-columns:34mm 1fr;}
+.chapter-three .yesno{gap:7mm;margin-top:3mm;}
+.chapter-three .yesno>div{padding:2.5mm 0;border-radius:0;background:transparent;border-top:2px solid;}
+.chapter-three .yesno .no{border-color:var(--coral);}
+.chapter-three .yesno .yes{border-color:var(--mint);}
+.chapter-three .prot{gap:0;border-top:1px solid var(--navy);border-bottom:1px solid var(--line);}
+.chapter-three .prot div{padding:3mm 2mm;background:transparent;color:var(--navy);border-radius:0;border-right:1px solid var(--line);}
+.chapter-three .prot div:last-child{border-right:0;}
+.chapter-three .prot .img.icon{background:transparent;border:0;}
+
+/* Combined home page — two related systems, visually balanced */
+.page-combined-home .rules{border-radius:1mm;box-shadow:none;}
+.page-combined-home .swap{border-radius:0;border-left:0;border-right:0;}
+.page-combined-home .chat .b{border-radius:0;border-top:1px solid var(--amber);background:transparent;}
+.page-combined-home .scr>div{border-radius:0;}
+
+/* 06 — keep the replacement menu useful without looking like a dashboard */
+.page-ch6 .menu{gap:0;border-top:1px solid var(--navy);border-bottom:1px solid var(--line);}
+.page-ch6 .menu div{border:0;border-right:1px solid var(--line);border-radius:0;background:transparent;}
+.page-ch6 .menu div:last-child{border-right:0;}
+.page-ch6 .menu b{padding:2mm 2.4mm;background:transparent!important;color:var(--navy);border-bottom:2px solid var(--indigo);}
+.page-ch6 .pw-third{background:transparent;}
+
+/* 07 — worksheet on the right, an uncluttered four-step path on the left */
+.chapter-reset .week{padding:3mm 0 3mm 4mm;border:0;border-left:2px solid var(--indigo);border-radius:0;}
+.chapter-reset .steps div{background:transparent;border-radius:0;border-bottom-width:2px;}
+.chapter-reset .plan{box-shadow:none;border-width:1px;}
+
+/* 08 — traffic-light decision aid rather than a wall of cards */
+.chapter-worry .tlight{gap:5mm;}
+.chapter-worry .tlight div{padding:3mm 0;border-radius:0;background:transparent;border-top:3px solid;}
+.chapter-worry .tlight .g{border-color:var(--mint);}
+.chapter-worry .tlight .a{border-color:var(--amber);}
+.chapter-worry .tlight .r{border-color:var(--coral);}
+.chapter-worry .basics{gap:0;border-top:1px solid var(--navy);border-bottom:1px solid var(--line);}
+.chapter-worry .basics>div{border:0;border-right:1px solid var(--line);border-radius:0;background:transparent;}
+.chapter-worry .basics>div:last-child{border-right:0;}
+
+
+/* Final editorial cleanup: remove duplicated labels and promotional furniture */
+.chapter-editorial .top .tag,
+.page-final-clean .top .tag{display:none;}
+.chapter-editorial .chap{
+  display:block;
+  padding-bottom:4mm;
+}
+.chapter-editorial .chap .n{
+  display:block;
+  margin:0 0 1.5mm;
+  padding:0;
+  color:var(--indigo);
+  font-family:Inter,"Helvetica Neue",Arial,sans-serif;
+  font-size:6.4pt;
+  font-weight:800;
+  line-height:1;
+  letter-spacing:.16em;
+}
+.chapter-editorial .chap .n::before{content:"SECTION ";}
+.page-combined-home .chap .n::before{content:"SECTION ";}
+.chapter-editorial .take{
+  display:block;
+  margin-top:4mm;
+  padding:3.5mm 0;
+  border:0;
+  border-top:1px solid var(--navy);
+  border-bottom:1px solid var(--navy);
+  border-radius:0;
+  background:transparent;
+}
+.chapter-editorial .take .lab{display:none;}
+.chapter-editorial .take p{font-size:10pt;line-height:1.25;}
+.foot .fn,
+.foot .brand,
+.footer .brand{display:none;}
+.foot{grid-template-columns:auto;}
+.footer{grid-template-columns:auto;}
+.foot .num,
+.footer .page-number{justify-self:start;}
+.page-final-clean .foot .brand{display:none;}
+
+/* White line-art assets need a dark field to remain visible. */
+.chapter-three .prot .img.icon{
+  width:10mm;
+  min-height:10mm;
+  margin:0 auto 1.8mm;
+  padding:1.8mm;
+  border:0;
+  border-radius:50%;
+  background:var(--navy);
+}
+.chapter-three .prot .img.icon img{object-fit:contain;}
+
+/* Page 6: a practical fridge note plus a real-life parent moment. */
+.page-combined-home>.cols.c2{grid-template-columns:1fr 1fr;gap:8mm;align-items:start;}
+.page-combined-home .rules{
+  position:relative;
+  padding:7mm 6mm 6mm;
+  border:0;
+  border-radius:.5mm;
+  background:#FFF1B8;
+  box-shadow:0 2.5mm 5mm rgba(77,62,19,.14);
+  transform:rotate(.35deg);
+}
+.page-combined-home .rules::before{
+  content:"";
+  position:absolute;
+  top:-3mm;
+  left:50%;
+  width:27mm;
+  height:7mm;
+  transform:translateX(-50%) rotate(-1.5deg);
+  background:rgba(226,211,171,.72);
+  box-shadow:0 .4mm 1mm rgba(60,49,20,.08);
+}
+.page-combined-home .rules .hd{margin-bottom:3mm;}
+.page-combined-home .rules .rule{padding:3mm 0;border-color:rgba(27,29,77,.18);}
+.page-combined-home .rules .rule .n{color:#A86900;}
+.page-combined-home .parent-habits-band{
+  display:grid;
+  grid-template-columns:64mm 1fr;
+  gap:7mm;
+  align-items:center;
+  margin-top:7mm;
+  padding:0;
+  border-left:3px solid var(--amber);
+  border-top:1px solid var(--navy);
+  border-bottom:1px solid var(--navy);
+}
+.page-combined-home .parent-habits-band figure{height:43mm;margin:0;overflow:hidden;}
+.page-combined-home .parent-habits-band img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
+.page-combined-home .parent-habits-band .k{display:block;margin-bottom:1mm;color:var(--indigo);font-size:6.2pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;}
+.page-combined-home .parent-habits-band h3{margin:0 0 1.5mm;color:var(--navy);font-family:var(--display);font-size:16pt;line-height:1;}
+.page-combined-home .parent-habits-band p{margin:0 0 1.5mm;color:var(--ink-2);font-size:8pt;line-height:1.35;}
+.page-combined-home .parent-habits-band strong{color:var(--navy);font-size:8pt;}
+.page-combined-home .take{margin-top:5mm;}
+
+/* One phone-shell system for all three product screens. */
+.product-page .product-evidence{align-items:start;}
+.product-page .evidence-card .device,
+.product-page .evidence-card.analytics .device{
+  position:relative;
+  width:32mm;
+  height:72mm;
+  padding:4mm 0 3.5mm;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:2mm;
+  background:#fff;
+}
+.product-page .evidence-card .status-bar{height:4mm;padding:0 2mm;}
+.product-page .evidence-card .nav-bar{height:3.5mm;padding:0 5mm;}
+.product-page .evidence-card.analytics img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  max-width:none;
+  height:100%;
+  border:0;
+  border-radius:0;
+  object-fit:cover;
+  object-position:top center;
+}
+.product-page .evidence-card .status-bar,
+.product-page .evidence-card .nav-bar{z-index:3;}
+.product-page .evidence-card figcaption{width:32mm;max-width:32mm;}
+
+/* Page 9: align the diagnostic panels and turn the actions into a 3 × 2 grid. */
+.chapter-worry .cols.c2w{
+  grid-template-columns:1fr 1fr;
+  gap:5mm;
+  align-items:stretch;
+  margin-bottom:6mm;
+}
+.chapter-worry .flags,
+.chapter-worry .stat.two{height:100%;}
+.chapter-worry .stat.two{align-content:space-between;}
+.chapter-worry>.h3{margin:0 0 2.5mm;}
+.chapter-worry .basics{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:3mm;
+  margin-bottom:4mm;
+  border:0;
+}
+.chapter-worry .basics>div{
+  display:grid;
+  grid-template-columns:12mm 1fr;
+  gap:3mm;
+  align-items:center;
+  min-height:22mm;
+  padding:3mm;
+  text-align:left;
+  border:0;
+  border-top:2px solid var(--indigo);
+  border-radius:0;
+  background:#fff;
+  font-size:7.5pt;
+  line-height:1.2;
+}
+.chapter-worry .basics>div:last-child{border-right:0;}
+.chapter-worry .basics .img.icon{
+  width:11mm;
+  min-height:11mm;
+  margin:0;
+  border:0;
+  background:transparent;
+}
+.chapter-worry>.small{
+  margin:4mm 0 0;
+  padding:3.5mm 4mm;
+  border-left:3px solid var(--amber);
+  background:var(--amber-soft);
+  font-size:7.8pt;
+  line-height:1.35;
+}
+.chapter-worry .take{margin-top:5mm;}
+
+/* Align G / A / R labels to the exact checkbox centres. */
+.chapter-worry .flags .bx{
+  display:grid;
+  grid-template-columns:repeat(3,3.6mm);
+  gap:1.6mm;
+  align-items:center;
+  justify-items:center;
+}
+.chapter-worry .flags div:first-child .bx{
+  gap:1.6mm;
+  font-size:5.8pt;
+  letter-spacing:0;
+}
+.chapter-worry .flags div:first-child .bx span{
+  display:block;
+  width:3.6mm;
+  text-align:center;
+}
+
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="masthead">
+    <figure class="logo">
+      <img src="final_report_assets/IMG-01.png" alt="PW Games logo">
+    </figure>
+  </header>
+
+  <section class="headline" aria-labelledby="page-title">
+    <h1 id="page-title">The Indian Parent's Guide to <span>Kids, Phones <em>&amp; Screen Time</em></span></h1>
+    <p class="deck"><strong>For parents of children in Grades 1–4.</strong> How to raise a happy, curious child in a world full of screens.</p>
+  </section>
+
+  <figure class="hero">
+    <img src="final_report_assets/IMG-02-playbook-hero-flat-editorial-v6.png" alt="A child holds a phone while listening to his mother calmly point toward the clock, with homework, books and play waiting nearby">
+  </figure>
+
+  <section class="opening-grid" aria-label="Why this handbook exists">
+    <aside class="scene-card" aria-labelledby="sound-familiar">
+      <h2 class="section-title" id="sound-familiar">Sound familiar?</h2>
+      <p class="scene-line"><span>The ask</span><strong>“Mumma, phone do na.”</strong></p>
+      <p class="time-jump">Five minutes become forty</p>
+      <p class="scene-line"><span>The answer</span><strong>“One more minute.”</strong></p>
+    </aside>
+
+    <div class="story" aria-labelledby="why-handbook">
+      <h2 class="section-title" id="why-handbook">Why this handbook exists</h2>
+      <p>If you have a child in Grade 1, 2, 3 or 4, you know this pattern: the phone can quickly become the most fought-over object in the house.</p>
+      <p>Your child is growing up at a time when one screen can be a classroom, a gaming console, a television, a video call with Nani, a homework helper and an endless entertainment machine — all at once. So the goal cannot simply be <strong>“no screens.”</strong></p>
+      <aside class="thesis" aria-label="Central message">
+        <span class="thesis-label">But here is the thing</span>
+        <p>This is not really a story about a phone. It is a story about childhood.</p>
+      </aside>
+    </div>
+  </section>
+
+  <nav aria-labelledby="inside-guide">
+    <div class="contents-title">
+      <h2 class="section-title" id="inside-guide">Inside this guide</h2>
+    </div>
+    <div class="toc">
+      <div class="toc-item"><b>01</b><span>Not all screen time is the same</span></div>
+      <div class="toc-item"><b>02</b><span>Why "one more video" is so hard</span></div>
+      <div class="toc-item"><b>03</b><span>What two hours really cost</span></div>
+      <div class="toc-item"><b>04</b><span>Design the home and model the habit</span></div>
+      <div class="toc-item"><b>05</b><span>What goes in the phone's place</span></div>
+      <div class="toc-item"><b>06</b><span>A four-week screen reset</span></div>
+      <div class="toc-item"><b>07</b><span>When to actually worry — and what's next</span></div>
+    </div>
+  </nav>
+
+  <footer class="footer">
+    <span class="page-number">1</span>
+    <span class="brand">PW Games · Learn through play</span>
+  </footer>
+</main>
+
+<main class="page product-page">
+  <header class="masthead">
+    <figure class="logo">
+      <img src="final_report_assets/IMG-01.png" alt="PW Games logo">
+    </figure>
+  </header>
+
+  <section class="product-title" aria-labelledby="product-page-title">
+    <div>
+      <p class="eyebrow">How PW Games can help your child</p>
+      <h1 id="product-page-title">Turn screen time into thinking time.</h1>
+      <p class="product-lead">Short puzzles and story-led games help children practise school skills, think through problems and see their progress.</p>
+    </div>
+    <figure class="product-hero">
+      <img src="final_report_assets/IMG-03-pw-games-parent-child-hero-v2.png" alt="A parent and child enjoying an educational game together">
+    </figure>
+  </section>
+
+  <section class="product-summary" aria-label="What PW Games does">
+    <p><strong>PW Games</strong>, from the makers of Physics Wallah, brings Maths, Science, English and Mental Ability together in one playful learning space.</p>
+  </section>
+
+  <section class="product-story" aria-labelledby="why-pw-games">
+    <div class="principles">
+      <h2 class="section-title" id="why-pw-games">How it helps</h2>
+      <div class="benefit-band">
+        <article class="editorial-principle">
+          <span>01 · Practice</span>
+          <h3>Turn revision into play</h3>
+          <p>Children revisit school skills through short activities that feel lighter than extra homework.</p>
+        </article>
+        <article class="editorial-principle">
+          <span>02 · Thinking</span>
+          <h3>Build problem-solving habits</h3>
+          <p>Puzzles, choices and recall ask children to participate—not simply keep watching.</p>
+        </article>
+        <article class="editorial-principle">
+          <span>03 · Finite</span>
+          <h3>Give play a place to end</h3>
+          <p>Levels finish, creating a more natural moment to put the screen away.</p>
+        </article>
+        <article class="editorial-principle">
+          <span>04 · Progress</span>
+          <h3>Make effort visible</h3>
+          <p>Parents can see what was practised and talk about what the child learned.</p>
+        </article>
+      </div>
+    </div>
+
+    <div>
+      <div class="evidence-heading">
+        <h2>Inside PW Games</h2>
+      </div>
+      <div class="product-evidence" aria-label="Inside PW Games">
+        <figure class="evidence-card app-screen">
+          <div class="device"><span class="status-bar"><span>10:45</span><span class="status-signals"><span class="cellular"><i></i><i></i><i></i><i></i></span><span class="wifi-mark"></span><span class="battery-mark"></span></span></span><img src="final_report_assets/PW-Games-Maths-original.jpg" alt="Original PW Games Maths Games screen"><span class="nav-bar"><i class="nav-triangle"></i><i class="nav-circle"></i><i class="nav-square"></i></span></div>
+          <figcaption><strong>Explore</strong></figcaption>
+        </figure>
+        <figure class="evidence-card app-screen">
+          <div class="device"><span class="status-bar"><span>10:45</span><span class="status-signals"><span class="cellular"><i></i><i></i><i></i><i></i></span><span class="wifi-mark"></span><span class="battery-mark"></span></span></span><img src="final_report_assets/gameplay-crossmath-clean.png" alt="PW Games CrossMath multiplication puzzle in play"><span class="nav-bar"><i class="nav-triangle"></i><i class="nav-circle"></i><i class="nav-square"></i></span></div>
+          <figcaption><strong>Solve</strong></figcaption>
+        </figure>
+        <figure class="evidence-card analytics">
+          <div class="device"><span class="status-bar"><span>10:45</span><span class="status-signals"><span class="cellular"><i></i><i></i><i></i><i></i></span><span class="wifi-mark"></span><span class="battery-mark"></span></span></span><img src="final_report_assets/IMG-04-pw-games-progress-report-native-v2.png" alt="PW Games progress report across four learning areas"><span class="nav-bar"><i class="nav-triangle"></i><i class="nav-circle"></i><i class="nav-square"></i></span></div>
+          <figcaption><strong>Progress</strong></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="balance-editorial" aria-labelledby="balance-title">
+    <h2 id="balance-title">Useful does not mean unlimited.</h2>
+    <p>A learning game is still screen time. It should add to childhood—not replace sleep, outdoor play, reading, conversation or the useful freedom of being bored.</p>
+  </section>
+
+  <footer class="footer">
+    <span class="page-number">2</span>
+    <span class="brand">PW Games · Learn through play</span>
+  </footer>
+</main>
+
+<!-- =============================== PAGE 3 · CH 01 =============================== -->
+<section class="page chapter-editorial chapter-one">
+<div class="top"><span>Screen Time Handbook · Grades 1–4</span><span class="tag">Chapter 01</span></div>
+<div class="chap">
+<div class="n">01</div>
+<div>
+<h2>Not all screen time is the same</h2>
+<p class="lead">Sixty minutes is sixty minutes. But two children can spend the same hour in completely different childhoods.</p>
+</div>
+</div>
+<div class="cols c2n mb">
+<figure class="img fill asset" style="min-height:98mm;"><img alt="IMG-03" src="final_report_assets/IMG-03.png"/></figure>
+<div>
+<p class="h3">The same 60 minutes</p>
+<div class="cmp mb-s">
+<div class="a">
+<span class="k">Child A</span>
+<div class="big">1 hour</div>
+<ul>
+<li>Watched a science experiment</li>
+<li>Drew something</li>
+<li>Practised multiplication in a puzzle game</li>
+<li>Called their grandparents</li>
+<li>Played a thoughtful game</li>
+</ul>
+<span class="sum">Creating · learning · connecting</span>
+</div>
+<div class="b">
+<span class="k">Child B</span>
+<div class="big">1 hour</div>
+<ul><li>Watched 80 short videos</li></ul>
+<span class="sum">Served one clip after another</span>
+</div>
+</div>
+<p>Both are "one hour of screen time." They are not the same. Before you count minutes, ask four questions.</p>
+</div>
+</div>
+<div class="cols c4 mb">
+<div class="card soft"><figure class="img icon asset"><img alt="IMG-04a" src="final_report_assets/IMG-04a.png"/></figure><span class="k">01</span><span class="t">What?</span><p>What is my child actually doing on the screen?</p></div>
+<div class="card soft"><figure class="img icon asset"><img alt="IMG-04b" src="final_report_assets/IMG-04b.png"/></figure><span class="k">02</span><span class="t">When?</span><p>After school, during homework, at dinner — or near bedtime?</p></div>
+<div class="card soft"><figure class="img icon asset"><img alt="IMG-04c" src="final_report_assets/IMG-04c.png"/></figure><span class="k">03</span><span class="t">How?</span><p>Creating, learning or playing — or just being served content?</p></div>
+<div class="card soft"><figure class="img icon asset"><img alt="IMG-04d" src="final_report_assets/IMG-04d.png"/></figure><span class="k">04</span><span class="t">Replacing what?</span><p>Sleep, outdoor play, reading, conversation, family time or hobbies?</p></div>
+</div>
+<div class="ev">
+<span class="lab">What the research says</span>
+<p>Higher screen use has been linked with poorer sleep, reduced physical activity, attention difficulties and emotional and social challenges. At the same time, limited, educational and co-viewed use can be different from passive consumption.<sup>1</sup></p>
+</div>
+<div class="take">
+<span class="lab">Takeaway</span>
+<p>Don't just count screen minutes. Look at what your child is doing, when they're doing it — and what those minutes are replacing.</p>
+</div>
+<div class="foot">
+<span class="num">3</span>
+<span class="fn"><sup>1</sup> Impact of Screen Time on Development of Children (2025), narrative review of 46 studies, 2014–2024 · pmc.ncbi.nlm.nih.gov/articles/PMC12563978</span>
+<span class="brand">PW Games · Learn through play</span>
+</div>
+</section>
+<!-- =============================== PAGE 4 · CH 02 =============================== -->
+<section class="page chapter-editorial chapter-two">
+<div class="top"><span>Screen Time Handbook · Grades 1–4</span><span class="tag">Chapter 02</span></div>
+<div class="chap">
+<div class="n">02</div>
+<div>
+<h2>Why is "one more video" so hard?</h2>
+<p class="lead">Your child is not being difficult. They are competing against a product designed so that stopping never feels natural.</p>
+</div>
+</div>
+<div class="cols c2 mb">
+<div>
+<div class="chat mb-s">
+<div class="b par"><span class="who">Parent</span>"Okay, last video."</div>
+<div class="b kid"><span class="who">Child</span>"Promise."</div>
+</div>
+<p class="muted">The video ends. And then…</p>
+<p class="pull mb-s">Another one starts automatically.</p>
+<p>Children in Grades 1–4 are still developing their ability to regulate impulses and attention. Digital products also remove the natural reasons to stop: there is always another video, level, reward, notification or recommendation.</p>
+<div class="loop">
+<span>Video</span><i>→</i><span class="r">Reward</span><i>→</i><span>Next video</span><i>→</i><span class="r">Reward</span><i>→</i><span>Repeat</span>
+</div>
+</div>
+<figure class="img fill asset" style="min-height:86mm;"><img alt="IMG-05" src="final_report_assets/IMG-05.png"/></figure>
+</div>
+<div class="cols c2w mb">
+<div>
+<p class="h3">What parents call "brain rot"</p>
+<p class="small">The phrase is informal, not a diagnosis. But it describes a pattern parents increasingly recognise:</p>
+<div class="chips ind mb-s">
+<span>Very fast content</span><span>Constant novelty</span><span>Almost no waiting</span><span>Almost no effort</span><span>Always something next</span>
+</div>
+<div class="ev">
+<span class="lab">What the research says</span>
+<p>A 2025 research scale described digital overconsumption using three dimensions:<sup>2</sup></p>
+<div class="dims" style="margin-top:2mm;">
+<div>Attention dysregulation</div><div>Digital compulsivity</div><div>Cognitive dependency</div>
+</div>
+</div>
+</div>
+<div class="card ind">
+<span class="k">The serious point</span>
+<span class="t">Slow is not bad. Slow is valuable.</span>
+<p style="margin-bottom:2mm;">A child should not grow up believing that every activity needs to be instantly exciting.</p>
+<div class="cols c5" style="gap:1.6mm;text-align:center;">
+<div><figure class="img icon asset"><img alt="IMG-06a" src="final_report_assets/IMG-06a.png"/></figure><p class="small">Reading</p></div>
+<div><figure class="img icon asset"><img alt="IMG-06b" src="final_report_assets/IMG-06b.png"/></figure><p class="small">An instrument</p></div>
+<div><figure class="img icon asset"><img alt="IMG-06c" src="final_report_assets/IMG-06c.png"/></figure><p class="small">Cricket</p></div>
+<div><figure class="img icon asset"><img alt="IMG-06d" src="final_report_assets/IMG-06d.png"/></figure><p class="small">A hard puzzle</p></div>
+<div><figure class="img icon asset"><img alt="IMG-06e" src="final_report_assets/IMG-06e.png"/></figure><p class="small">Building</p></div>
+</div>
+<p style="margin-top:2mm;">All of these feel slow. That does not make them bad. <strong>It makes them valuable</strong> — and it is why a game that asks for a little effort beats a feed that asks for none.</p>
+</div>
+</div>
+<div class="take">
+<span class="lab">Takeaway</span>
+<p>Don't only teach your child when to stop using a screen. Teach them to enjoy things that take time.</p>
+</div>
+<div class="foot">
+<span class="num">4</span>
+<span class="fn"><sup>2</sup> Development and Psychometric Validation of the Brain Rot Scale, BRS-14 (2025) · pmc.ncbi.nlm.nih.gov/articles/PMC12731444</span>
+<span class="brand">PW Games · Learn through play</span>
+</div>
+</section>
+<!-- =============================== PAGE 5 · CH 03 =============================== -->
+<section class="page chapter-editorial chapter-three">
+<div class="top"><span>Screen Time Handbook · Grades 1–4</span><span class="tag">Chapter 03</span></div>
+<div class="chap">
+<div class="n">03</div>
+<div>
+<h2>What can two hours of screen time really cost?</h2>
+<p class="lead">Nothing in a normal afternoon looks dramatic. The cost only appears when you add it up.</p>
+</div>
+</div>
+<div class="cols c2 mb">
+<div>
+<p class="h3">A typical school day</p>
+<div class="tl">
+<div><b>After school</b> 30 minutes of YouTube</div>
+<div><b>Before snacks</b> 20 minutes of gaming</div>
+<div><b>While eating</b> Another 15 minutes</div>
+<div><b>Before homework</b> Another 20 minutes</div>
+<div><b>Before bed</b> A few more videos</div>
+<div class="x">Homework starts later</div>
+<div class="x">Outdoor play disappears · reading becomes optional</div>
+<div class="x">Dinner gets quieter · bedtime gets pushed · sleep gets shorter</div>
+</div>
+<p class="note" style="margin-top:1.6mm;">An illustrative day, not a measured research result.</p>
+</div>
+<figure class="img fill asset" style="min-height:84mm;"><img alt="IMG-07" src="final_report_assets/IMG-07.png"/></figure>
+</div>
+<div class="stat mb-s">
+<div class="fig">~10%<small>lower odds</small></div>
+<div>
+<p>A prospective cohort study of elementary-school students found that higher total screen exposure before age 8 was associated with <strong>lower reading and mathematics achievement</strong> — roughly 10% lower odds of being in the higher achievement levels for each additional hour of daily screen time.<sup>3</sup></p>
+</div>
+</div>
+<div class="yesno mb">
+<div class="no"><b>This does not mean</b>"Give your child one extra hour of screen time and their marks will fall by 10%."</div>
+<div class="yes"><b>It does mean</b>The study found an association, not a cause-and-effect rule. But it should still make us stop and think.</div>
+</div>
+<p class="h3">Protect these five things fiercely</p>
+<div class="prot mb">
+<div><figure class="img icon asset"><img alt="IMG-08a" src="final_report_assets/IMG-08a.png"/></figure><b>Sleep</b></div>
+<div><figure class="img icon asset"><img alt="IMG-08b" src="final_report_assets/IMG-08b.png"/></figure><b>Play</b></div>
+<div><figure class="img icon asset"><img alt="IMG-08c" src="final_report_assets/IMG-08c.png"/></figure><b>Reading</b></div>
+<div><figure class="img icon asset"><img alt="IMG-08d" src="final_report_assets/IMG-08d.png"/></figure><b>Conversation</b></div>
+<div><figure class="img icon asset"><img alt="IMG-08e" src="final_report_assets/IMG-08e.png"/></figure><b>Boredom</b></div>
+</div>
+<div class="take">
+<span class="lab">Takeaway</span>
+<p>The real danger is not just "too much screen." It is what the screen quietly pushes out of your child's day.</p>
+</div>
+<div class="foot">
+<span class="num">5</span>
+<span class="fn"><sup>3</sup> JAMA Network Open (2025), Screen Time and Standardized Academic Achievement Tests in Elementary School · summary at sickkids.ca</span>
+<span class="brand">PW Games · Learn through play</span>
+</div>
+</section>
+<!-- =============================== PAGE 6 · SECTION 04 =============================== -->
+<section class="page page-combined-home chapter-editorial">
+<div class="top"><span>Screen Time Handbook · Grades 1–4</span><span class="tag">Section 04</span></div>
+<div class="chap">
+<div class="n">04</div>
+<div>
+<h2>Design the home and model the habit.</h2>
+<p class="lead">Children need more than rules. They need an environment that makes healthy choices easier—and adults who follow the same boundaries.</p>
+</div>
+</div>
+<div class="cols c2">
+<div>
+<p class="pull mb-s">A Grade 1 child shouldn't have to win a self-control competition against an algorithm built to keep them watching.</p>
+<p class="small muted mb-s">Of course children need to learn self-control — eventually. Until then, make the healthy choice the easy choice.</p>
+<div class="swap mb-s">
+<div><span class="g">Set this up</span><span class="arr">instead of</span><span class="o">This</span></div>
+<div><span class="g">Family tablet</span><span class="arr">instead of</span><span class="o">Personal smartphone</span></div>
+<div><span class="g">TV in a common room</span><span class="arr">instead of</span><span class="o">Screen in the bedroom</span></div>
+<div><span class="g">Shared devices</span><span class="arr">instead of</span><span class="o">Private devices</span></div>
+<div><span class="g">Charging station</span><span class="arr">instead of</span><span class="o">Bedside charging</span></div>
+<div><span class="g">Parent-approved apps</span><span class="arr">instead of</span><span class="o">Unlimited downloads</span></div>
+</div>
+<p class="h3">Do not make the phone the prize</p>
+<div class="chat mb-s">
+<div class="b par">“Finish your homework, then you can have the phone.”</div>
+<div class="b par">“Behave, or I will take the tablet away.”</div>
+</div>
+<p class="small">When the phone becomes both reward and punishment, it starts to feel like the most valuable object in the house. Make access <strong>predictable</strong> instead of negotiable.</p>
+<div class="scr" style="margin-top:2mm;">
+<div class="bad"><b>Instead of</b><span>“Maybe, if you finish this.”</span></div>
+<div class="good"><b>Try</b><span>“After homework and play, there is screen time.”</span></div>
+</div>
+</div>
+<div class="rules">
+<div class="hd">
+<div class="five">5</div>
+<div><b>Five rules are enough</b><small>Print this. Put it on the fridge.</small></div>
+<figure class="img icon asset" style="margin:0 0 0 auto;width:13mm;min-height:13mm;"><img alt="IMG-10" src="final_report_assets/IMG-10.png"/></figure>
+</div>
+<div class="rule"><div class="n">1</div><div><b>No phones during meals</b><p>Food is for eating. Dinner is for talking. And yes — parents too.</p></div></div>
+<div class="rule"><div class="n">2</div><div><b>No screens before bed</b><p>Create a screen-free window of around 30–60 minutes before bedtime.<sup>5</sup></p></div></div>
+<div class="rule"><div class="n">3</div><div><b>No phone during homework</b><p>Not beside the notebook. Not face down. Not on silent. Away.</p></div></div>
+<div class="rule"><div class="n">4</div><div><b>Life before entertainment</b><p>Homework. School prep. Some physical activity. Basic responsibilities. Then entertainment.</p></div></div>
+<div class="rule"><div class="n">5</div><div><b>Same rules for Mumma &amp; Papa</b><p>If your child keeps the phone away at dinner while Dad checks WhatsApp, the lesson is clear: the rule is negotiable.</p></div></div>
+</div>
+</div>
+<section class="parent-habits-band">
+<figure><img alt="A parent giving a child focused, phone-free time" src="final_report_assets/IMG-12.png"/></figure>
+<div>
+<span class="k">The parent habit</span>
+<h3>20 phone-free minutes</h3>
+<p>Put your phone away—not face down beside you. Let your child choose what to do together: play, draw, walk, build or talk.</p>
+<strong>Children calibrate to what we do, not only what we say.</strong>
+</div>
+</section>
+<div class="take">
+<span class="lab">Takeaway</span>
+<p>Make screens predictable, keep them out of the bedroom, and follow the rules yourself. The home teaches before the lecture does.</p>
+</div>
+<div class="foot">
+<span class="num">6</span>
+<span class="fn"><sup>4</sup> Research-backed parent guidance, Economic Times (economictimes.indiatimes.com, slideshow 133796004)  ·  <sup>5</sup> Children and Screens, Adolescence Guide (2026)  ·  <sup>6</sup> Children and Screens, Middle Childhood Guide, ages 6–11 (2026) · childrenandscreens.org</span>
+<span class="brand">PW Games · Learn through play</span>
+</div>
+</section>
+<!-- =============================== PAGE 7 · SECTION 05 =============================== -->
+<section class="page page-ch6 chapter-editorial">
+<div class="top"><span>Screen Time Handbook · Grades 1–4</span><span class="tag">Section 05</span></div>
+<div class="chap">
+<div class="n">05</div>
+<div>
+<h2>If you take the phone away, what goes in its place?</h2>
+<p class="lead">"Then what do I do?" is a fair question. If the answer is "nothing," the phone will win.</p>
+</div>
+</div>
+<div class="cols c2n mb">
+<figure class="img fill asset" style="min-height:80mm;"><img alt="IMG-13" src="final_report_assets/IMG-13.png"/></figure>
+<div>
+<div class="chat mb-s">
+<div class="b par">"Okay, no YouTube."</div>
+<div class="b kid">"Then what do I do?"</div>
+</div>
+<p>Honestly — that's a fair question. So build the answer before you need it. Create a <strong>boredom menu</strong>: a list on the fridge your child can go to without asking you.</p>
+<p class="h3" style="margin-top:2.6mm;">And please let them be bored</p>
+<p>The first few times you will hear <em>"I'm bored." "There's nothing to do." "I have NOTHING!"</em> Resist the urge to hand over the phone. The goal isn't a child who is always occupied. <strong>It is a child who can occupy themselves.</strong></p>
+</div>
+</div>
+<p class="h3">The boredom menu</p>
+<div class="menu mb">
+<div><b>Move</b><ul><li>Cricket</li><li>Football</li><li>Cycling</li><li>Badminton</li><li>Skipping</li><li>Dancing</li></ul></div>
+<div><b>Make</b><ul><li>Drawing</li><li>LEGO</li><li>Origami</li><li>Painting</li><li>Crafts</li><li>Cooking with Mum</li></ul></div>
+<div><b>Think</b><ul><li>Chess</li><li>Puzzles &amp; Sudoku</li><li>Books &amp; riddles</li><li>Board games</li><li>A maths or word game that makes them work for the win</li></ul></div>
+<div><b>Connect</b><ul><li>Play with a sibling</li><li>Call Dadi</li><li>Talk to Papa</li><li>Meet a friend</li></ul></div>
+<div><b>Explore</b><ul><li>Plant something</li><li>A science experiment</li><li>A magic trick</li><li>An instrument</li><li>Collect interesting things</li></ul></div>
+</div>
+<section class="pw-third" aria-label="PW Games learning alternative">
+<div class="visual">
+<figure><img alt="Original PW Games Maths Games screen" src="final_report_assets/PW-Games-Maths-original.jpg"/></figure>
+<figure><img alt="PW Games progress report" src="final_report_assets/IMG-04-pw-games-progress-report-native-v2.png"/></figure>
+</div>
+<div class="copy">
+<p class="eyebrow">When the screen stays on</p>
+<h3>Give the screen a job.</h3>
+<p>Not every screen minute has to disappear. When your child does play, choose activities that ask them to notice patterns, solve problems, recall ideas and finish a level.</p>
+<p><strong>PW Games</strong> turns Maths, Science, English and Mental Ability into short, purposeful challenges - a better bridge between entertainment and learning.</p>
+<div class="subjects"><span>Maths</span><span>Science</span><span>English</span><span>Mental Ability</span></div>
+</div>
+</section>
+</div>
+<div class="foot">
+<span class="num">7</span>
+<span class="fn"><sup>4</sup> Research-backed parent guidance, Economic Times (economictimes.indiatimes.com, slideshow 133796004)</span>
+<span class="brand">PW Games · Learn through play</span>
+</div>
+</section>
+<!-- =============================== PAGE 8 · SECTION 06 =============================== -->
+<section class="page chapter-reset chapter-editorial">
+<div class="top"><span>Screen Time Handbook · Grades 1–4</span><span class="tag">Section 06</span></div>
+<div class="chap">
+<div class="n">06</div>
+<div>
+<h2>A four-week screen reset</h2>
+<p class="lead">One habit at a time, for four weeks, until the new routine stops feeling like a rule — then write it down together.</p>
+</div>
+</div>
+<div class="cols c2">
+<div>
+<div class="steps mb-s">
+<div><span>Week 1</span><b>Observe</b></div>
+<div><span>Week 2</span><b>Replace</b></div>
+<div><span>Week 3</span><b>Upgrade</b></div>
+<div><span>Week 4</span><b>Consolidate</b></div>
+</div>
+<div class="week mb-s">
+<b>Week 1 — Observe</b>
+<p>Open the screen-time report. Which apps? How much? What time of day? What happens <em>before</em> your child picks up the phone — and when you ask them to stop?</p>
+<p>Then introduce two boundaries: <strong>no devices in bedrooms; no screens before bed.</strong></p>
+</div>
+<div class="week mb-s">
+<b>Week 2 — Replace</b>
+<p>Choose one chunk of screen time and replace 30–45 minutes with something real:<sup>4</sup> outdoor play, a family walk, a board game, art, reading, cooking.</p>
+</div>
+<div class="week mb-s">
+<b>Week 3 — Upgrade</b>
+<p>Look at the content itself. Can some passive consumption become creative, interactive, educational or social? Don't aim for zero screen. <strong>Aim for better screen.</strong></p>
+<div class="ex">
+<span class="p">20 short videos on autoplay</span><i>→</i><span class="a">15 minutes of a maths puzzle game</span>
+</div>
+<div class="ex">
+<span class="p">Scrolling alone at dinner-prep time</span><i>→</i><span class="a">A quiz you play together, then a level that ends</span>
+</div>
+<p class="note" style="margin-top:1.4mm;">Look for games with levels that finish, not feeds that never do — PW Games' free games are one place to start.</p>
+</div>
+<div class="week">
+<b>Week 4 — Consolidate</b>
+<p>Same charging station. Same bedtime rule. Same dinner rule. Same homework set-up. Same expectations, same consequences. <strong>No daily negotiations</strong> — fill in the plan on the right and put it on the fridge.</p>
+</div>
+</div>
+<div class="plan">
+<span class="t">Our Family Screen Plan</span>
+<span class="s">Fill this in together — parent and child.</span>
+<span class="k">We don't use screens</span>
+<div class="fl"><span>During meals</span><i></i></div>
+<div class="fl"><span>During homework</span><i></i></div>
+<div class="fl"><span>Before bedtime</span><i></i></div>
+<div class="fl"><span>In bedrooms</span><i></i></div>
+<div class="fl"><span>During family time</span><i></i></div>
+<span class="k">Our screen routine</span>
+<div class="fl"><span>School days</span><i></i></div>
+<div class="fl"><span>Weekends</span><i></i></div>
+<div class="fl"><span>Where our devices charge</span><i></i></div>
+<span class="k">When I'm bored, I can…</span>
+<div class="fl w"><i></i></div>
+<div class="fl w"><i></i></div>
+<div class="fl w"><i></i></div>
+<span class="k">Apps &amp; games that need permission</span>
+<div class="fl w"><i></i></div>
+<div class="fl w"><i></i></div>
+<div class="prom">
+<b>Our family promise</b>
+        We will use technology. We will enjoy technology. We will learn with technology. But we will not let it replace sleep, play, movement, reading, family, friends and childhood.
+      </div>
+<div class="sig"><span><i></i>Parent</span><span><i></i>Child</span></div>
+</div>
+</div>
+<div class="take">
+<span class="lab">Takeaway</span>
+<p>Don't try to fix your child's entire digital life in one day. Change one habit at a time until the new routine becomes normal.</p>
+</div>
+<div class="foot">
+<span class="num">8</span>
+<span class="fn"><sup>4</sup> 30–45 minutes is a practical step in a structured four-week ramp-down, not a universal prescription · Economic Times parent guidance (slideshow 133796004)</span>
+<span class="brand">PW Games · Learn through play</span>
+</div>
+</section>
+<!-- =============================== PAGE 9 · SECTION 07 =============================== -->
+<section class="page page-08-fix chapter-worry chapter-editorial">
+<div class="top"><span>Screen Time Handbook · Grades 1–4</span><span class="tag">Section 07</span></div>
+<div class="chap">
+<div class="n">07</div>
+<div>
+<h2>When should you actually worry?</h2>
+<p class="lead">Not every child who loves gaming has a problem. Not every child who watches YouTube daily is "addicted." A tantrum when the iPad goes away is not a diagnosis. Look at the pattern, not one incident.</p>
+</div>
+</div>
+<div class="tlight mb">
+<div class="g"><i></i><b>Green · Healthy</b><p>Screens are present, but sleep, school, movement, hobbies and family life are all intact.</p></div>
+<div class="a"><i></i><b>Amber · Watch</b><p>Screens are increasingly interfering. One or two areas of life are slipping.</p></div>
+<div class="r"><i></i><b>Red · Act</b><p>Persistent impairment across sleep, learning, movement or relationships.</p></div>
+</div>
+<div class="cols c2w mb">
+<div class="flags">
+<div><span>Pay attention if…</span><span class="bx"><span>G</span><span>A</span><span>R</span></span></div>
+<div><span>My child regularly sleeps less because of the phone.</span><span class="bx"><i></i><i></i><i></i></span></div>
+<div><span>Homework is consistently delayed or affected.</span><span class="bx"><i></i><i></i><i></i></span></div>
+<div><span>Outdoor play has almost disappeared.</span><span class="bx"><i></i><i></i><i></i></span></div>
+<div><span>Hobbies have disappeared.</span><span class="bx"><i></i><i></i><i></i></span></div>
+<div><span>My child wants the screen more than almost anything else.</span><span class="bx"><i></i><i></i><i></i></span></div>
+<div><span>Every attempt to stop creates major distress.</span><span class="bx"><i></i><i></i><i></i></span></div>
+<div><span>The phone is affecting how my child behaves, learns or interacts with family.</span><span class="bx"><i></i><i></i><i></i></span></div>
+</div>
+<div class="stat two">
+<div><div class="fig">~70%</div><p style="margin-top:1.6mm;">of reviewed studies reported declines in face-to-face communication, empathy or emotional sensitivity.</p></div>
+<div><div class="fig">~65%</div><p style="margin-top:1.6mm;">of reviewed studies reported academic disengagement or lower performance.</p></div>
+<div class="caveat"><strong>Read carefully:</strong> these are proportions of <em>studies</em> in a 2025 systematic review on online game addiction — not the proportion of children affected.<sup>8</sup></div>
+</div>
+</div>
+<p class="h3">If you are seeing amber or red, start with the basics</p>
+<div class="basics mb-s">
+<div><figure class="img icon asset"><img alt="Bedtime routine" src="final_report_assets/IMG-15a.png"/></figure>Tighten bedtime</div>
+<div><figure class="img icon asset"><img alt="Devices outside bedrooms" src="final_report_assets/IMG-15b.png"/></figure>Move devices out</div>
+<div><figure class="img icon asset"><img alt="Outdoor activity" src="final_report_assets/IMG-15c.png"/></figure>Increase outdoor play</div>
+<div><figure class="img icon asset"><img alt="Family interaction" src="final_report_assets/IMG-15d.png"/></figure>Create family time</div>
+<div><figure class="img icon asset"><img alt="Finite games" src="final_report_assets/IMG-15e.png"/></figure>Choose games that end</div>
+<div><figure class="img icon asset"><img alt="Real alternatives" src="final_report_assets/IMG-15f.png"/></figure>Offer real alternatives</div>
+</div>
+<p class="small">If significant difficulties persist, <strong>seek appropriate professional help rather than escalating punishment.</strong> A paediatrician, school counsellor or child psychologist is the right next step.</p>
+<div class="take"><span class="lab">Takeaway</span><p>Act when screens consistently interfere with sleep, learning, movement, relationships or everyday life.</p></div>
+<div class="foot">
+<span class="num">9</span>
+<span class="fn"><sup>8</sup> Systematic review on online game addiction (2025) · journal-gehu.com/index.php/gehu/article/view/617</span>
+<span class="brand">PW Games · Learn through play</span>
+</div>
+</section>
+<!-- =============================== PAGE 10 · CLOSE + PW GAMES =============================== -->
+<section class="page page-final-clean">
+<div class="top"><span>Screen Time Handbook · Grades 1–4</span><span class="tag">A note for the road ahead</span></div>
+<div class="closing-intro">
+<h2>A childhood bigger than the screen.</h2>
+<div class="closing-copy">
+<p>Your child will eventually have a phone of their own. They will use YouTube, games, WhatsApp, AI, social media—and whatever comes next. You cannot be their permanent screen police.</p>
+<p>So the real goal of parenting today is not <em>“How do I control my child's screen time forever?”</em> It is <strong>“How do I teach my child to control their own screen time eventually?”</strong></p>
+<p>There will be days when you hand over the phone because you need twenty quiet minutes. That's okay. Healthy habits aren't built in one dramatic family meeting—they're built through hundreds of small decisions. Start again tomorrow.</p>
+</div>
+</div>
+<div class="game-collage" aria-label="A collage of original PW Games screens">
+<figure class="market"><img alt="Mini's Market Sorter game" src="final_report_assets/gameplay-market-sort.jpg"/><figcaption><strong>Mini's Market Sorter</strong><span>Sorting &amp; classification</span></figcaption></figure>
+<figure class="sequence"><img alt="Smarty Serpent game" src="final_report_assets/gameplay-sequence.jpg"/><figcaption><strong>Smarty Serpent</strong><span>Number patterns</span></figcaption></figure>
+<figure class="science"><img alt="Knowledge Runner game" src="final_report_assets/gameplay-science-platform.jpg"/><figcaption><strong>Knowledge Runner</strong><span>Science recall</span></figcaption></figure>
+<figure class="shape"><img alt="Packabunchas game" src="final_report_assets/gameplay-shape-drag-clean.png"/><figcaption><strong>Packabunchas</strong><span>Spatial reasoning</span></figcaption></figure>
+<figure class="crossmath"><img alt="CrossMath game" src="final_report_assets/gameplay-crossmath-clean.png"/><figcaption><strong>CrossMath</strong><span>Multiplication</span></figcaption></figure>
+<figure class="space"><img alt="Cosmic Quest game" src="final_report_assets/gameplay-space-math.jpg"/><figcaption><strong>Cosmic Quest</strong><span>Algebraic thinking</span></figcaption></figure>
+<figure class="memory"><img alt="BrainMatch game" src="final_report_assets/gameplay-memory-clean.png"/><figcaption><strong>BrainMatch</strong><span>Visual memory</span></figcaption></figure>
+<figure class="hindi"><img alt="Pop the Balloons game" src="final_report_assets/gameplay-hindi-sound.jpg"/><figcaption><strong>Pop the Balloons</strong><span>Sound recognition</span></figcaption></figure>
+</div>
+<div class="download-pw">
+<div>
+<h3>Download PW Games</h3>
+<p>Turn screen time into short, active challenges across Maths, Science, English and Mental Ability—from the makers of Physics Wallah.</p>
+<span class="price">All games for just <strong>₹7</strong></span>
+</div>
+<div class="download-assets">
+<figure class="qr"><img alt="QR code to download PW Games" src="final_report_assets/IMG-18.png"/></figure>
+<div class="playstore-button" aria-label="Get PW Games on Google Play">
+<svg aria-hidden="true" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 5L36 32 7 59Z" fill="#27C1E6"/>
+<path d="M7 5L43 26 36 32Z" fill="#32D177"/>
+<path d="M7 59L43 38 36 32Z" fill="#F34B55"/>
+<path d="M36 32L43 26 56 33.5C58 34.7 58 37.3 56 38.5L43 46 36 40Z" fill="#FFD23F" transform="translate(0 -4)"/>
+</svg>
+<span>GET IT ON<strong>Google Play</strong></span>
+</div>
+</div>
+</div>
+<p class="sources-heading">Sources &amp; reading</p>
+<div class="mini-sources">
+<div><sup>1</sup> Impact of Screen Time on Development of Children (2025), narrative review of 46 studies. pmc.ncbi.nlm.nih.gov/articles/PMC12563978</div>
+<div><sup>2</sup> Development and Psychometric Validation of the Brain Rot Scale, BRS-14 (2025). pmc.ncbi.nlm.nih.gov/articles/PMC12731444</div>
+<div><sup>3</sup> JAMA Network Open (2025), Screen Time and Standardized Academic Achievement Tests in Elementary School; summary: sickkids.ca</div>
+<div><sup>4</sup> How to reduce phone screen time for kids—research-backed parent guidance, Economic Times (slideshow 133796004).</div>
+<div><sup>5</sup> Children and Screens, Guide for Child Development and Media Use—Adolescence (2026). childrenandscreens.org</div>
+<div><sup>6</sup> Children and Screens, Guide for Child Development and Media Use—Middle Childhood, ages 6–11 (2026). childrenandscreens.org</div>
+<div><sup>7</sup> Stop using screens as a reward or punishment—Economic Times parent guidance (slideshow 133796001).</div>
+<div><sup>8</sup> Systematic review on online game addiction (2025). journal-gehu.com/index.php/gehu/article/view/617</div>
+<div><strong>Note:</strong> Research on children and screens is largely observational. Associations do not prove cause and effect; this handbook is guidance, not diagnosis.</div>
+</div>
+<div class="foot">
+<span class="num">10</span>
+<span class="brand">PW Games · Learn through play</span>
+</div>
+</section>
+</body>
+</html>
