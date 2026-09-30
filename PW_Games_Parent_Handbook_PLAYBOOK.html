@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
 <title>The Indian Parent's Guide to Kids, Phones &amp; Screen Time</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -3451,9 +3451,6 @@ body{
   window.addEventListener('DOMContentLoaded', fitPrintedPages);
   window.addEventListener('resize', fitPrintedPages, {passive:true});
   window.addEventListener('orientationchange', fitPrintedPages, {passive:true});
-  if (window.visualViewport) {
-    window.visualViewport.addEventListener('resize', fitPrintedPages, {passive:true});
-  }
   window.addEventListener('beforeprint', () => {
     document.querySelectorAll('.page-viewport').forEach(viewport => {
       viewport.style.width = '';
