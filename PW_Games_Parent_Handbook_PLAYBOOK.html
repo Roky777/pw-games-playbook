@@ -2761,13 +2761,19 @@ body{
 /* Phone preview: scale each complete A4 sheet without changing its layout. */
 .page-viewport{display:contents;}
 @media screen and (max-width:900px){
-  html,body{width:100%;overflow-x:hidden;}
+  html,body{
+    width:100%;
+    overflow-x:hidden;
+    overscroll-behavior-x:none;
+    touch-action:pan-x pan-y pinch-zoom;
+  }
   body{padding:6px 0 12px;}
   .page-viewport{
     display:block;
     position:relative;
     margin:6px auto;
     overflow:visible;
+    touch-action:pan-x pan-y pinch-zoom;
   }
   .page-viewport > .page{
     width:210mm;
@@ -3449,8 +3455,10 @@ body{
   }
 
   window.addEventListener('DOMContentLoaded', fitPrintedPages);
-  window.addEventListener('resize', fitPrintedPages, {passive:true});
-  window.addEventListener('orientationchange', fitPrintedPages, {passive:true});
+  window.addEventListener('pageshow', fitPrintedPages, {passive:true});
+  window.addEventListener('orientationchange', () => {
+    window.setTimeout(fitPrintedPages, 250);
+  }, {passive:true});
   window.addEventListener('beforeprint', () => {
     document.querySelectorAll('.page-viewport').forEach(viewport => {
       viewport.style.width = '';
