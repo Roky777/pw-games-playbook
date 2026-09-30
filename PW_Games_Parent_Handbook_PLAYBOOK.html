@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Indian Parent's Guide to Kids, Phones &amp; Screen Time - Lightweight Edition</title>
+<title>The Indian Parent's Guide to Kids, Phones &amp; Screen Time</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700;8..60,800&amp;display=swap" rel="stylesheet">
@@ -86,12 +86,13 @@ body{
 
 .hero{
   height:auto;
-  aspect-ratio:2152 / 731;
-  margin:4mm 0 0;
+  width:92%;
+  aspect-ratio:1.75 / 1;
+  margin:4mm auto 0;
   overflow:hidden;
   border-top:3px solid var(--amber);
 }
-.hero img{display:block;width:100%;height:100%;object-fit:cover;}
+.hero img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
 .thesis{
   margin:2.5mm 0;
   padding:2.6mm 0;
@@ -189,7 +190,7 @@ body{
 .goal{
   margin-top:2.2mm;
   padding-left:4mm;
-  border-left:3px solid var(--amber);
+  border-left:3px solid var(--navy);
   color:var(--navy);
   font-size:10pt;
   font-weight:800;
@@ -274,7 +275,7 @@ body{
 .product-lead{
   margin:3.5mm 0 0;
   padding:1mm 0 1mm 4mm;
-  border-left:3px solid var(--amber);
+  border-left:3px solid var(--navy);
   color:var(--ink-2);
   font-size:8.2pt;
   line-height:1.42;
@@ -288,7 +289,7 @@ body{
   border-top:1.2mm solid var(--amber);
   background:#EFE9E0;
 }
-.product-hero img{display:block;width:100%;height:100%;object-fit:contain;}
+.product-hero img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
 .product-summary{
   display:grid;
   grid-template-columns:1fr;
@@ -474,14 +475,14 @@ body{
   align-items:center;
   margin-top:9mm;
   padding:4.5mm 0 4.5mm 4mm;
-  border-left:3px solid var(--amber);
+  border-left:3px solid var(--navy);
   border-top:1px solid var(--navy);
   border-bottom:1px solid var(--navy);
 }
 .balance-editorial h2{margin:0;color:var(--navy);font-family:var(--display);font-size:12pt;line-height:1.1;}
 .balance-editorial p{margin:0;color:var(--ink-2);font-size:8pt;line-height:1.4;}
 
-@media screen and (max-width:230mm){
+@media screen and (max-width:1px){
   .page{width:auto;min-height:0;margin:3mm;padding:7mm 5mm 12mm;}
   .headline h1{font-size:23pt;}
   .hero{height:auto;aspect-ratio:2153/730;}
@@ -536,7 +537,7 @@ body{
 .chapter-two>.cols.c2w{grid-template-columns:1fr 1fr;gap:7mm;border-top:1px solid var(--navy);padding-top:4mm;}
 .chapter-two .chips span{background:transparent;border-color:var(--line);}
 .chapter-two .ev{padding:3mm 0 3mm 4mm;border-left:3px solid var(--mint);border-radius:0;background:transparent;}
-.chapter-two .card.ind{padding:3mm 0 3mm 4mm;border:0;border-left:3px solid var(--amber);border-radius:0;background:transparent;}
+.chapter-two .card.ind{padding:3mm 0 3mm 4mm;border:0;border-left:3px solid var(--navy);border-radius:0;background:transparent;}
 
 /* 03 — make the disappearing afternoon the dominant story */
 .chapter-three>.cols.c2{grid-template-columns:.9fr 1.1fr;gap:8mm;align-items:center;}
@@ -862,7 +863,7 @@ sup{font-size:.68em;line-height:0;vertical-align:baseline;position:relative;top:
 .state .hi{color:var(--amber);}
 .pull{
   padding-left:4mm;
-  border-left:3px solid var(--amber);
+  border-left:3px solid var(--navy);
   font-size:10.4pt;
   line-height:1.3;
   font-weight:700;
@@ -880,7 +881,7 @@ sup{font-size:.68em;line-height:0;vertical-align:baseline;position:relative;top:
   padding:3.4mm 4.5mm;
   background:var(--amber-soft);
   border-radius:1.6mm;
-  border-left:4px solid var(--amber);
+  border-left:4px solid var(--navy);
 }
 .take .lab{
   font-size:6.4pt;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--amber-dk);
@@ -1188,7 +1189,7 @@ sup{font-size:.68em;line-height:0;vertical-align:baseline;position:relative;top:
 .toc b{font-size:9pt;font-weight:900;color:var(--indigo);}
 
 /* ---------- screen (small) ---------- */
-@media screen and (max-width:230mm){
+@media screen and (max-width:1px){
   body{font-size:9.4pt;}
   .page{width:auto;margin:3mm;padding:7mm 5mm 12mm;min-height:0;}
   .foot{position:static;margin-top:8mm;}
@@ -1300,7 +1301,7 @@ figure.img.asset{background:#F7F5F0;border-color:#D9DCE7;}
   padding:5mm;
   border-top:1.5px solid var(--navy);
   border-bottom:1px solid var(--navy);
-  border-left:3px solid var(--amber);
+  border-left:3px solid var(--navy);
   background:#FFFDF8;
 }
 .pw-third .visual{display:grid;grid-template-columns:1fr 1fr;gap:2.5mm;}
@@ -1316,68 +1317,109 @@ figure.img.asset{background:#F7F5F0;border-color:#D9DCE7;}
 /* Closing page: real gameplay first, then a restrained download block and sources */
 .page-final-clean .closing-intro{display:grid;grid-template-columns:.72fr 1.28fr;gap:7mm;align-items:start;margin:5mm 0 4mm;}
 .page-final-clean .closing-intro h2{margin:0;color:var(--navy);font-family:"Source Serif 4",Georgia,serif;font-size:21pt;line-height:1.02;letter-spacing:-.035em;}
-.page-final-clean .closing-copy{padding-left:4mm;border-left:3px solid var(--amber);}
+.page-final-clean .closing-copy{padding-left:4mm;border-left:3px solid var(--navy);}
 .page-final-clean .closing-copy p{margin:0 0 1.5mm;color:var(--ink-2);font-size:7.05pt;line-height:1.3;}
 .page-final-clean .closing-copy p:last-child{margin-bottom:0;}
 .page-final-clean .closing-copy strong{color:var(--navy);}
 .game-collage{
-  position:relative;
-  display:block;
-  height:102mm;
+  display:grid;
+  grid-template-columns:repeat(5,1fr) repeat(3,.85fr) repeat(4,1.12fr);
+  grid-template-rows:47.5mm 38mm 30.5mm;
+  gap:2mm;
+  width:100%;
+  height:120mm;
   margin:0 0 4mm;
 }
-.game-collage figure{position:absolute;display:flex;flex-direction:column;margin:0;overflow:hidden;border:1px solid #D6D9E4;border-radius:2mm;background:#fff;}
-.game-collage .market{left:0;top:0;width:69mm;height:31mm;background:#F7B85D;}
-.game-collage .sequence{left:72mm;top:0;width:55mm;height:31mm;background:#087C55;}
-.game-collage .science{left:130mm;top:0;width:52mm;height:31mm;background:#21D7DB;}
-.game-collage .memory{left:0;top:34mm;width:35.5mm;height:68mm;background:#FFF5CD;}
-.game-collage .space{left:38.5mm;top:34mm;width:38mm;height:68mm;background:#08091B;}
-.game-collage .crossmath{left:79.5mm;top:34mm;width:30.5mm;height:68mm;background:#E8BE87;}
-.game-collage .shape{left:113mm;top:34mm;width:30.5mm;height:68mm;background:#FFE86D;}
-.game-collage .hindi{left:146.5mm;top:34mm;width:35.5mm;height:68mm;background:#55BFF1;}
-.game-collage img{display:block;width:100%;min-height:0;flex:1 1 auto;object-fit:cover;object-position:center;}
-.game-collage .market img,.game-collage .shape img,.game-collage .crossmath img,.game-collage .memory img,.game-collage .space img,.game-collage .hindi img,.game-collage .science img{object-fit:contain;}
-.game-collage .sequence img{object-fit:cover;object-position:center;}
-.game-collage figcaption{flex:0 0 7mm;display:flex;align-items:center;justify-content:center;gap:1.4mm;padding:1mm 1.5mm;background:#fff;color:var(--ink-2);font-size:5.5pt;line-height:1.05;text-align:center;}
-.game-collage figcaption strong{color:var(--navy);font-size:6pt;white-space:nowrap;}
-.game-collage figcaption span{padding-left:1.4mm;border-left:1px solid #D9DCE8;}
-.game-collage .memory figcaption,.game-collage .space figcaption,.game-collage .crossmath figcaption,.game-collage .shape figcaption,.game-collage .hindi figcaption{flex-basis:10mm;display:block;padding:1.4mm 1mm;}
-.game-collage .memory figcaption strong,.game-collage .space figcaption strong,.game-collage .crossmath figcaption strong,.game-collage .shape figcaption strong,.game-collage .hindi figcaption strong{display:block;margin-bottom:.7mm;white-space:normal;}
-.game-collage .memory figcaption span,.game-collage .space figcaption span,.game-collage .crossmath figcaption span,.game-collage .shape figcaption span,.game-collage .hindi figcaption span{display:block;padding:0;border:0;color:var(--ink-3);font-size:5pt;}
+.game-collage figure{position:relative;display:flex;flex-direction:column-reverse;min-width:0;min-height:0;margin:0;overflow:hidden;border:1px solid rgba(27,29,77,.07);border-radius:4mm;box-shadow:0 1.2mm 3.4mm rgba(27,29,77,.09);}
+.game-collage figure::after{content:"";position:absolute;z-index:0;top:-7mm;right:-6mm;width:18mm;height:18mm;border-radius:50%;background:rgba(255,255,255,.34);pointer-events:none;}
+.game-collage .market{grid-column:1/6;grid-row:1;background:linear-gradient(145deg,#FFE7B8 0%,#FFCC82 100%);}
+.game-collage .sequence{grid-column:1/6;grid-row:2;background:linear-gradient(145deg,#DDF8E1 0%,#BDECC7 100%);}
+.game-collage .memory{grid-column:6/9;grid-row:1/3;background:linear-gradient(160deg,#F0EEFF 0%,#D9D5FF 100%);}
+.game-collage .science{grid-column:9/13;grid-row:1;background:linear-gradient(145deg,#D7F7FF 0%,#A8E7FA 100%);}
+.game-collage .shape{grid-column:1/5;grid-row:3;background:linear-gradient(145deg,#FFF7C9 0%,#FFE98A 100%);}
+.game-collage .hindi{grid-column:5/9;grid-row:3;background:linear-gradient(145deg,#DAF8FF 0%,#AFE8F7 100%);}
+.game-collage .space{grid-column:9/11;grid-row:2/4;background:linear-gradient(165deg,#252B69 0%,#10133B 100%);}
+.game-collage .crossmath{grid-column:11/13;grid-row:2/4;background:linear-gradient(150deg,#FFF3D8 0%,#FFDEA0 100%);}
+.game-collage img{position:relative;z-index:1;display:block;width:calc(100% - 4mm);min-height:0;flex:1 1 auto;margin:0 2mm 2mm;border:1px solid rgba(27,29,77,.08);border-radius:2.4mm;object-fit:contain;object-position:center;background:rgba(255,255,255,.22);box-shadow:0 .7mm 1.8mm rgba(27,29,77,.08);}
+.game-collage figcaption{
+  position:relative;
+  z-index:1;
+  flex:0 0 auto;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  grid-template-rows:auto auto;
+  column-gap:2mm;
+  align-items:center;
+  padding:2.2mm 3mm 1.6mm;
+  background:transparent;
+  color:#526080;
+  font-size:7.5pt;
+  line-height:1.05;
+  text-align:left;
+}
+.game-collage figcaption::before{grid-row:1/3;font-size:16pt;line-height:1;}
+.game-collage .market figcaption::before{content:"🍎";}
+.game-collage .sequence figcaption::before{content:"🐍";}
+.game-collage .memory figcaption::before{content:"⭐";}
+.game-collage .science figcaption::before{content:"🌳";}
+.game-collage .shape figcaption::before{content:"🧩";}
+.game-collage .hindi figcaption::before{content:"🔊";}
+.game-collage .space figcaption::before{content:"🚀";}
+.game-collage .crossmath figcaption::before{content:"✖️";}
+.game-collage figcaption strong{grid-column:2;color:var(--navy);font-size:10pt;line-height:1.02;white-space:normal;}
+.game-collage figcaption span{grid-column:2;padding:0;border:0;color:#596684;font-size:7.3pt;line-height:1.08;}
+.game-collage .space figcaption,.game-collage .crossmath figcaption{column-gap:1mm;padding:2mm 1.5mm 1.4mm;}
+.game-collage .space figcaption::before,.game-collage .crossmath figcaption::before{font-size:12pt;}
+.game-collage .space figcaption strong,.game-collage .crossmath figcaption strong{font-size:8.2pt;}
+.game-collage .space figcaption span,.game-collage .crossmath figcaption span{font-size:6.2pt;}
+.game-collage .space figcaption{color:#D9DDF8;}
+.game-collage .space figcaption strong{color:#fff;}
+.game-collage .space figcaption span{color:#C4C9EF;}
 
 .page-final-clean .download-pw{
   display:grid;
-  grid-template-columns:1fr auto;
-  gap:7mm;
+  grid-template-columns:76mm 1fr;
+  gap:5mm;
   align-items:center;
-  min-height:29mm;
+  min-height:42mm;
   margin-bottom:3.5mm;
-  padding:3.6mm 4.5mm;
-  border-left:3px solid var(--amber);
-  background:#FFF6DD;
+  padding:4mm 5mm;
+  border-left:3px solid var(--navy);
+  border-radius:0 2.5mm 2.5mm 0;
+  background:linear-gradient(110deg,#FFF3C9 0%,#FFF9E8 100%);
 }
-.page-final-clean .download-pw h3{margin:0 0 1mm;color:var(--navy);font-family:"Source Serif 4",Georgia,serif;font-size:16pt;line-height:1.05;}
-.page-final-clean .download-pw p{max-width:116mm;margin:0;color:#4B4435;font-size:8pt;line-height:1.36;}
-.page-final-clean .download-pw .price{display:inline-flex;align-items:baseline;gap:1.2mm;margin-top:2mm;padding:1.2mm 3mm;border-radius:10mm;background:var(--navy);color:#fff;font-size:7pt;font-weight:800;letter-spacing:.03em;}
+.page-final-clean .download-pw .download-copy{padding-left:6mm;border-left:2px solid var(--indigo);}
+.page-final-clean .download-pw h3{margin:0 0 1.2mm;color:var(--navy);font-family:"Source Serif 4",Georgia,serif;font-size:17pt;line-height:1.05;}
+.page-final-clean .download-pw h3 a{color:inherit;text-decoration:none;}
+.page-final-clean .download-pw p{max-width:100mm;margin:0;color:#4B4435;font-size:8pt;line-height:1.36;}
+.page-final-clean .download-pw .price{display:inline-flex;align-items:baseline;gap:1.2mm;margin-top:2.2mm;padding:1.25mm 3mm;border-radius:10mm;background:var(--navy);color:#fff;font-size:7pt;font-weight:800;letter-spacing:.03em;}
 .page-final-clean .download-pw .price strong{color:var(--amber);font-size:12pt;line-height:1;}
-.page-final-clean .download-pw .download-assets{display:flex;align-items:center;gap:2.2mm;}
-.page-final-clean .download-pw .qr{width:22mm;height:22mm;margin:0;border:1px solid #E2C878;background:#fff;}
+.page-final-clean .download-pw .download-assets{display:grid;grid-template-columns:28mm 1fr;gap:6mm;align-items:center;justify-items:center;}
+.page-final-clean .download-pw .qr-stack{display:flex;flex-direction:column;align-items:center;gap:.8mm;color:var(--navy);}
+.page-final-clean .download-pw .download-label{font-size:6.3pt;font-weight:800;letter-spacing:.08em;text-transform:uppercase;}
+.page-final-clean .download-pw .scan-label{font-size:5.8pt;font-weight:700;color:#7A6333;}
+.page-final-clean .download-pw .qr{width:23mm;height:23mm;margin:0;border:1px solid #E2C878;background:#fff;}
 .page-final-clean .download-pw .qr img{width:100%;height:100%;object-fit:contain;}
-.page-final-clean .playstore-button{display:flex;align-items:center;gap:1.8mm;width:32mm;height:9.8mm;padding:1.1mm 1.8mm;border:1px solid #A8A8A8;border-radius:1mm;background:#050505;color:#fff;}
-.page-final-clean .playstore-button svg{display:block;width:6.2mm;height:6.2mm;flex:none;}
-.page-final-clean .playstore-button span{display:block;color:#fff;font-size:3.9pt;line-height:1;letter-spacing:.04em;}
-.page-final-clean .playstore-button strong{display:block;margin-top:.45mm;color:#fff;font-family:Arial,sans-serif;font-size:7.4pt;font-weight:500;line-height:1;letter-spacing:-.015em;}
-.page-final-clean .sources-heading{margin:0 0 1.5mm;color:var(--indigo);font-size:6.4pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;}
-.page-final-clean .mini-sources{padding-top:2.5mm;border-top:1px solid var(--navy);font-size:6pt;line-height:1.3;color:var(--ink-3);columns:3;column-gap:4mm;}
-.page-final-clean .mini-sources div{break-inside:avoid;margin-bottom:1mm;}
+.page-final-clean .store-cta{display:flex;flex-direction:column;align-items:center;gap:1.4mm;}
+.page-final-clean .store-label{color:#7A6333;font-size:5.7pt;font-weight:800;letter-spacing:.08em;text-transform:uppercase;}
+.page-final-clean .playstore-button{display:block;width:39mm;height:auto;padding:0;border:0;background:transparent;color:#fff;text-decoration:none;filter:drop-shadow(0 1mm 1.7mm rgba(27,29,77,.15));}
+.page-final-clean .playstore-button img{display:block;width:100%;height:auto;}
+.page-final-clean .offer-cta{position:relative;display:flex;align-items:center;justify-content:center;width:39mm;min-height:7.5mm;overflow:hidden;padding:1mm 2mm;border:1px solid rgba(255,222,126,.5);border-radius:8mm;background:linear-gradient(135deg,#292462 0%,#4C43AD 58%,#6657D4 100%);color:#fff;font-size:6.6pt;font-weight:800;line-height:1;text-decoration:none;box-shadow:0 1mm 2.4mm rgba(44,38,111,.2),inset 0 .45mm .7mm rgba(255,255,255,.16);}
+.page-final-clean .offer-cta::before{content:"✦";position:absolute;left:2.1mm;top:1.05mm;color:#FFD56A;font-size:5.8pt;line-height:1;text-shadow:4.4mm 3.7mm 0 rgba(255,255,255,.7),27.5mm 3.5mm 0 rgba(255,213,106,.8);transform:rotate(-8deg);}
+.page-final-clean .offer-cta::after{content:"✧";position:absolute;right:3.4mm;top:.65mm;color:#CFC9FF;font-size:5.2pt;line-height:1;text-shadow:-24mm 4.3mm 0 rgba(207,201,255,.75);transform:rotate(12deg);}
+.page-final-clean .offer-cta .offer-text{position:relative;z-index:1;display:flex;align-items:center;text-shadow:0 .3mm .5mm rgba(20,17,62,.35);}
+.page-final-clean .offer-cta strong{margin-left:1mm;color:#FFCB3D;font-size:10pt;line-height:1;}
+.page-final-clean .sources-heading{margin:0 0 1.2mm;color:var(--indigo);font-size:5.8pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;}
+.page-final-clean .mini-sources{padding-top:2mm;border-top:1px solid var(--navy);font-size:5.25pt;line-height:1.22;color:var(--ink-3);columns:3;column-gap:4mm;}
+.page-final-clean .mini-sources div{break-inside:avoid;margin-bottom:.8mm;}
 
 /* Page 2: the PW Games introduction developed in the playbook */
 .product-page .product-title{display:grid;grid-template-columns:78mm 1fr;gap:8mm;align-items:center;margin:8mm 0 5mm;}
 .product-page .eyebrow{margin:0 0 1.8mm;color:var(--indigo);font-size:6.6pt;font-weight:800;letter-spacing:.15em;text-transform:uppercase;}
 .product-page h1{margin:0;color:var(--navy);font-family:"Source Serif 4",Georgia,serif;font-size:26pt;font-weight:800;letter-spacing:-.045em;line-height:.98;}
-.product-page .product-lead{margin:3.5mm 0 0;padding:1mm 0 1mm 4mm;border-left:3px solid var(--amber);color:var(--ink-2);font-size:8.2pt;line-height:1.42;}
+.product-page .product-lead{margin:3.5mm 0 0;padding:1mm 0 1mm 4mm;border-left:3px solid var(--navy);color:var(--ink-2);font-size:8.2pt;line-height:1.42;}
 .product-page .product-hero{width:100%;aspect-ratio:1672/941;margin:0;overflow:hidden;border-top:1.2mm solid var(--amber);background:#efe9e0;}
-.product-page .product-hero img{display:block;width:100%;height:100%;object-fit:contain;}
+.product-page .product-hero img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
 .product-page .product-summary{margin:0 0 5mm;padding:3.5mm 0;border-bottom:1px solid var(--line);}
 .product-page .product-summary p{margin:0;color:var(--ink-2);font-size:8.2pt;line-height:1.38;}
 .product-page .product-story{display:grid;grid-template-columns:58mm 1fr;gap:8mm;align-items:start;padding:6mm 0;border-top:1px solid var(--navy);border-bottom:1px solid var(--line);}
@@ -1388,14 +1430,41 @@ figure.img.asset{background:#F7F5F0;border-color:#D9DCE7;}
 .product-page .editorial-principle h3{margin:0;color:var(--navy);font-size:8.4pt;line-height:1.2;}
 .product-page .editorial-principle p{margin:.8mm 0 0;color:var(--ink-2);font-size:6.7pt;line-height:1.32;}
 .product-page .evidence-heading h2{margin:0 0 2.2mm;color:var(--navy);font-size:9pt;}
-.product-page .product-evidence{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;align-items:start;}
-.product-page .evidence-card{margin:0;}
-.product-page .device{width:32mm;height:72mm;margin:0 auto;overflow:hidden;border:1px solid var(--line);border-radius:2mm;background:#fff;}
+.product-page .product-evidence{
+  position:relative;
+  isolation:isolate;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:0;
+  align-items:start;
+  min-height:79mm;
+  padding:2.5mm 1.5mm 0;
+}
+.product-page .product-evidence::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:5mm 0 6mm;
+  border:1px solid #DDD9F7;
+  border-radius:5mm;
+  background:
+    radial-gradient(circle at 18% 18%,rgba(255,179,32,.22) 0 10mm,transparent 10.2mm),
+    radial-gradient(circle at 84% 76%,rgba(91,75,224,.16) 0 12mm,transparent 12.2mm),
+    linear-gradient(145deg,#FFF9E9 0%,#F4F1FF 100%);
+}
+.product-page .evidence-card{position:relative;margin:0;text-align:center;}
+.product-page .device{width:32mm;height:72mm;margin:0 auto;overflow:hidden;border:1px solid #D5D7E2;border-radius:2.6mm;background:#fff;box-shadow:0 2.2mm 5mm rgba(27,29,77,.16);}
+.product-page .evidence-card:nth-child(1){z-index:1;padding-top:4mm;transform:translateX(3mm);}
+.product-page .evidence-card:nth-child(1) .device{width:30mm;height:67mm;transform:rotate(-4deg);}
+.product-page .evidence-card:nth-child(2){z-index:3;}
+.product-page .evidence-card:nth-child(2) .device{width:34mm;height:74mm;transform:rotate(1.2deg);box-shadow:0 3mm 7mm rgba(27,29,77,.24);}
+.product-page .evidence-card:nth-child(3){z-index:2;padding-top:4mm;transform:translateX(-3mm);}
+.product-page .evidence-card:nth-child(3) .device{width:31mm;height:68mm;transform:rotate(4deg);}
 .product-page .device img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;}
-.product-page .evidence-card.analytics .device{width:35mm;}
+.product-page .evidence-card.analytics .device{width:31mm;}
 .product-page .evidence-card.analytics img{object-fit:contain;}
-.product-page figcaption{margin:1.2mm auto 0;color:var(--navy);font-size:7.3pt;font-weight:700;}
-.product-page .balance-editorial{display:grid;grid-template-columns:45mm 1fr;gap:6mm;align-items:center;margin-top:7mm;padding:4mm 0 4mm 4mm;border-left:3px solid var(--amber);border-top:1px solid var(--navy);border-bottom:1px solid var(--navy);}
+.product-page figcaption{position:relative;z-index:4;width:max-content;margin:1.4mm auto 0;padding:.8mm 2.2mm;border:1px solid var(--line);border-radius:8mm;background:#fff;color:var(--navy);font-size:7pt;font-weight:800;box-shadow:0 1mm 2.5mm rgba(27,29,77,.1);}
+.product-page .balance-editorial{display:grid;grid-template-columns:45mm 1fr;gap:6mm;align-items:center;margin-top:7mm;padding:4mm 4.5mm;background:var(--amber-soft);border:1px solid #F3D894;border-left:4px solid var(--navy);border-radius:1.6mm;}
 .product-page .balance-editorial h2{margin:0;color:var(--navy);font-family:"Source Serif 4",Georgia,serif;font-size:12pt;line-height:1.1;}
 .product-page .balance-editorial p{margin:0;color:var(--ink-2);font-size:8pt;line-height:1.4;}
 
@@ -1496,12 +1565,13 @@ body{
 
 .hero{
   height:auto;
-  aspect-ratio:2152 / 731;
-  margin:4mm 0 0;
+  width:92%;
+  aspect-ratio:1.75 / 1;
+  margin:4mm auto 0;
   overflow:hidden;
   border-top:3px solid var(--amber);
 }
-.hero img{display:block;width:100%;height:100%;object-fit:cover;}
+.hero img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
 .thesis{
   margin:2.5mm 0;
   padding:2.6mm 0;
@@ -1599,7 +1669,7 @@ body{
 .goal{
   margin-top:2.2mm;
   padding-left:4mm;
-  border-left:3px solid var(--amber);
+  border-left:3px solid var(--navy);
   color:var(--navy);
   font-size:10pt;
   font-weight:800;
@@ -1684,7 +1754,7 @@ body{
 .product-lead{
   margin:3.5mm 0 0;
   padding:1mm 0 1mm 4mm;
-  border-left:3px solid var(--amber);
+  border-left:3px solid var(--navy);
   color:var(--ink-2);
   font-size:8.2pt;
   line-height:1.42;
@@ -1698,7 +1768,7 @@ body{
   border-top:1.2mm solid var(--amber);
   background:#EFE9E0;
 }
-.product-hero img{display:block;width:100%;height:100%;object-fit:contain;}
+.product-hero img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
 .product-summary{
   display:grid;
   grid-template-columns:1fr;
@@ -1884,14 +1954,14 @@ body{
   align-items:center;
   margin-top:9mm;
   padding:4.5mm 0 4.5mm 4mm;
-  border-left:3px solid var(--amber);
+  border-left:3px solid var(--navy);
   border-top:1px solid var(--navy);
   border-bottom:1px solid var(--navy);
 }
 .balance-editorial h2{margin:0;color:var(--navy);font-family:var(--display);font-size:12pt;line-height:1.1;}
 .balance-editorial p{margin:0;color:var(--ink-2);font-size:8pt;line-height:1.4;}
 
-@media screen and (max-width:230mm){
+@media screen and (max-width:1px){
   .page{width:auto;min-height:0;margin:3mm;padding:7mm 5mm 12mm;}
   .headline h1{font-size:23pt;}
   .hero{height:auto;aspect-ratio:2153/730;}
@@ -1954,7 +2024,7 @@ body{
 .chapter-two>.cols.c2w{grid-template-columns:1fr 1fr;gap:7mm;border-top:1px solid var(--navy);padding-top:4mm;}
 .chapter-two .chips span{background:transparent;border-color:var(--line);}
 .chapter-two .ev{padding:3mm 0 3mm 4mm;border-left:3px solid var(--mint);border-radius:0;background:transparent;}
-.chapter-two .card.ind{padding:3mm 0 3mm 4mm;border:0;border-left:3px solid var(--amber);border-radius:0;background:transparent;}
+.chapter-two .card.ind{padding:3mm 0 3mm 4mm;border:0;border-left:3px solid var(--navy);border-radius:0;background:transparent;}
 
 /* 03 — make the disappearing afternoon the dominant story */
 .chapter-three>.cols.c2{grid-template-columns:.9fr 1.1fr;gap:8mm;align-items:center;}
@@ -2084,7 +2154,7 @@ body{
   align-items:center;
   margin-top:7mm;
   padding:0;
-  border-left:3px solid var(--amber);
+  border-left:3px solid var(--navy);
   border-top:1px solid var(--navy);
   border-bottom:1px solid var(--navy);
 }
@@ -2170,7 +2240,7 @@ body{
 .chapter-worry>.small{
   margin:4mm 0 0;
   padding:3.5mm 4mm;
-  border-left:3px solid var(--amber);
+  border-left:3px solid var(--navy);
   background:var(--amber-soft);
   font-size:7.8pt;
   line-height:1.35;
@@ -2196,13 +2266,545 @@ body{
   text-align:center;
 }
 
+/* Chapter 2 conversation: retain the editorial palette, but read clearly as chat. */
+.chapter-two .chat{
+  display:flex;
+  flex-direction:column;
+  gap:2.2mm;
+  padding:1mm 0;
+}
+.chapter-two .chat .b{
+  position:relative;
+  width:fit-content;
+  max-width:78%;
+  padding:2.4mm 3.4mm 2.7mm;
+  border:0;
+  border-radius:3.2mm;
+  font-size:9pt;
+  line-height:1.25;
+}
+.chapter-two .chat .par{
+  align-self:flex-start;
+  color:#5E3E00;
+  background:var(--amber-soft);
+  border-bottom-left-radius:.8mm;
+}
+.chapter-two .chat .kid{
+  align-self:flex-end;
+  color:var(--navy);
+  background:var(--indigo-soft);
+  border-bottom-right-radius:.8mm;
+}
+.chapter-two .chat .par::after,
+.chapter-two .chat .kid::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  width:0;
+  height:0;
+  border-top:2.2mm solid transparent;
+}
+.chapter-two .chat .par::after{
+  left:-1.7mm;
+  border-right:2.2mm solid var(--amber-soft);
+}
+.chapter-two .chat .kid::after{
+  right:-1.7mm;
+  border-left:2.2mm solid var(--indigo-soft);
+}
+.chapter-two .chat + .muted{
+  display:flex;
+  align-items:center;
+  gap:2mm;
+  margin:2.4mm 0;
+  color:var(--ink-3);
+  font-size:7.2pt;
+  text-align:center;
+}
+.chapter-two .chat + .muted::before,
+.chapter-two .chat + .muted::after{
+  content:"";
+  flex:1;
+  border-top:1px solid var(--line);
+}
+
+/* Page 1 opening exchange: a compact conversation instead of static quotes. */
+.page:first-child .scene-card{
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:2.2mm;
+}
+.page:first-child .scene-card .section-title{align-self:stretch;}
+.page:first-child .scene-line{
+  position:relative;
+  width:fit-content;
+  max-width:92%;
+  padding:1.5mm 2.4mm 1.8mm;
+  border-radius:2.7mm;
+}
+.page:first-child .scene-line.child{
+  align-self:flex-start;
+  background:var(--indigo-soft);
+  border-bottom-left-radius:.8mm;
+}
+.page:first-child .scene-line.parent{
+  align-self:flex-end;
+  background:var(--amber-soft);
+  border-bottom-right-radius:.8mm;
+}
+.page:first-child .scene-line::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  width:0;
+  height:0;
+  border-top:2mm solid transparent;
+}
+.page:first-child .scene-line.child::after{
+  left:-1.5mm;
+  border-right:2mm solid var(--indigo-soft);
+}
+.page:first-child .scene-line.parent::after{
+  right:-1.5mm;
+  border-left:2mm solid var(--amber-soft);
+}
+.page:first-child .scene-line span{margin-bottom:.35mm;font-size:5.2pt;}
+.page:first-child .scene-line strong{font-size:9pt;line-height:1.08;}
+.page:first-child .time-jump{
+  display:flex;
+  align-items:center;
+  align-self:stretch;
+  gap:1.3mm;
+  margin:.7mm 0;
+  text-align:center;
+  white-space:nowrap;
+}
+.page:first-child .time-jump::before,
+.page:first-child .time-jump::after{
+  content:"";
+  flex:1;
+  border-top:1px solid var(--line);
+}
+
+/* Keep the taller, portrait-friendly cover crop clear of the page footer. */
+.page:first-child .opening-grid{margin-top:5mm;margin-bottom:0;}
+.page:first-child nav[aria-labelledby="inside-guide"]{
+  margin-top:1.5mm;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+}
+.page:first-child .contents-title{margin:0 0 1.8mm;}
+.page:first-child .contents-title::after{border-color:#CEC9F2;}
+.page:first-child .toc{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:2.2mm 2.6mm;
+}
+.page:first-child .toc-item{
+  grid-column:span 3;
+  grid-template-columns:8mm 1fr;
+  gap:1.5mm;
+  align-items:baseline;
+  min-height:13.5mm;
+  padding:2.6mm 2.5mm 2.2mm 0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  font-size:7.3pt;
+  line-height:1.25;
+}
+.page:first-child .toc-item:nth-child(n+5){grid-column:span 4;}
+.page:first-child .toc-item b{
+  display:block;
+  width:auto;
+  height:auto;
+  border-radius:0;
+  background:transparent;
+  color:var(--indigo);
+  font-size:10pt;
+  font-weight:900;
+  line-height:1;
+}
+.page:first-child .toc-item:nth-child(2n){border-top-color:transparent;}
+.page:first-child .toc-item:nth-child(2n) b{background:transparent;color:var(--indigo);}
+
+/* Reverted PLAYBOOK polish batch */
+@media (min-width:9999mm){
+.chapter-two .chap{
+  position:relative;
+  padding-right:24mm;
+  background:linear-gradient(90deg,transparent 0 72%,rgba(91,75,224,.055) 100%);
+}
+.chapter-two .chap::after{
+  content:"02";
+  position:absolute;
+  right:2mm;
+  bottom:-1.5mm;
+  color:rgba(91,75,224,.10);
+  font-family:var(--display);
+  font-size:29pt;
+  font-weight:800;
+  line-height:1;
+}
+.chapter-two>.cols.c2:first-of-type>.img{
+  padding:1mm;
+  border:1px solid rgba(27,29,77,.28);
+  background:#fff;
+  box-shadow:2.2mm 2.2mm 0 rgba(91,75,224,.10),0 2.5mm 6mm rgba(27,29,77,.10);
+}
+.chapter-two>.cols.c2:first-of-type>.img img{border-radius:1mm;}
+.chapter-two .pull{
+  padding:2mm 2.5mm;
+  border-left:3px solid var(--indigo);
+  background:linear-gradient(90deg,rgba(238,236,252,.8),rgba(238,236,252,0));
+}
+.chapter-two .loop{
+  padding:2.6mm;
+  border-top:1px solid var(--indigo-line);
+  border-bottom:1px solid var(--indigo-line);
+  background:linear-gradient(100deg,rgba(238,236,252,.7),rgba(255,245,221,.55));
+}
+.chapter-two .loop span{background:#fff;box-shadow:0 .6mm 1.5mm rgba(27,29,77,.06);}
+.chapter-two>.cols.c2w{gap:4mm;border-top:0;padding-top:0;}
+.chapter-two>.cols.c2w>div:first-child{
+  padding:3.4mm;
+  border-top:3px solid var(--mint);
+  background:linear-gradient(145deg,rgba(229,246,239,.72),rgba(255,255,255,.3));
+}
+.chapter-two .chips span{background:rgba(255,255,255,.82);}
+.chapter-two .ev{padding:2.8mm 0 0;border-left:0;background:transparent;}
+.chapter-two .card.ind{
+  padding:3.4mm;
+  border:0;
+  border-top:3px solid var(--indigo);
+  background:linear-gradient(145deg,rgba(238,236,252,.86),rgba(255,255,255,.32));
+}
+.chapter-two .card.ind .img.icon{
+  width:10mm;
+  min-height:10mm;
+  padding:1mm;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 .8mm 1.8mm rgba(27,29,77,.08);
+}
+.chapter-two .take{
+  padding:3mm 4mm;
+  border-top:1px solid var(--navy);
+  border-bottom:1px solid var(--navy);
+  border-left:3px solid var(--indigo);
+  background:linear-gradient(90deg,var(--amber-soft),rgba(255,245,221,.18));
+}
+
+/* Page 7 PW Games bridge: Page 2-inspired layered screenshots in PLAYBOOK geometry */
+.page-ch6 .pw-third{
+  grid-template-columns:67mm 1fr;
+  min-height:67mm;
+  padding:5mm 5.5mm;
+  border-left:3px solid var(--indigo);
+  background:linear-gradient(120deg,#F1EFFF 0%,#FBFAF7 48%,#E9F8FC 100%);
+}
+.page-ch6 .pw-third .visual{
+  position:relative;
+  display:block;
+  min-height:57mm;
+}
+.page-ch6 .pw-third .visual::before{
+  content:"";
+  position:absolute;
+  left:7mm;top:7mm;
+  width:48mm;height:39mm;
+  border:1px solid rgba(91,75,224,.16);
+  background:rgba(255,255,255,.34);
+}
+.page-ch6 .pw-third .visual figure{
+  position:absolute;
+  width:49mm;
+  height:31mm;
+  border:1.2mm solid #fff;
+  border-radius:2.5mm;
+  box-shadow:0 2mm 5mm rgba(27,29,77,.17);
+}
+.page-ch6 .pw-third .visual figure:first-child{left:0;top:0;transform:rotate(-2deg);z-index:1;}
+.page-ch6 .pw-third .visual figure:last-child{right:0;bottom:0;transform:rotate(2deg);z-index:2;}
+.page-ch6 .pw-third .visual img{object-fit:cover;object-position:center;}
+.page-ch6 .pw-third .copy{padding-left:2mm;border-left:1px solid rgba(91,75,224,.24);}
+.page-ch6 .pw-third .subjects span{border-color:var(--indigo-line);background:rgba(255,255,255,.84);}
+}
+
+/* Match the FINAL handbook's standardized takeaway component */
+.page .take{
+  display:grid;
+  grid-template-columns:8mm 1fr;
+  gap:3.5mm;
+  align-items:center;
+  min-height:20mm;
+  margin-top:3.2mm;
+  padding:3mm 4.8mm 3mm 3.8mm;
+  border:0;
+  border-left:4px solid var(--amber);
+  border-radius:3mm;
+  background:linear-gradient(100deg,#FFF1C9 0%,#FFF9E9 72%,#FFFDF6 100%);
+  box-shadow:0 1.6mm 4mm rgba(27,29,77,.08);
+}
+.page .take .lab{
+  display:block;
+  color:var(--amber-dk);
+  font-size:6.3pt;
+  font-weight:800;
+  line-height:1;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
+}
+.page .take p{
+  margin:0;
+  color:var(--navy);
+  font-size:9.1pt;
+  font-weight:800;
+  line-height:1.24;
+}
+
+/* Page 7 — Page 2-inspired pairing of gameplay and parent analytics */
+.page-ch6 .pw-third.page2-pair{
+  grid-template-columns:72mm 1fr;
+  gap:6mm;
+  min-height:69mm;
+  border-left:3px solid var(--indigo);
+  background:linear-gradient(125deg,#F0EEFF 0%,#FBFAF7 48%,#E8F8FC 100%);
+}
+.page-ch6 .page2-pair .visual{
+  position:relative;
+  display:block;
+  min-height:58mm;
+}
+.page-ch6 .page2-pair .visual::before{
+  content:"";
+  position:absolute;
+  left:5mm;top:6mm;
+  width:54mm;height:43mm;
+  border-radius:50%;
+  background:rgba(255,255,255,.56);
+}
+.page-ch6 .page2-pair .visual figure{
+  position:absolute;
+  margin:0;
+  overflow:hidden;
+  border:1.2mm solid #fff;
+  background:#fff;
+  box-shadow:0 2mm 5mm rgba(27,29,77,.17);
+}
+.page-ch6 .page2-pair .visual .sorting-shot{
+  left:0;top:0;
+  width:52mm;height:29mm;
+  z-index:2;
+  transform:rotate(-1.4deg);
+  border-radius:3mm;
+}
+.page-ch6 .page2-pair .visual .science-shot{
+  left:3mm;bottom:0;
+  width:50mm;height:28mm;
+  z-index:1;
+  transform:rotate(1.6deg);
+  border-radius:3mm;
+}
+.page-ch6 .page2-pair .visual .analytics-shot{
+  right:0;top:5mm;
+  width:28mm;height:49mm;
+  z-index:4;
+  transform:rotate(1deg);
+  border-radius:3.5mm;
+}
+.page-ch6 .page2-pair .visual img{width:100%;height:100%;object-fit:cover;}
+.page-ch6 .page2-pair .visual .analytics-shot img{object-position:top center;}
+.page-ch6 .page2-pair .visual .science-shot img{object-position:center;}
+.page-ch6 .page2-pair figcaption{
+  position:absolute;
+  left:1.6mm;bottom:1.4mm;
+  padding:.7mm 1.5mm;
+  border-radius:8mm;
+  background:rgba(27,29,77,.88);
+  color:#fff;
+  font-size:5.2pt;
+  font-weight:800;
+}
+.page-ch6 .page2-pair .copy{padding-left:3mm;border-left:1px solid rgba(91,75,224,.25);}
+.page-ch6 .pw-third.page2-pair{grid-template-columns:78mm 1fr;gap:4mm;}
+.page-ch6 .page2-pair .visual{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.page-ch6 .page2-pair .visual::before{display:none;}
+.page-ch6 .page2-pair .visual .page7-showcase{
+  display:block;
+  width:100% !important;
+  height:auto !important;
+  object-fit:contain !important;
+  border:1px solid rgba(91,75,224,.18);
+  border-radius:3mm;
+  box-shadow:0 2mm 5mm rgba(27,29,77,.14);
+}
+
+/* Use the bright blue-purple for box accents; reserve dark navy for text/rules */
+.page .goal,
+.page .pull,
+.product-page .product-lead,
+.product-page .balance-editorial,
+.chapter-two .card.ind,
+.page-ch6 .pw-third,
+.page-final-clean .closing-copy,
+.page-final-clean .download-pw,
+.chapter-worry > .small{
+  border-left-color:#5B4BE0 !important;
+}
+
+/* Chapter 2 chips — richer interaction cues within the PLAYBOOK editorial style */
+.chapter-two .loop{
+  gap:1.3mm;
+  padding:2.7mm 0;
+  border-top:1px solid var(--indigo-line);
+  border-bottom:1px solid var(--indigo-line);
+}
+.chapter-two .loop span{
+  padding:1.25mm 2.4mm;
+  border:0;
+  border-radius:1.2mm;
+  background:var(--navy);
+  color:#fff;
+  box-shadow:0 .7mm 1.6mm rgba(27,29,77,.12);
+}
+.chapter-two .loop span.r{
+  border:0;
+  background:var(--amber);
+  color:var(--navy);
+}
+.chapter-two .loop i{color:var(--indigo);font-size:9pt;}
+.chapter-two .chips.ind{gap:1.7mm;}
+.chapter-two .chips.ind span{
+  position:relative;
+  padding:1.45mm 2.8mm 1.45mm 4.7mm;
+  border:1px solid rgba(91,75,224,.12);
+  border-radius:8mm;
+  background:linear-gradient(135deg,#F2F0FF,#E9E6FC);
+  color:var(--navy);
+  font-weight:700;
+  box-shadow:0 .6mm 1.5mm rgba(27,29,77,.06);
+}
+.chapter-two .chips.ind span::before{
+  content:"";
+  position:absolute;
+  left:2.1mm;
+  top:50%;
+  width:1.5mm;
+  height:1.5mm;
+  border-radius:50%;
+  background:var(--indigo);
+  transform:translateY(-50%);
+}
+.chapter-two > .cols.c2w > div:first-child{
+  padding:3mm 3.2mm;
+  border-top:2px solid var(--mint);
+  background:linear-gradient(145deg,rgba(229,246,239,.58),rgba(255,255,255,.18));
+}
+.chapter-two .card.ind{
+  padding:3mm 3.2mm;
+  border:0;
+  border-top:2px solid var(--indigo);
+  border-left:3px solid var(--indigo);
+  border-radius:0;
+  background:linear-gradient(145deg,rgba(238,236,252,.78),rgba(255,255,255,.2));
+}
+.chapter-two .dims div{
+  background:rgba(255,255,255,.82);
+  box-shadow:0 .6mm 1.4mm rgba(21,154,110,.07);
+}
+
+.product-page .balance-editorial.take{
+  grid-template-columns:8mm 1fr;
+  gap:3.5mm;
+  margin-top:7mm;
+  border-left-color:var(--amber) !important;
+}
+.product-page .balance-editorial .balance-copy{
+  display:grid;
+  grid-template-columns:45mm 1fr;
+  gap:6mm;
+  align-items:center;
+}
+
+/* Page 6 — protect clear space between the takeaway and page number */
+.page-combined-home .parent-habits-band{margin-top:5mm;}
+.page-combined-home .parent-habits-band figure{height:39mm;}
+.page-combined-home .take{
+  min-height:18mm;
+  margin-top:3mm;
+  padding-top:2.4mm;
+  padding-bottom:2.4mm;
+}
+
+.page-final-clean .improved-bento{
+  width:96%;
+  margin:0 auto 4mm;
+}
+.page-final-clean .improved-bento img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:3mm;
+}
+
+/* Phone preview: scale each complete A4 sheet without changing its layout. */
+.page-viewport{display:contents;}
+@media screen and (max-width:900px){
+  html,body{width:100%;overflow-x:hidden;}
+  body{padding:6px 0 12px;}
+  .page-viewport{
+    display:block;
+    position:relative;
+    margin:6px auto;
+    overflow:visible;
+  }
+  .page-viewport > .page{
+    width:210mm;
+    height:297mm;
+    min-height:297mm;
+    margin:0;
+    transform-origin:top left;
+  }
+}
+@media print{
+  .page-viewport{
+    display:block;
+    width:210mm;
+    height:297mm;
+    margin:0;
+    break-after:page;
+    page-break-after:always;
+  }
+  .page-viewport:last-of-type{
+    break-after:auto;
+    page-break-after:auto;
+  }
+  .page-viewport > .page{
+    margin:0;
+    transform:none !important;
+    break-after:auto !important;
+    page-break-after:auto !important;
+  }
+}
+
 </style>
 </head>
 <body>
 <main class="page">
   <header class="masthead">
     <figure class="logo">
-      <img loading="eager" decoding="async" fetchpriority="high" src="final_report_assets_web/IMG-01.webp" alt="PW Games logo">
+      <img src="final_report_assets_web/IMG-01.webp" alt="PW Games logo">
     </figure>
   </header>
 
@@ -2212,15 +2814,16 @@ body{
   </section>
 
   <figure class="hero">
-    <img loading="eager" decoding="async" fetchpriority="high" src="final_report_assets_web/IMG-02-playbook-hero-flat-editorial-v6.webp" alt="A child holds a phone while listening to his mother calmly point toward the clock, with homework, books and play waiting nearby">
+    <img src="final_report_assets_web/IMG-02-playbook-hero-wide-v9.webp" alt="A child holds a tablet while his mother calmly points toward the clock, with homework, books and play waiting nearby">
   </figure>
 
   <section class="opening-grid" aria-label="Why this handbook exists">
     <aside class="scene-card" aria-labelledby="sound-familiar">
       <h2 class="section-title" id="sound-familiar">Sound familiar?</h2>
-      <p class="scene-line"><span>The ask</span><strong>“Mumma, phone do na.”</strong></p>
-      <p class="time-jump">Five minutes become forty</p>
-      <p class="scene-line"><span>The answer</span><strong>“One more minute.”</strong></p>
+      <p class="scene-line child"><span>Child</span><strong>“Mumma, phone do na.”</strong></p>
+      <p class="scene-line parent"><span>Parent</span><strong>“Okay—but only for five minutes.”</strong></p>
+      <p class="time-jump">Forty minutes later…</p>
+      <p class="scene-line child"><span>Child</span><strong>“Bas one more minute!”</strong></p>
     </aside>
 
     <div class="story" aria-labelledby="why-handbook">
@@ -2258,7 +2861,7 @@ body{
 <main class="page product-page">
   <header class="masthead">
     <figure class="logo">
-      <img loading="lazy" decoding="async" src="final_report_assets_web/IMG-01.webp" alt="PW Games logo">
+      <img src="final_report_assets_web/IMG-01.webp" alt="PW Games logo">
     </figure>
   </header>
 
@@ -2269,12 +2872,12 @@ body{
       <p class="product-lead">Short puzzles and story-led games help children practise school skills, think through problems and see their progress.</p>
     </div>
     <figure class="product-hero">
-      <img loading="lazy" decoding="async" src="final_report_assets_web/IMG-03-pw-games-parent-child-hero-v2.webp" alt="A parent and child enjoying an educational game together">
+      <img src="final_report_assets_web/IMG-03-pw-games-parent-child-hero-v2.webp" alt="A parent and child enjoying an educational game together">
     </figure>
   </section>
 
   <section class="product-summary" aria-label="What PW Games does">
-    <p><strong>PW Games</strong>, from the makers of Physics Wallah, brings Maths, Science, English and Mental Ability together in one playful learning space.</p>
+    <p><strong>Our vision:</strong> To help parents turn screen time into a healthier, more purposeful experience—one where children have fun, stay curious, learn through play and build confidence along the way.</p>
   </section>
 
   <section class="product-story" aria-labelledby="why-pw-games">
@@ -2310,24 +2913,27 @@ body{
       </div>
       <div class="product-evidence" aria-label="Inside PW Games">
         <figure class="evidence-card app-screen">
-          <div class="device"><span class="status-bar"><span>10:45</span><span class="status-signals"><span class="cellular"><i></i><i></i><i></i><i></i></span><span class="wifi-mark"></span><span class="battery-mark"></span></span></span><img loading="lazy" decoding="async" src="final_report_assets_web/PW-Games-Maths-original.webp" alt="Original PW Games Maths Games screen"><span class="nav-bar"><i class="nav-triangle"></i><i class="nav-circle"></i><i class="nav-square"></i></span></div>
-          <figcaption><strong>Explore</strong></figcaption>
+          <div class="device"><span class="status-bar"><span>10:45</span><span class="status-signals"><span class="cellular"><i></i><i></i><i></i><i></i></span><span class="wifi-mark"></span><span class="battery-mark"></span></span></span><img src="final_report_assets_web/PW-Games-All-Games-light.webp" alt="PW Games All Games library with learning activities"><span class="nav-bar"><i class="nav-triangle"></i><i class="nav-circle"></i><i class="nav-square"></i></span></div>
+          <figcaption><strong>Browse</strong></figcaption>
         </figure>
         <figure class="evidence-card app-screen">
-          <div class="device"><span class="status-bar"><span>10:45</span><span class="status-signals"><span class="cellular"><i></i><i></i><i></i><i></i></span><span class="wifi-mark"></span><span class="battery-mark"></span></span></span><img loading="lazy" decoding="async" src="final_report_assets_web/gameplay-crossmath-clean.webp" alt="PW Games CrossMath multiplication puzzle in play"><span class="nav-bar"><i class="nav-triangle"></i><i class="nav-circle"></i><i class="nav-square"></i></span></div>
-          <figcaption><strong>Solve</strong></figcaption>
+          <div class="device"><span class="status-bar"><span>10:45</span><span class="status-signals"><span class="cellular"><i></i><i></i><i></i><i></i></span><span class="wifi-mark"></span><span class="battery-mark"></span></span></span><img src="final_report_assets_web/gameplay-listen-pop-light.webp" alt="PW Games Listen and Pop word recognition game in play"><span class="nav-bar"><i class="nav-triangle"></i><i class="nav-circle"></i><i class="nav-square"></i></span></div>
+          <figcaption><strong>Play</strong></figcaption>
         </figure>
         <figure class="evidence-card analytics">
-          <div class="device"><span class="status-bar"><span>10:45</span><span class="status-signals"><span class="cellular"><i></i><i></i><i></i><i></i></span><span class="wifi-mark"></span><span class="battery-mark"></span></span></span><img loading="lazy" decoding="async" src="final_report_assets_web/IMG-04-pw-games-progress-report-native-v2.webp" alt="PW Games progress report across four learning areas"><span class="nav-bar"><i class="nav-triangle"></i><i class="nav-circle"></i><i class="nav-square"></i></span></div>
+          <div class="device"><img src="final_report_assets_web/IMG-04-pw-games-progress-report-native-v2.webp" alt="PW Games progress report showing levels, XP points and progress across four learning areas"></div>
           <figcaption><strong>Progress</strong></figcaption>
         </figure>
       </div>
     </div>
   </section>
 
-  <section class="balance-editorial" aria-labelledby="balance-title">
-    <h2 id="balance-title">Useful does not mean unlimited.</h2>
-    <p>A learning game is still screen time. It should add to childhood—not replace sleep, outdoor play, reading, conversation or the useful freedom of being bored.</p>
+  <section class="balance-editorial take" aria-labelledby="balance-title">
+    <span class="lab">Takeaway</span>
+    <div class="balance-copy">
+      <h2 id="balance-title">Useful does not mean unlimited.</h2>
+      <p>A learning game is still screen time. It should add to childhood—not replace sleep, outdoor play, reading, conversation or the useful freedom of being bored.</p>
+    </div>
   </section>
 
   <footer class="footer">
@@ -2347,7 +2953,7 @@ body{
 </div>
 </div>
 <div class="cols c2n mb">
-<figure class="img fill asset" style="min-height:98mm;"><img loading="lazy" decoding="async" alt="IMG-03" src="final_report_assets_web/IMG-03.webp"/></figure>
+<figure class="img fill asset" style="min-height:98mm;"><img alt="IMG-03" src="final_report_assets_web/IMG-03.webp"/></figure>
 <div>
 <p class="h3">The same 60 minutes</p>
 <div class="cmp mb-s">
@@ -2374,10 +2980,10 @@ body{
 </div>
 </div>
 <div class="cols c4 mb">
-<div class="card soft"><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-04a" src="final_report_assets_web/IMG-04a.webp"/></figure><span class="k">01</span><span class="t">What?</span><p>What is my child actually doing on the screen?</p></div>
-<div class="card soft"><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-04b" src="final_report_assets_web/IMG-04b.webp"/></figure><span class="k">02</span><span class="t">When?</span><p>After school, during homework, at dinner — or near bedtime?</p></div>
-<div class="card soft"><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-04c" src="final_report_assets_web/IMG-04c.webp"/></figure><span class="k">03</span><span class="t">How?</span><p>Creating, learning or playing — or just being served content?</p></div>
-<div class="card soft"><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-04d" src="final_report_assets_web/IMG-04d.webp"/></figure><span class="k">04</span><span class="t">Replacing what?</span><p>Sleep, outdoor play, reading, conversation, family time or hobbies?</p></div>
+<div class="card soft"><figure class="img icon asset"><img alt="IMG-04a" src="final_report_assets_web/IMG-04a.webp"/></figure><span class="k">01</span><span class="t">What?</span><p>What is my child actually doing on the screen?</p></div>
+<div class="card soft"><figure class="img icon asset"><img alt="IMG-04b" src="final_report_assets_web/IMG-04b.webp"/></figure><span class="k">02</span><span class="t">When?</span><p>After school, during homework, at dinner — or near bedtime?</p></div>
+<div class="card soft"><figure class="img icon asset"><img alt="IMG-04c" src="final_report_assets_web/IMG-04c.webp"/></figure><span class="k">03</span><span class="t">How?</span><p>Creating, learning or playing — or just being served content?</p></div>
+<div class="card soft"><figure class="img icon asset"><img alt="IMG-04d" src="final_report_assets_web/IMG-04d.webp"/></figure><span class="k">04</span><span class="t">Replacing what?</span><p>Sleep, outdoor play, reading, conversation, family time or hobbies?</p></div>
 </div>
 <div class="ev">
 <span class="lab">What the research says</span>
@@ -2416,7 +3022,7 @@ body{
 <span>Video</span><i>→</i><span class="r">Reward</span><i>→</i><span>Next video</span><i>→</i><span class="r">Reward</span><i>→</i><span>Repeat</span>
 </div>
 </div>
-<figure class="img fill asset" style="min-height:86mm;"><img loading="lazy" decoding="async" alt="IMG-05" src="final_report_assets_web/IMG-05.webp"/></figure>
+<figure class="img fill asset" style="min-height:86mm;"><img alt="IMG-05" src="final_report_assets_web/IMG-05.webp"/></figure>
 </div>
 <div class="cols c2w mb">
 <div>
@@ -2438,11 +3044,11 @@ body{
 <span class="t">Slow is not bad. Slow is valuable.</span>
 <p style="margin-bottom:2mm;">A child should not grow up believing that every activity needs to be instantly exciting.</p>
 <div class="cols c5" style="gap:1.6mm;text-align:center;">
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-06a" src="final_report_assets_web/IMG-06a.webp"/></figure><p class="small">Reading</p></div>
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-06b" src="final_report_assets_web/IMG-06b.webp"/></figure><p class="small">An instrument</p></div>
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-06c" src="final_report_assets_web/IMG-06c.webp"/></figure><p class="small">Cricket</p></div>
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-06d" src="final_report_assets_web/IMG-06d.webp"/></figure><p class="small">A hard puzzle</p></div>
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-06e" src="final_report_assets_web/IMG-06e.webp"/></figure><p class="small">Building</p></div>
+<div><figure class="img icon asset"><img alt="IMG-06a" src="final_report_assets_web/IMG-06a.webp"/></figure><p class="small">Reading</p></div>
+<div><figure class="img icon asset"><img alt="IMG-06b" src="final_report_assets_web/IMG-06b.webp"/></figure><p class="small">An instrument</p></div>
+<div><figure class="img icon asset"><img alt="IMG-06c" src="final_report_assets_web/IMG-06c.webp"/></figure><p class="small">Cricket</p></div>
+<div><figure class="img icon asset"><img alt="IMG-06d" src="final_report_assets_web/IMG-06d.webp"/></figure><p class="small">A hard puzzle</p></div>
+<div><figure class="img icon asset"><img alt="IMG-06e" src="final_report_assets_web/IMG-06e.webp"/></figure><p class="small">Building</p></div>
 </div>
 <p style="margin-top:2mm;">All of these feel slow. That does not make them bad. <strong>It makes them valuable</strong> — and it is why a game that asks for a little effort beats a feed that asks for none.</p>
 </div>
@@ -2482,7 +3088,7 @@ body{
 </div>
 <p class="note" style="margin-top:1.6mm;">An illustrative day, not a measured research result.</p>
 </div>
-<figure class="img fill asset" style="min-height:84mm;"><img loading="lazy" decoding="async" alt="IMG-07" src="final_report_assets_web/IMG-07.webp"/></figure>
+<figure class="img fill asset" style="min-height:84mm;"><img alt="IMG-07" src="final_report_assets_web/IMG-07.webp"/></figure>
 </div>
 <div class="stat mb-s">
 <div class="fig">~10%<small>lower odds</small></div>
@@ -2496,11 +3102,11 @@ body{
 </div>
 <p class="h3">Protect these five things fiercely</p>
 <div class="prot mb">
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-08a" src="final_report_assets_web/IMG-08a.webp"/></figure><b>Sleep</b></div>
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-08b" src="final_report_assets_web/IMG-08b.webp"/></figure><b>Play</b></div>
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-08c" src="final_report_assets_web/IMG-08c.webp"/></figure><b>Reading</b></div>
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-08d" src="final_report_assets_web/IMG-08d.webp"/></figure><b>Conversation</b></div>
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="IMG-08e" src="final_report_assets_web/IMG-08e.webp"/></figure><b>Boredom</b></div>
+<div><figure class="img icon asset"><img alt="IMG-08a" src="final_report_assets_web/IMG-08a.webp"/></figure><b>Sleep</b></div>
+<div><figure class="img icon asset"><img alt="IMG-08b" src="final_report_assets_web/IMG-08b.webp"/></figure><b>Play</b></div>
+<div><figure class="img icon asset"><img alt="IMG-08c" src="final_report_assets_web/IMG-08c.webp"/></figure><b>Reading</b></div>
+<div><figure class="img icon asset"><img alt="IMG-08d" src="final_report_assets_web/IMG-08d.webp"/></figure><b>Conversation</b></div>
+<div><figure class="img icon asset"><img alt="IMG-08e" src="final_report_assets_web/IMG-08e.webp"/></figure><b>Boredom</b></div>
 </div>
 <div class="take">
 <span class="lab">Takeaway</span>
@@ -2549,7 +3155,7 @@ body{
 <div class="hd">
 <div class="five">5</div>
 <div><b>Five rules are enough</b><small>Print this. Put it on the fridge.</small></div>
-<figure class="img icon asset" style="margin:0 0 0 auto;width:13mm;min-height:13mm;"><img loading="lazy" decoding="async" alt="IMG-10" src="final_report_assets_web/IMG-10.webp"/></figure>
+<figure class="img icon asset" style="margin:0 0 0 auto;width:13mm;min-height:13mm;"><img alt="IMG-10" src="final_report_assets_web/IMG-10.webp"/></figure>
 </div>
 <div class="rule"><div class="n">1</div><div><b>No phones during meals</b><p>Food is for eating. Dinner is for talking. And yes — parents too.</p></div></div>
 <div class="rule"><div class="n">2</div><div><b>No screens before bed</b><p>Create a screen-free window of around 30–60 minutes before bedtime.<sup>5</sup></p></div></div>
@@ -2559,7 +3165,7 @@ body{
 </div>
 </div>
 <section class="parent-habits-band">
-<figure><img loading="lazy" decoding="async" alt="A parent giving a child focused, phone-free time" src="final_report_assets_web/IMG-12.webp"/></figure>
+<figure><img alt="A parent giving a child focused, phone-free time" src="final_report_assets_web/IMG-12.webp"/></figure>
 <div>
 <span class="k">The parent habit</span>
 <h3>20 phone-free minutes</h3>
@@ -2588,7 +3194,7 @@ body{
 </div>
 </div>
 <div class="cols c2n mb">
-<figure class="img fill asset" style="min-height:80mm;"><img loading="lazy" decoding="async" alt="IMG-13" src="final_report_assets_web/IMG-13.webp"/></figure>
+<figure class="img fill asset" style="min-height:80mm;"><img alt="IMG-13" src="final_report_assets_web/IMG-13.webp"/></figure>
 <div>
 <div class="chat mb-s">
 <div class="b par">"Okay, no YouTube."</div>
@@ -2607,10 +3213,9 @@ body{
 <div><b>Connect</b><ul><li>Play with a sibling</li><li>Call Dadi</li><li>Talk to Papa</li><li>Meet a friend</li></ul></div>
 <div><b>Explore</b><ul><li>Plant something</li><li>A science experiment</li><li>A magic trick</li><li>An instrument</li><li>Collect interesting things</li></ul></div>
 </div>
-<section class="pw-third" aria-label="PW Games learning alternative">
+<section class="pw-third page2-pair" aria-label="PW Games learning alternative">
 <div class="visual">
-<figure><img loading="lazy" decoding="async" alt="Original PW Games Maths Games screen" src="final_report_assets_web/PW-Games-Maths-original.webp"/></figure>
-<figure><img loading="lazy" decoding="async" alt="PW Games progress report" src="final_report_assets_web/IMG-04-pw-games-progress-report-native-v2.webp"/></figure>
+<img class="page7-showcase" alt="PW Games sorting and science gameplay beside the parent progress report" src="final_report_assets_web/IMG-07-pw-games-learning-showcase-v1.webp"/>
 </div>
 <div class="copy">
 <p class="eyebrow">When the screen stays on</p>
@@ -2741,12 +3346,12 @@ body{
 </div>
 <p class="h3">If you are seeing amber or red, start with the basics</p>
 <div class="basics mb-s">
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="Bedtime routine" src="final_report_assets_web/IMG-15a.webp"/></figure>Tighten bedtime</div>
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="Devices outside bedrooms" src="final_report_assets_web/IMG-15b.webp"/></figure>Move devices out</div>
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="Outdoor activity" src="final_report_assets_web/IMG-15c.webp"/></figure>Increase outdoor play</div>
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="Family interaction" src="final_report_assets_web/IMG-15d.webp"/></figure>Create family time</div>
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="Finite games" src="final_report_assets_web/IMG-15e.webp"/></figure>Choose games that end</div>
-<div><figure class="img icon asset"><img loading="lazy" decoding="async" alt="Real alternatives" src="final_report_assets_web/IMG-15f.webp"/></figure>Offer real alternatives</div>
+<div><figure class="img icon asset"><img alt="Bedtime routine" src="final_report_assets_web/IMG-15a.webp"/></figure>Tighten bedtime</div>
+<div><figure class="img icon asset"><img alt="Devices outside bedrooms" src="final_report_assets_web/IMG-15b.webp"/></figure>Move devices out</div>
+<div><figure class="img icon asset"><img alt="Outdoor activity" src="final_report_assets_web/IMG-15c.webp"/></figure>Increase outdoor play</div>
+<div><figure class="img icon asset"><img alt="Family interaction" src="final_report_assets_web/IMG-15d.webp"/></figure>Create family time</div>
+<div><figure class="img icon asset"><img alt="Finite games" src="final_report_assets_web/IMG-15e.webp"/></figure>Choose games that end</div>
+<div><figure class="img icon asset"><img alt="Real alternatives" src="final_report_assets_web/IMG-15f.webp"/></figure>Offer real alternatives</div>
 </div>
 <p class="small">If significant difficulties persist, <strong>seek appropriate professional help rather than escalating punishment.</strong> A paediatrician, school counsellor or child psychologist is the right next step.</p>
 <div class="take"><span class="lab">Takeaway</span><p>Act when screens consistently interfere with sleep, learning, movement, relationships or everyday life.</p></div>
@@ -2767,33 +3372,23 @@ body{
 <p>There will be days when you hand over the phone because you need twenty quiet minutes. That's okay. Healthy habits aren't built in one dramatic family meeting—they're built through hundreds of small decisions. Start again tomorrow.</p>
 </div>
 </div>
-<div class="game-collage" aria-label="A collage of original PW Games screens">
-<figure class="market"><img loading="lazy" decoding="async" alt="Mini's Market Sorter game" src="final_report_assets_web/gameplay-market-sort.webp"/><figcaption><strong>Mini's Market Sorter</strong><span>Sorting &amp; classification</span></figcaption></figure>
-<figure class="sequence"><img loading="lazy" decoding="async" alt="Smarty Serpent game" src="final_report_assets_web/gameplay-sequence.webp"/><figcaption><strong>Smarty Serpent</strong><span>Number patterns</span></figcaption></figure>
-<figure class="science"><img loading="lazy" decoding="async" alt="Knowledge Runner game" src="final_report_assets_web/gameplay-science-platform.webp"/><figcaption><strong>Knowledge Runner</strong><span>Science recall</span></figcaption></figure>
-<figure class="shape"><img loading="lazy" decoding="async" alt="Packabunchas game" src="final_report_assets_web/gameplay-shape-drag-clean.webp"/><figcaption><strong>Packabunchas</strong><span>Spatial reasoning</span></figcaption></figure>
-<figure class="crossmath"><img loading="lazy" decoding="async" alt="CrossMath game" src="final_report_assets_web/gameplay-crossmath-clean.webp"/><figcaption><strong>CrossMath</strong><span>Multiplication</span></figcaption></figure>
-<figure class="space"><img loading="lazy" decoding="async" alt="Cosmic Quest game" src="final_report_assets_web/gameplay-space-math.webp"/><figcaption><strong>Cosmic Quest</strong><span>Algebraic thinking</span></figcaption></figure>
-<figure class="memory"><img loading="lazy" decoding="async" alt="BrainMatch game" src="final_report_assets_web/gameplay-memory-clean.webp"/><figcaption><strong>BrainMatch</strong><span>Visual memory</span></figcaption></figure>
-<figure class="hindi"><img loading="lazy" decoding="async" alt="Pop the Balloons game" src="final_report_assets_web/gameplay-hindi-sound.webp"/><figcaption><strong>Pop the Balloons</strong><span>Sound recognition</span></figcaption></figure>
-</div>
+<figure class="improved-bento" aria-label="A collage of original PW Games screens">
+<img alt="PW Games collection featuring sorting, memory, sound, maths, spatial reasoning and science games" src="final_report_assets_web/improved_bento.webp"/>
+</figure>
 <div class="download-pw">
-<div>
-<h3>Download PW Games</h3>
-<p>Turn screen time into short, active challenges across Maths, Science, English and Mental Ability—from the makers of Physics Wallah.</p>
-<span class="price">All games for just <strong>₹7</strong></span>
-</div>
 <div class="download-assets">
-<figure class="qr"><img loading="lazy" decoding="async" alt="QR code to download PW Games" src="final_report_assets_web/IMG-18.webp"/></figure>
-<div class="playstore-button" aria-label="Get PW Games on Google Play">
-<svg aria-hidden="true" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<path d="M7 5L36 32 7 59Z" fill="#27C1E6"/>
-<path d="M7 5L43 26 36 32Z" fill="#32D177"/>
-<path d="M7 59L43 38 36 32Z" fill="#F34B55"/>
-<path d="M36 32L43 26 56 33.5C58 34.7 58 37.3 56 38.5L43 46 36 40Z" fill="#FFD23F" transform="translate(0 -4)"/>
-</svg>
-<span>GET IT ON<strong>Google Play</strong></span>
+<div class="qr-stack"><span class="download-label">Download QR</span><figure class="qr"><img alt="QR code to download PW Games" src="final_report_assets_web/IMG-18.webp"/></figure><span class="scan-label">Scan and play</span></div>
+<div class="store-cta">
+<span class="store-label">Tap to download</span>
+<a class="playstore-button" href="https://play.google.com/store/apps/details?id=com.pw.games" target="_blank" rel="noopener" aria-label="Get PW Games on Google Play">
+<img src="final_report_assets_web/google-play-badge.svg" alt="Get it on Google Play"/>
+</a>
+<a class="offer-cta" href="https://play.google.com/store/apps/details?id=com.pw.games" target="_blank" rel="noopener"><span class="offer-text">Unlock all games · <strong>₹7</strong></span></a>
 </div>
+</div>
+<div class="download-copy">
+<h3><a href="https://play.google.com/store/apps/details?id=com.pw.games" target="_blank" rel="noopener">Download PW Games</a></h3>
+<p>Turn screen time into short, active challenges across Maths, Science, English and Mental Ability—from the makers of Physics Wallah.</p>
 </div>
 </div>
 <p class="sources-heading">Sources &amp; reading</p>
@@ -2813,5 +3408,62 @@ body{
 <span class="brand">PW Games · Learn through play</span>
 </div>
 </section>
+<script>
+(() => {
+  const phoneQuery = window.matchMedia('(max-width: 900px)');
+
+  function wrapPrintedPages() {
+    document.querySelectorAll('.page').forEach(page => {
+      if (page.parentElement && page.parentElement.classList.contains('page-viewport')) return;
+      const viewport = document.createElement('div');
+      viewport.className = 'page-viewport';
+      page.parentNode.insertBefore(viewport, page);
+      viewport.appendChild(page);
+    });
+  }
+
+  function fitPrintedPages() {
+    wrapPrintedPages();
+    const viewports = document.querySelectorAll('.page-viewport');
+
+    viewports.forEach(viewport => {
+      const page = viewport.querySelector(':scope > .page');
+      if (!page) return;
+
+      page.style.transform = 'none';
+      viewport.style.width = '';
+      viewport.style.height = '';
+
+      if (!phoneQuery.matches) return;
+
+      const pageWidth = page.offsetWidth;
+      const pageHeight = page.offsetHeight;
+      const visibleWidth = window.visualViewport ? window.visualViewport.width : window.innerWidth;
+      const availableWidth = Math.max(1, visibleWidth - 12);
+      const scale = Math.min(1, availableWidth / pageWidth);
+
+      page.style.transform = `scale(${scale})`;
+      viewport.style.width = `${pageWidth * scale}px`;
+      viewport.style.height = `${pageHeight * scale}px`;
+    });
+  }
+
+  window.addEventListener('DOMContentLoaded', fitPrintedPages);
+  window.addEventListener('resize', fitPrintedPages, {passive:true});
+  window.addEventListener('orientationchange', fitPrintedPages, {passive:true});
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', fitPrintedPages, {passive:true});
+  }
+  window.addEventListener('beforeprint', () => {
+    document.querySelectorAll('.page-viewport').forEach(viewport => {
+      viewport.style.width = '';
+      viewport.style.height = '';
+      const page = viewport.querySelector(':scope > .page');
+      if (page) page.style.transform = 'none';
+    });
+  });
+  window.addEventListener('afterprint', fitPrintedPages);
+})();
+</script>
 </body>
 </html>
