@@ -2763,9 +2763,9 @@ body{
 @media screen and (max-width:900px){
   html,body{
     width:100%;
-    overflow-x:auto;
-    overscroll-behavior-x:none;
-    touch-action:pan-x pan-y pinch-zoom;
+    overflow:auto;
+    touch-action:auto;
+    -webkit-overflow-scrolling:touch;
   }
   body{padding:6px 0 12px;}
   .page-viewport{
@@ -2773,7 +2773,7 @@ body{
     position:relative;
     margin:6px auto;
     overflow:visible;
-    touch-action:pan-x pan-y pinch-zoom;
+    touch-action:auto;
   }
   .page-viewport > .page{
     width:210mm;
